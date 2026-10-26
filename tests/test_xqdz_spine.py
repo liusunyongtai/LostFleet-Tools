@@ -6,8 +6,9 @@ import unittest
 import numpy as np
 from PIL import Image
 
-from tools.build_xqdz_spine import (BASE, DURATIONS, attachment_matrix, build_skeleton,
-                                    load_images, pose, render, visible_attachments)
+from tools.build_xqdz_spine import (BASE, DURATIONS, LIGHT_SLOTS, LIT_PARTS,
+                                    PREVIEW_CAMERA, attachment_matrix, build_skeleton,
+                                    load_images, pose, render, sample, visible_attachments)
 
 
 class XqdzSpineTests(unittest.TestCase):
@@ -65,8 +66,9 @@ class XqdzSpineTests(unittest.TestCase):
                 np.testing.assert_allclose(start[bone],end[bone],atol=1e-5)
 
     def test_flash_and_shoot_event_are_synchronized(self):
-        self.assertEqual(self.skeleton['animations']['attack']['events'],
-                         [{'time':0.266667,'name':'shoot'}])
+        event=self.skeleton['animations']['attack']['events'][0]
+        self.assertEqual(event['name'],'shoot')
+        self.assertAlmostEqual(event['time'],8/30,places=12)
         for name,duration in DURATIONS.items():
             visible=[]
             for frame in range(round(duration*30)+1):
@@ -89,9 +91,15 @@ class XqdzSpineTests(unittest.TestCase):
 
     def test_death_preview_keeps_the_entire_fallen_character(self):
         complete=render(self.skeleton,self.images,'death',1.4,size=(1600,1400),camera=(700,800))
-        expected=[v-(340 if i%2==0 else 260) for i,v in enumerate(complete.getbbox())]
+        expected=[v-((700-PREVIEW_CAMERA[0]) if i%2==0 else (800-PREVIEW_CAMERA[1]))
+                  for i,v in enumerate(complete.getbbox())]
         cropped=render(self.skeleton,self.images,'death',1.4)
         self.assertEqual(list(cropped.getbbox()),expected)
+
+    def test_death_does_not_sink_below_ground_during_the_fall(self):
+        for frame in range(43):
+            image=render(self.skeleton,self.images,'death',frame/30,size=(1600,1400),camera=(700,800))
+            self.assertLessEqual(image.getbbox()[3],801,f'frame {frame}')
 
     def test_runtime_pose_report_is_current_and_matches_preview_math(self):
         report=json.loads((BASE/'runtime-validation.json').read_text())
@@ -110,6 +118,55 @@ class XqdzSpineTests(unittest.TestCase):
         rebuilt=build_skeleton(self.source,self.config)
         for field in ('bones','slots','skins','skeleton'):
             self.assertEqual(rebuilt[field],self.skeleton[field])
+
+    def test_flash_is_twice_v1_in_both_dimensions_and_starts_at_muzzle(self):
+        flash=self.skeleton['skins'][0]['attachments']['muzzle_flash']
+        for attachment in flash.values():
+            self.assertEqual((attachment['width'],attachment['height']),(160,112))
+            self.assertEqual(attachment['x']-attachment['width']/2,0)
+
+    def test_each_action_has_a_stronger_readable_accent_than_v1(self):
+        baseline=json.loads((BASE/'source/v1-animation-reference.json').read_text())
+        for animation,bone in [('idle','head'),('move','right_leg'),('attack','body'),
+                               ('hit','body'),('death','body')]:
+            old=max(abs(k['value']) for k in baseline['animations'][animation]['bones'][bone]['rotate'])
+            new=max(abs(k['value']) for k in self.skeleton['animations'][animation]['bones'][bone]['rotate'])
+            self.assertGreaterEqual(new,old*1.6,(animation,bone))
+
+    def test_light_masks_are_clipped_to_original_alpha(self):
+        for name in LIT_PARTS:
+            original=np.asarray(self.images[name])[:,:,3]
+            mask=np.asarray(self.images['fx/shot_light_'+name])[:,:,3]
+            self.assertTrue(np.all(mask<=original))
+            self.assertTrue(np.any(mask>0))
+
+    def test_lights_are_attack_only_and_match_official_runtime_fade(self):
+        report=json.loads((BASE/'runtime-validation.json').read_text())
+        for entry in report['samples']:
+            visible={slot['name'] for slot,_ in visible_attachments(self.skeleton,entry['animation'],entry['time'])}
+            for name in LIGHT_SLOTS:
+                official=entry['lights'][name]
+                self.assertEqual(bool(official['attachment']),name in visible)
+                track=self.skeleton['animations'][entry['animation']]['slots'][name]['alpha']
+                alpha=sample(track,entry['time'],'value',1)
+                self.assertAlmostEqual(alpha,official['alpha'],places=5)
+                if entry['animation']!='attack':self.assertFalse(official['attachment'])
+
+    def test_shot_light_actually_brightens_the_gun_and_turns_off(self):
+        from copy import deepcopy
+        unlit=deepcopy(self.skeleton)
+        for animation in unlit['animations'].values():
+            for name in LIGHT_SLOTS:animation['slots'][name]={'attachment':[{'time':0,'name':None}]}
+        background=Image.new('RGBA',(1120,640),'#26323e')
+        before=render(unlit,self.images,'attack',8/30,background=background)
+        after=render(self.skeleton,self.images,'attack',8/30,background=background)
+        slot=next(slot for slot in self.skeleton['slots'] if slot['name']=='wuqi')
+        a=self.skeleton['skins'][0]['attachments']['wuqi']['wuqi']
+        world=attachment_matrix(pose(self.skeleton,'attack',8/30),slot,a,self.images['wuqi']) @ [60,50,1]
+        x,y=round(world[0]+PREVIEW_CAMERA[0]),round(PREVIEW_CAMERA[1]-world[1])
+        self.assertGreater(after.getpixel((x,y))[0],before.getpixel((x,y))[0]+20)
+        np.testing.assert_array_equal(np.asarray(render(unlit,self.images,'attack',.6,background=background)),
+                                      np.asarray(render(self.skeleton,self.images,'attack',.6,background=background)))
 
 
 if __name__=='__main__':unittest.main(verbosity=2)

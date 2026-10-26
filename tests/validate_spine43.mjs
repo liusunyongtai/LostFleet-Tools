@@ -22,15 +22,17 @@ const data=new SkeletonJson(loader).readSkeletonData(json);
 const results={runtime:'@esotericsoftware/spine-core 4.3.13',targetEditor:'4.3.23',desktopEditorTested:false,
   notes:'Runtime parse, timeline application, finite world transforms and attachment references. No desktop/editor import claim.',bones:data.bones.length,slots:data.slots.length,animations:{},samples:[]};
 results.skeletonSHA256=createHash('sha256').update(readFileSync(path.join(root,'xqdz-4.3.json'))).digest('hex');
-assert.equal(data.bones.length,13);assert.equal(data.slots.length,10);assert.equal(data.animations.length,5);
+assert.equal(data.bones.length,13);assert.equal(data.slots.length,16);assert.equal(data.animations.length,5);
+const lightSlots=json.slots.filter(slot=>slot.name.startsWith('shot_light_')||slot.name==='muzzle_glow').map(slot=>slot.name);
 for(const animation of data.animations){
   const count=Math.round(animation.duration*30);
   const skeleton=new Skeleton(data);
   const state=new AnimationState(new AnimationStateData(data));
   const entry=state.setAnimation(0,animation.name,false);
-  let shown=0;
+  let shown=0;const flashIndices=[];
   for(let frame=0;frame<=count;frame++){
-    const time=frame===count?animation.duration:frame/30;
+    // Runtime frame arrays use float32; sample the same frame boundary precision.
+    const time=frame===count?animation.duration:Math.fround(frame/30);
     skeleton.setupPose();entry.trackTime=time;state.apply(skeleton);skeleton.updateWorldTransform(Physics.none);
     const bones={};
     for(const bone of skeleton.bones){
@@ -39,11 +41,20 @@ for(const animation of data.animations){
       bones[bone.data.name]=values;
     }
     const flash=skeleton.findSlot('muzzle_flash').appliedPose.attachment;
-    if(flash)shown++;
+    if(flash){shown++;flashIndices.push(frame);}
     if(animation.name!=='attack')assert.equal(flash,null);
-    results.samples.push({animation:animation.name,time,bones,flash:flash?.name||null});
+    const lights={};
+    for(const name of lightSlots){
+      const pose=skeleton.findSlot(name).appliedPose;
+      const lit=!!pose.attachment&&pose.color.a>0;
+      if(animation.name!=='attack'||frame<8||frame>=14)assert.equal(lit,false);
+      if(animation.name==='attack'&&frame===8){assert.equal(lit,true);assert.ok(Math.abs(pose.color.a-1)<1e-6);}
+      assert.ok(Number.isFinite(pose.color.a));
+      lights[name]={attachment:pose.attachment?.name||null,alpha:pose.color.a};
+    }
+    results.samples.push({animation:animation.name,time,bones,flash:flash?.name||null,lights});
   }
-  if(animation.name==='attack')assert.equal(shown,3);
+  if(animation.name==='attack')assert.deepEqual(flashIndices,[8,9,10]);
   results.animations[animation.name]={duration:animation.duration,frames:count+1,flashFrames:shown};
   console.log(`PASS runtime: ${animation.name}, ${count+1} poses, ${shown} flash frames`);
 }
