@@ -1,0 +1,149 @@
+{
+  "target_version": "4.3.23",
+  "origin": [
+    270,
+    -463
+  ],
+  "bones": [
+    {
+      "name": "root",
+      "position": [
+        270,
+        -463
+      ],
+      "rotation": 0,
+      "length": 0
+    },
+    {
+      "name": "pelvis",
+      "parent": "root",
+      "position": [
+        270,
+        -350
+      ],
+      "rotation": 0,
+      "length": 12
+    },
+    {
+      "name": "body",
+      "parent": "pelvis",
+      "position": [
+        275,
+        -337
+      ],
+      "rotation": 90,
+      "length": 90
+    },
+    {
+      "name": "head",
+      "parent": "body",
+      "position": [
+        268,
+        -242
+      ],
+      "rotation": 90,
+      "length": 100
+    },
+    {
+      "name": "antenna_01",
+      "parent": "head",
+      "position": [
+        315,
+        -190
+      ],
+      "rotation": -45,
+      "length": 55
+    },
+    {
+      "name": "antenna_02",
+      "parent": "head",
+      "position": [
+        310,
+        -142
+      ],
+      "rotation": 10,
+      "length": 55
+    },
+    {
+      "name": "aim",
+      "parent": "body",
+      "position": [
+        306,
+        -265
+      ],
+      "rotation": 0,
+      "length": 0
+    },
+    {
+      "name": "right_arm",
+      "parent": "aim",
+      "position": [
+        267,
+        -270
+      ],
+      "rotation": -160,
+      "length": 110
+    },
+    {
+      "name": "left_arm",
+      "parent": "aim",
+      "position": [
+        325,
+        -267
+      ],
+      "rotation": -158,
+      "length": 135
+    },
+    {
+      "name": "weapon",
+      "parent": "aim",
+      "position": [
+        165,
+        -310
+      ],
+      "rotation": 180,
+      "length": 135
+    },
+    {
+      "name": "muzzle",
+      "parent": "weapon",
+      "position": [
+        22,
+        -269
+      ],
+      "rotation": 180,
+      "length": 40
+    },
+    {
+      "name": "right_leg",
+      "parent": "pelvis",
+      "position": [
+        228,
+        -348
+      ],
+      "rotation": -90,
+      "length": 100
+    },
+    {
+      "name": "left_leg",
+      "parent": "pelvis",
+      "position": [
+        294,
+        -353
+      ],
+      "rotation": -90,
+      "length": 105
+    }
+  ],
+  "bindings": {
+    "youshoubi": "right_arm",
+    "youtui": "right_leg",
+    "qugan": "body",
+    "zuotui": "left_leg",
+    "toubvu": "head",
+    "cx02": "antenna_02",
+    "cx01": "antenna_01",
+    "wuqi": "weapon",
+    "zuoshoubni": "left_arm"
+  }
+}

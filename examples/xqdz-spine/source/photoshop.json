@@ -1,0 +1,136 @@
+{
+  "skeleton": {
+    "images": "../images/"
+  },
+  "bones": [
+    {
+      "name": "root"
+    }
+  ],
+  "slots": [
+    {
+      "name": "youshoubi",
+      "bone": "root",
+      "attachment": "youshoubi"
+    },
+    {
+      "name": "youtui",
+      "bone": "root",
+      "attachment": "youtui"
+    },
+    {
+      "name": "qugan",
+      "bone": "root",
+      "attachment": "qugan"
+    },
+    {
+      "name": "zuotui",
+      "bone": "root",
+      "attachment": "zuotui"
+    },
+    {
+      "name": "toubvu",
+      "bone": "root",
+      "attachment": "toubvu"
+    },
+    {
+      "name": "cx02",
+      "bone": "root",
+      "attachment": "cx02"
+    },
+    {
+      "name": "cx01",
+      "bone": "root",
+      "attachment": "cx01"
+    },
+    {
+      "name": "wuqi",
+      "bone": "root",
+      "attachment": "wuqi"
+    },
+    {
+      "name": "zuoshoubni",
+      "bone": "root",
+      "attachment": "zuoshoubni"
+    }
+  ],
+  "skins": {
+    "default": {
+      "youshoubi": {
+        "youshoubi": {
+          "x": 205,
+          "y": -291,
+          "width": 162,
+          "height": 94
+        }
+      },
+      "youtui": {
+        "youtui": {
+          "x": 225.5,
+          "y": -393,
+          "width": 101,
+          "height": 118
+        }
+      },
+      "qugan": {
+        "qugan": {
+          "x": 279,
+          "y": -297.5,
+          "width": 158,
+          "height": 159
+        }
+      },
+      "zuotui": {
+        "zuotui": {
+          "x": 307.5,
+          "y": -406.5,
+          "width": 85,
+          "height": 113
+        }
+      },
+      "toubvu": {
+        "toubvu": {
+          "x": 258.5,
+          "y": -145,
+          "width": 221,
+          "height": 260
+        }
+      },
+      "cx02": {
+        "cx02": {
+          "x": 340,
+          "y": -146.5,
+          "width": 76,
+          "height": 83
+        }
+      },
+      "cx01": {
+        "cx01": {
+          "x": 329,
+          "y": -219.5,
+          "width": 48,
+          "height": 85
+        }
+      },
+      "wuqi": {
+        "wuqi": {
+          "x": 107.5,
+          "y": -286.5,
+          "width": 189,
+          "height": 119
+        }
+      },
+      "zuoshoubni": {
+        "zuoshoubni": {
+          "x": 269.5,
+          "y": -286.5,
+          "width": 183,
+          "height": 99
+        }
+      }
+    }
+  },
+  "animations": {
+    "animation": {}
+  }
+}

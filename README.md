@@ -147,6 +147,12 @@ LOSTFLEET_URL=http://127.0.0.1:8000/ PYTHON=/workspace/.venvs/lostfleet-tools/bi
 
 `ui_layout.cjs` 额外验证两种目标分辨率、自包含 HTML、CSS/JS 端点 MIME、页面无溢出、部件重命名/显隐、平移与指针定点缩放、拖动枢轴、原图对比、旧工程兼容，以及不带末尾斜杠的代理路径下上传和导出。截图保存为系统临时目录中的 `lostfleet-ui-1366.png`、`lostfleet-ui-1920.png`；指定运行中的端口后名称为 `lostfleet-live-8000-1366.png`、`lostfleet-live-8000-1920.png`，附同名 `-report.json` 诊断报告。使用程序生成的机器人测试图，不是实际游戏素材。代理回归使用测试代理，不能证明 Codex 实际内嵌预览成功；实际预览访问能力不可用时需明确报告。
 
+## XQDZ 枪手 · Spine 动画初稿
+
+本分支包含按授权提供的角色素材与五动作初稿，位于 [`examples/xqdz-spine`](examples/xqdz-spine/README.md)。下载 `codex/xqdz-spine-animations` 分支完整 ZIP 后，在本地 Spine 4.3.23 使用“导入数据”选择 `examples/xqdz-spine/xqdz-4.3.json`；图片目录是同级 `images`。先双击 `preview.html` 可查看 GIF。
+
+包含 `idle`、`attack`（开枪后坐与三帧火花）、`hit`、`death`、`move`。已验证官方 4.3 运行库加载与 167 个姿态，**未实机验证 Spine 4.3.23 桌面编辑器导入**。当前是整肢刚性绑定，没有膝肘弯曲、手部 IK 或遮挡补绘，详细限制见该目录说明。
+
 ## 后续扩展接口
 
 `lostfleet_tools/providers.py` 预留 `SegmentationProvider.suggest_regions()` 与 `InpaintingProvider.complete_occlusion()` 协议。未来模型建议应转换成可编辑的原图坐标选区；遮挡补绘应作为独立、可审阅的生成结果。MVP 未启用任何 AI 提供方，也不声称恢复遮挡部位。图像处理位于 `pipeline.py`，与本地 HTTP 界面解耦。
