@@ -1,0 +1,2 @@
+# Preserve Windows CRLF bytes in GitHub ZIP downloads as well as checkouts.
+*.bat -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

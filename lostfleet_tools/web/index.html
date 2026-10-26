@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>LostFleet · 角色素材拆分工作台</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./style.css?v=3">
+  <script src="./app.js?v=3" defer></script>
+</head>
+<body>
+<header class="app-header">
+  <div class="brand"><span class="brand-mark" aria-hidden="true">L<span>F</span></span><div><b>LOSTFLEET <span>TOOLS</span></b><small>2D 角色素材拆分工作台</small></div><span class="version">MANUAL / MVP</span></div>
+  <div class="header-actions"><span class="local-badge"><i></i> 本地处理</span><button id="diagnostics" class="quiet">界面诊断</button><button id="save" class="quiet">保存工程</button><label class="button quiet" tabindex="0">载入工程<input id="load" type="file" accept="application/json,.json"></label><label class="button primary" tabindex="0"><span aria-hidden="true">＋</span> 上传角色图片<input id="upload" type="file" accept="image/png,image/jpeg"></label></div>
+</header>
+<main class="app-layout">
+  <aside class="parts-panel" aria-label="部件列表面板">
+    <div class="panel-heading"><div><span class="eyebrow">LAYERS</span><h1>角色部件 <span id="partCount" class="count">0 / 16</span></h1></div><span class="subtle" title="左右以角色自身为准">16 层</span></div>
+    <div class="list-caption"><span>可见 / 名称</span><span>选区</span></div>
+    <select id="part" class="sr-only" tabindex="-1" aria-label="角色部件"></select>
+    <ul id="partList" class="part-list" aria-label="选择角色部件"></ul>
+    <div class="panel-foot"><span class="legend-dot"></span> 已绘制的部件将包含在导出中<p>眼睛开关只影响编辑显示，不影响导出。左右以角色自身为准。</p></div>
+  </aside>
+  <section class="workspace" aria-label="角色编辑工作区">
+    <div class="document-bar"><div class="document-name"><span class="file-icon" aria-hidden="true">▧</span><strong id="filename">未打开角色图片</strong></div><span class="document-tag">RGBA · 原图坐标</span></div>
+    <div class="canvas-toolbar">
+      <div class="tool-group" role="group" aria-label="绘制工具">
+        <button data-tool="rectangle" class="icon-tool active" title="矩形框选 (R)" aria-label="矩形框选" aria-pressed="true">▭</button>
+        <button data-tool="polygon" class="icon-tool" title="多边形 (P)" aria-label="多边形选区" aria-pressed="false">⬠</button>
+        <button data-tool="eraser" class="icon-tool" title="擦除框 (E)，精细擦除可用多边形＋擦除操作" aria-label="擦除框" aria-pressed="false">▱</button>
+        <button data-tool="pivot" class="icon-tool" title="枢轴点 (J)" aria-label="设置枢轴点" aria-pressed="false">⊕</button>
+        <button data-tool="pan" class="icon-tool" title="平移 (H) / 按住空格拖动 / 鼠标中键" aria-label="平移画布" aria-pressed="false">✥</button>
+      </div>
+      <label class="sr-only">工具<select id="tool"><option value="rectangle">矩形</option><option value="polygon">多边形</option><option value="eraser">擦除框</option><option value="pivot">枢轴点</option><option value="pan">平移</option></select></label>
+      <select id="operation" class="compact" aria-label="选区操作"><option value="add">＋ 添加选区</option><option value="subtract">− 擦除选区</option></select>
+      <span class="toolbar-divider"></span><button id="undo" class="quiet small" title="撤销最后一个点或区域">↶ 撤销</button><button id="finish" class="quiet small">完成多边形</button>
+      <span class="toolbar-spacer"></span><button id="compare" class="quiet small" aria-pressed="false" title="切换原始图片与当前编辑视图">◐ 原图对比</button>
+    </div>
+    <div id="viewport" class="checkerboard" tabindex="0" aria-label="角色编辑画布，滚轮缩放，空格拖动平移">
+      <canvas id="canvas" width="640" height="640" aria-label="角色图片区域编辑画布"></canvas>
+      <div id="empty"><div class="empty-symbol" aria-hidden="true">⬠<span>＋</span></div><h2>从一张角色原画开始</h2><p>上传 PNG / JPG，在左侧选择部件<br>框选轮廓，准备你的下一段动画</p><label class="button primary" for="upload" tabindex="0">选择角色图片 <span aria-hidden="true">↗</span></label><small>人工辅助拆分 · 不生成遮挡部位</small></div>
+      <div id="viewBadge" class="view-badge">矩形框选</div><div id="compareBadge" class="compare-badge" hidden>原始图片 · 仅查看</div>
+    </div>
+    <div class="canvas-bottom"><span id="coordinates">X — &nbsp; Y —</span><div class="view-controls"><select id="viewMode" aria-label="画布视图"><option value="edit">原图 + 选区</option><option value="mask">分割预览</option></select><button id="checker" class="quiet" aria-label="切换棋盘格背景" aria-pressed="true">▦</button><button id="zoomOut" class="quiet" aria-label="缩小">−</button><select id="zoom" aria-label="缩放"><option value="fit">适合窗口</option><option value="0.25">25%</option><option value="0.5">50%</option><option value="1">100%</option><option value="2">200%</option><option value="4">400%</option></select><button id="zoomIn" class="quiet" aria-label="放大">＋</button><button id="resetView" class="quiet" title="居中并适合窗口">⌖ 居中</button></div></div>
+  </section>
+  <aside class="properties-panel" aria-label="属性与导出面板">
+    <div class="panel-heading"><div><span class="eyebrow">INSPECTOR</span><h2>部件属性</h2></div><span id="selectedId" class="id-badge">head</span></div>
+    <div class="property-scroll">
+      <section class="property-section"><label for="displayName">显示名称 <span class="subtle">保留导出 ID</span></label><input id="displayName" maxlength="40" value="头部" autocomplete="off"><div class="section-title"><h3>选区与枢轴</h3><button id="clear" class="text-danger">清空选区</button></div><div class="metrics"><div><small>选区数量</small><strong id="regionCount">0</strong></div><div><small>关节枢轴 / px</small><strong id="pivotValue">自动居中</strong></div></div><p class="hint">Enter 完成多边形 · Esc 取消<br>擦除区域优先于扩边、羽化和重叠。</p></section>
+      <section class="property-section"><div class="section-title"><h3>边缘与关节</h3><span class="subtle">原图像素</span></div><label class="number-row" for="edge"><span>边缘扩缩 <small>−32 ~ 32</small></span><span class="number-unit"><input id="edge" type="number" min="-32" max="32" value="0"><span>px</span></span></label><label class="number-row" for="feather"><span>边缘羽化 <small>0 ~ 16</small></span><span class="number-unit"><input id="feather" type="number" min="0" max="16" step="0.5" value="0"><span>px</span></span></label><label class="number-row" for="overlap"><span>关节重叠 <small>0 ~ 128</small></span><span class="number-unit"><input id="overlap" type="number" min="0" max="128" value="0"><span>px</span></span></label><p class="hint">重叠仅复用枢轴附近的原图像素，不补绘遮挡内容。</p></section>
+      <section class="property-section"><div class="section-title"><h3>背景与透明度</h3><span class="subtle">ALPHA</span></div><label class="sr-only" for="background">去白模式</label><select id="background"><option value="border_white">去除边缘连通的近白背景</option><option value="all_white">去除所有近白色 · 慎用</option><option value="keep">保留原图 Alpha / 手工擦除</option></select><label class="number-row" for="threshold"><span>近白阈值 <small>0 ~ 255</small></span><span class="number-unit"><input id="threshold" type="number" min="0" max="255" value="245"></span></label><p class="hint">白色空洞可手工擦除；白色衣物请检查预览。</p></section>
+      <section class="property-section preview-section"><div class="section-title"><h3>透明 PNG 预览</h3><button id="preview" class="quiet small">↻ 更新预览</button></div><div class="preview checkerboard"><span id="previewEmpty">绘制选区后，更新预览</span><img id="previewImage" alt="当前部件透明预览" hidden></div><p class="hint">棋盘格表示透明区域 · 导出前检查边缘</p></section>
+    </div>
+    <div class="export-panel"><div class="export-info"><span>导出素材包</span><span id="exportCount">0 个部件</span></div><button id="export" class="primary export-button"><span>↓</span> 导出素材 ZIP <span class="export-arrow">↗</span></button><p>统一画布 + 紧凑 PNG + JSON 枢轴坐标<br>用于 Spine 素材导入，非完整骨骼工程。</p></div>
+  </aside>
+</main>
+<footer class="status-bar"><span class="status-led"></span><span id="status" role="status">就绪 · 上传角色图片后开始绘制；离开前请保存工程。</span><span class="keyboard-hint">滚轮缩放 &nbsp; / &nbsp; 空格拖动平移</span></footer>
+<dialog id="diagnosticsDialog" aria-labelledby="diagnosticsTitle"><div class="section-title"><h2 id="diagnosticsTitle">当前页面运行诊断</h2><button id="closeDiagnostics">关闭</button></div><p>仅显示当前页面路径（不含查询参数）、构建版本和布局状态。该报告来自你实际打开的窗口。</p><pre id="diagnosticsReport"></pre><button id="saveDiagnostics">下载诊断 JSON</button></dialog>
+</body>
+</html>
