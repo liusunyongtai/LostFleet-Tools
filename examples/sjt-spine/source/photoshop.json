@@ -1,0 +1,123 @@
+{
+  "skeleton": {
+    "images": "../images/"
+  },
+  "bones": [
+    {
+      "name": "root"
+    }
+  ],
+  "slots": [
+    {
+      "name": "zuoshoubi",
+      "bone": "root",
+      "attachment": "zuoshoubi"
+    },
+    {
+      "name": "zuojiao",
+      "bone": "root",
+      "attachment": "zuojiao"
+    },
+    {
+      "name": "zuotui",
+      "bone": "root",
+      "attachment": "zuotui"
+    },
+    {
+      "name": "youjiao",
+      "bone": "root",
+      "attachment": "youjiao"
+    },
+    {
+      "name": "youtui",
+      "bone": "root",
+      "attachment": "youtui"
+    },
+    {
+      "name": "shenti",
+      "bone": "root",
+      "attachment": "shenti"
+    },
+    {
+      "name": "tou",
+      "bone": "root",
+      "attachment": "tou"
+    },
+    {
+      "name": "youshoubi",
+      "bone": "root",
+      "attachment": "youshoubi"
+    }
+  ],
+  "skins": {
+    "default": {
+      "zuoshoubi": {
+        "zuoshoubi": {
+          "x": 155.5,
+          "y": -458,
+          "width": 249,
+          "height": 352
+        }
+      },
+      "zuojiao": {
+        "zuojiao": {
+          "x": 244,
+          "y": -790,
+          "width": 186,
+          "height": 116
+        }
+      },
+      "zuotui": {
+        "zuotui": {
+          "x": 261,
+          "y": -653,
+          "width": 186,
+          "height": 204
+        }
+      },
+      "youjiao": {
+        "youjiao": {
+          "x": 498.5,
+          "y": -778,
+          "width": 185,
+          "height": 146
+        }
+      },
+      "youtui": {
+        "youtui": {
+          "x": 466.5,
+          "y": -656,
+          "width": 193,
+          "height": 198
+        }
+      },
+      "shenti": {
+        "shenti": {
+          "x": 371,
+          "y": -486.5,
+          "width": 440,
+          "height": 537
+        }
+      },
+      "tou": {
+        "tou": {
+          "x": 319.5,
+          "y": -219.5,
+          "width": 285,
+          "height": 313
+        }
+      },
+      "youshoubi": {
+        "youshoubi": {
+          "x": 644,
+          "y": -484,
+          "width": 452,
+          "height": 590
+        }
+      }
+    }
+  },
+  "animations": {
+    "animation": {}
+  }
+}

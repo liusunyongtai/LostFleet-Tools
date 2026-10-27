@@ -1,0 +1,261 @@
+{
+  "target_version": "4.3.23",
+  "origin": [
+    372,
+    -850
+  ],
+  "fps": 30,
+  "bones": [
+    {
+      "name": "root",
+      "position": [
+        372,
+        -850
+      ],
+      "rotation": 0,
+      "length": 0
+    },
+    {
+      "name": "pelvis",
+      "position": [
+        372,
+        -615
+      ],
+      "rotation": 90,
+      "length": 165,
+      "parent": "root"
+    },
+    {
+      "name": "body",
+      "position": [
+        370,
+        -450
+      ],
+      "rotation": 90,
+      "length": 115,
+      "parent": "pelvis"
+    },
+    {
+      "name": "neck",
+      "position": [
+        322,
+        -343
+      ],
+      "rotation": 90,
+      "length": 22,
+      "parent": "body"
+    },
+    {
+      "name": "head",
+      "position": [
+        319,
+        -330
+      ],
+      "rotation": 90,
+      "length": 180,
+      "parent": "neck"
+    },
+    {
+      "name": "back_leg_upper",
+      "position": [
+        267,
+        -611
+      ],
+      "rotation": -92.1475854282985,
+      "length": 80.05623023850174,
+      "parent": "pelvis"
+    },
+    {
+      "name": "back_leg_lower",
+      "position": [
+        264,
+        -691
+      ],
+      "rotation": -94.61064931866062,
+      "length": 62.20128616033595,
+      "parent": "back_leg_upper"
+    },
+    {
+      "name": "back_leg_paw",
+      "position": [
+        259,
+        -753
+      ],
+      "rotation": -136.39718102729637,
+      "length": 87.0,
+      "parent": "back_leg_lower"
+    },
+    {
+      "name": "front_leg_upper",
+      "position": [
+        461,
+        -611
+      ],
+      "rotation": -85.71084667118099,
+      "length": 80.22468448052632,
+      "parent": "pelvis"
+    },
+    {
+      "name": "front_leg_lower",
+      "position": [
+        467,
+        -691
+      ],
+      "rotation": -72.42874122167758,
+      "length": 62.93647591023825,
+      "parent": "front_leg_upper"
+    },
+    {
+      "name": "front_leg_paw",
+      "position": [
+        486,
+        -751
+      ],
+      "rotation": -48.81407483429036,
+      "length": 85.0411665018772,
+      "parent": "front_leg_lower"
+    },
+    {
+      "name": "left_arm_upper",
+      "position": [
+        229,
+        -313
+      ],
+      "rotation": -119.29900874500974,
+      "length": 159.38946012832844,
+      "parent": "body"
+    },
+    {
+      "name": "left_arm_lower",
+      "position": [
+        151,
+        -452
+      ],
+      "rotation": -114.89130012486584,
+      "length": 137.80058055030102,
+      "parent": "left_arm_upper"
+    },
+    {
+      "name": "left_arm_paw",
+      "position": [
+        93,
+        -577
+      ],
+      "rotation": -119.74488129694222,
+      "length": 32.2490309931942,
+      "parent": "left_arm_lower"
+    },
+    {
+      "name": "right_arm",
+      "position": [
+        476,
+        -300
+      ],
+      "rotation": -50,
+      "length": 510,
+      "parent": "body"
+    },
+    {
+      "name": "right_piston",
+      "position": [
+        620,
+        -455
+      ],
+      "rotation": -50,
+      "length": 300,
+      "parent": "right_arm"
+    },
+    {
+      "name": "tool_tip",
+      "position": [
+        790,
+        -690
+      ],
+      "rotation": -50,
+      "length": 35,
+      "parent": "right_piston"
+    }
+  ],
+  "limbs": {
+    "back_leg": {
+      "parent": "pelvis",
+      "hip": [
+        267,
+        -611
+      ],
+      "knee": [
+        264,
+        -691
+      ],
+      "ankle": [
+        259,
+        -753
+      ],
+      "toe": [
+        196,
+        -813
+      ],
+      "phase": 0,
+      "image": "zuotui",
+      "foot": "zuojiao"
+    },
+    "front_leg": {
+      "parent": "pelvis",
+      "hip": [
+        461,
+        -611
+      ],
+      "knee": [
+        467,
+        -691
+      ],
+      "ankle": [
+        486,
+        -751
+      ],
+      "toe": [
+        542,
+        -815
+      ],
+      "phase": 3.141592653589793,
+      "image": "youtui",
+      "foot": "youjiao"
+    }
+  },
+  "left_arm": {
+    "points": [
+      [
+        229,
+        -313
+      ],
+      [
+        151,
+        -452
+      ],
+      [
+        93,
+        -577
+      ],
+      [
+        77,
+        -605
+      ]
+    ],
+    "image": "zuoshoubi"
+  },
+  "bindings": {
+    "shenti": "body",
+    "tou": "head",
+    "zuotui": "back_leg_upper",
+    "youtui": "front_leg_upper",
+    "zuojiao": "back_leg_paw",
+    "youjiao": "front_leg_paw",
+    "zuoshoubi": "left_arm_upper",
+    "youshoubi": "right_arm"
+  },
+  "poke_frame": 15,
+  "slam_frame": 19,
+  "piston_stroke": 50,
+  "facing": "left-front",
+  "motion_direction": "Right mechanical arm only for attacks: forward poke with piston extension; raised arm downward smash. Heavy anticipation and recoil; in-place walk."
+}

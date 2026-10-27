@@ -184,3 +184,8 @@ LOSTFLEET_URL=http://127.0.0.1:8000/ PYTHON=/workspace/.venvs/lostfleet-tools/bi
 ### JBJS 单臂感染者 · 单手前抓
 
 新增 [Spine PRO 4.3.23 动画包说明](examples/jbjs-spine/README.md) 与 [五动作预览](examples/jbjs-spine/preview.html)：`stand`、`dead`、`hit`、`attack`、`move`。15 根骨骼、8 个加权网格，保留原始透明 PNG；单手抓击包含后收蓄力、前伸、手腕下扣与回弹，移动原地循环。下载 [独立 ZIP](downloads/jbjs-spine-4.3.23.zip)。官方 4.3 运行库检查范围及桌面 Spine 未实测的说明见包内 README。
+
+
+### SJT 机械右臂 · 前戳与下砸
+
+新增 [Spine PRO 4.3.23 动画包说明](examples/sjt-spine/README.md) 与 [六动作预览](examples/sjt-spine/preview.html)：`stand`、`dead`、`hit`、`attack_1`、`attack_2`、`move`。右臂分别完成活塞前戳与举臂下砸，强调蓄力和回弹；移动原地循环。17 根骨骼、8 个加权网格，保留八张原始透明 PNG。下载 [独立 ZIP](downloads/sjt-spine-4.3.23.zip)。官方 4.3 运行库检查范围及桌面 Spine 未实测的说明见包内 README。
