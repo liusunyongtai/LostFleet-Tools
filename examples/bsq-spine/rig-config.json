@@ -1,0 +1,180 @@
+{
+  "target_version": "4.3.23",
+  "origin": [
+    450,
+    -992
+  ],
+  "fps": 30,
+  "bones": [
+    {
+      "name": "root",
+      "position": [
+        450,
+        -992
+      ],
+      "rotation": 0,
+      "length": 0
+    },
+    {
+      "name": "pelvis",
+      "parent": "root",
+      "position": [
+        450,
+        -780
+      ],
+      "rotation": 0,
+      "length": 20
+    },
+    {
+      "name": "body",
+      "parent": "pelvis",
+      "position": [
+        450,
+        -750
+      ],
+      "rotation": 90,
+      "length": 210
+    },
+    {
+      "name": "sac",
+      "parent": "body",
+      "position": [
+        420,
+        -540
+      ],
+      "rotation": 90,
+      "length": 240
+    },
+    {
+      "name": "head",
+      "parent": "body",
+      "position": [
+        535,
+        -550
+      ],
+      "rotation": 90,
+      "length": 160
+    },
+    {
+      "name": "mouth",
+      "parent": "head",
+      "position": [
+        788,
+        -488
+      ],
+      "rotation": 0,
+      "length": 80
+    },
+    {
+      "name": "far_arm",
+      "parent": "body",
+      "position": [
+        574,
+        -552
+      ],
+      "rotation": -90,
+      "length": 170
+    },
+    {
+      "name": "near_upper_arm",
+      "parent": "body",
+      "position": [
+        390,
+        -550
+      ],
+      "rotation": -128.418055344822,
+      "length": 185.06755523321746
+    },
+    {
+      "name": "near_forearm",
+      "parent": "near_upper_arm",
+      "position": [
+        275,
+        -695
+      ],
+      "rotation": 19.536654938128386,
+      "length": 164.46884203398528
+    },
+    {
+      "name": "claw_tip",
+      "parent": "near_forearm",
+      "position": [
+        468,
+        -620
+      ],
+      "rotation": 0,
+      "length": 35
+    },
+    {
+      "name": "back_thigh",
+      "parent": "pelvis",
+      "position": [
+        412,
+        -770
+      ],
+      "rotation": -129.50767544287257,
+      "length": 147.75655653811103
+    },
+    {
+      "name": "back_shin",
+      "parent": "back_thigh",
+      "position": [
+        318,
+        -884
+      ],
+      "rotation": -120.34324888423959,
+      "length": 95.01578816175763
+    },
+    {
+      "name": "back_foot",
+      "parent": "back_shin",
+      "position": [
+        270,
+        -966
+      ],
+      "rotation": 0,
+      "length": 50
+    },
+    {
+      "name": "front_thigh",
+      "parent": "pelvis",
+      "position": [
+        515,
+        -772
+      ],
+      "rotation": -50.85601358542896,
+      "length": 110.8873302050329
+    },
+    {
+      "name": "front_shin",
+      "parent": "front_thigh",
+      "position": [
+        585,
+        -858
+      ],
+      "rotation": -80.36246188706906,
+      "length": 107.5174404457249
+    },
+    {
+      "name": "front_foot",
+      "parent": "front_shin",
+      "position": [
+        603,
+        -964
+      ],
+      "rotation": 0,
+      "length": 50
+    }
+  ],
+  "bindings": {
+    "bao": "sac",
+    "zuobi": "far_arm",
+    "tou": "head",
+    "yougebo": "near_upper_arm",
+    "youshoubi": "near_forearm"
+  },
+  "spit_frame": 12,
+  "claw_hit_frame": 11,
+  "projectile_spawn_offset": 96,
+  "direction": "Mobile readable; anticipation, strong accent, follow-through, natural overshoot; original-place looping move."
+}

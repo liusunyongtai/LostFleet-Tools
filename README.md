@@ -153,6 +153,10 @@ LOSTFLEET_URL=http://127.0.0.1:8000/ PYTHON=/workspace/.venvs/lostfleet-tools/bi
 
 包含 `idle`、`attack`（加强后坐、两倍火花与暖色补光）、`hit`、`death`、`move`。已验证官方 4.3 运行库加载与 167 个姿态，**未实机验证 Spine 4.3.23 桌面编辑器导入**。当前是整肢刚性绑定，没有膝肘弯曲、手部 IK 或遮挡补绘，详细限制见该目录说明。
 
+## BSQ 毒囊怪物 · Spine 六动作与独立毒液
+
+[`examples/bsq-spine`](examples/bsq-spine/README.md) 包含 `stand`、`dead`、`hit`、`attack_1`（向前抓击）、`attack_2`（喷吐）和原地循环 `move`，以及单独的 `bullet` 动画。Spine PRO 主版本使用连续加权网格处理原图合在一起的躯干与双腿，另附纯图片兼容版。目标编辑器为 4.3.23，官方运行库采样通过，但未实机测试桌面编辑器。独立动画包位于 `downloads/bsq-spine-4.3.23.zip`，无需启动网页工具即可导入本地 Spine。
+
 ## 后续扩展接口
 
 `lostfleet_tools/providers.py` 预留 `SegmentationProvider.suggest_regions()` 与 `InpaintingProvider.complete_occlusion()` 协议。未来模型建议应转换成可编辑的原图坐标选区；遮挡补绘应作为独立、可审阅的生成结果。MVP 未启用任何 AI 提供方，也不声称恢复遮挡部位。图像处理位于 `pipeline.py`，与本地 HTTP 界面解耦。

@@ -1,0 +1,97 @@
+{
+  "skeleton": {
+    "images": "../images/"
+  },
+  "bones": [
+    {
+      "name": "root"
+    }
+  ],
+  "slots": [
+    {
+      "name": "bao",
+      "bone": "root",
+      "attachment": "bao"
+    },
+    {
+      "name": "zuobi",
+      "bone": "root",
+      "attachment": "zuobi"
+    },
+    {
+      "name": "shenti",
+      "bone": "root",
+      "attachment": "shenti"
+    },
+    {
+      "name": "yougebo",
+      "bone": "root",
+      "attachment": "yougebo"
+    },
+    {
+      "name": "youshoubi",
+      "bone": "root",
+      "attachment": "youshoubi"
+    },
+    {
+      "name": "tou",
+      "bone": "root",
+      "attachment": "tou"
+    }
+  ],
+  "skins": {
+    "default": {
+      "bao": {
+        "bao": {
+          "x": 295,
+          "y": -363,
+          "width": 532,
+          "height": 654
+        }
+      },
+      "zuobi": {
+        "zuobi": {
+          "x": 671.5,
+          "y": -655.5,
+          "width": 259,
+          "height": 225
+        }
+      },
+      "shenti": {
+        "shenti": {
+          "x": 449,
+          "y": -736,
+          "width": 468,
+          "height": 512
+        }
+      },
+      "yougebo": {
+        "yougebo": {
+          "x": 323.5,
+          "y": -622.5,
+          "width": 169,
+          "height": 221
+        }
+      },
+      "youshoubi": {
+        "youshoubi": {
+          "x": 358.5,
+          "y": -652.5,
+          "width": 235,
+          "height": 167
+        }
+      },
+      "tou": {
+        "tou": {
+          "x": 590.5,
+          "y": -414.5,
+          "width": 519,
+          "height": 445
+        }
+      }
+    }
+  },
+  "animations": {
+    "animation": {}
+  }
+}
