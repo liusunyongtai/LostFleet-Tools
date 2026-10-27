@@ -1,0 +1,326 @@
+{
+  "target_version": "4.3.23",
+  "origin": [
+    310,
+    -440
+  ],
+  "fps": 30,
+  "bones": [
+    {
+      "name": "root",
+      "position": [
+        310,
+        -440
+      ],
+      "rotation": 0,
+      "length": 0
+    },
+    {
+      "name": "hips",
+      "parent": "root",
+      "position": [
+        451,
+        -202
+      ],
+      "rotation": 180,
+      "length": 205
+    },
+    {
+      "name": "chest",
+      "parent": "hips",
+      "position": [
+        243,
+        -139
+      ],
+      "rotation": 180,
+      "length": 60
+    },
+    {
+      "name": "neck",
+      "parent": "chest",
+      "position": [
+        224,
+        -146
+      ],
+      "rotation": 180,
+      "length": 55
+    },
+    {
+      "name": "head",
+      "parent": "neck",
+      "position": [
+        199,
+        -177
+      ],
+      "rotation": 180,
+      "length": 120
+    },
+    {
+      "name": "jaw_near",
+      "parent": "head",
+      "position": [
+        139,
+        -251
+      ],
+      "rotation": -125,
+      "length": 75
+    },
+    {
+      "name": "jaw_far",
+      "parent": "head",
+      "position": [
+        76,
+        -252
+      ],
+      "rotation": -105,
+      "length": 65
+    },
+    {
+      "name": "bite_point",
+      "parent": "head",
+      "position": [
+        63,
+        -282
+      ],
+      "rotation": 180,
+      "length": 40
+    },
+    {
+      "name": "tail_base",
+      "parent": "hips",
+      "position": [
+        492,
+        -164
+      ],
+      "rotation": 40,
+      "length": 52
+    },
+    {
+      "name": "tail_tip",
+      "parent": "tail_base",
+      "position": [
+        531,
+        -130
+      ],
+      "rotation": 62,
+      "length": 50
+    },
+    {
+      "name": "far_front_upper",
+      "parent": "chest",
+      "position": [
+        233,
+        -140
+      ],
+      "rotation": -90.43405063213942,
+      "length": 132.00378782444085
+    },
+    {
+      "name": "far_front_lower",
+      "parent": "far_front_upper",
+      "position": [
+        232,
+        -272
+      ],
+      "rotation": -128.72892255049885,
+      "length": 129.46814279968643
+    },
+    {
+      "name": "far_front_paw",
+      "parent": "far_front_lower",
+      "position": [
+        151,
+        -373
+      ],
+      "rotation": -117.21611155730749,
+      "length": 39.35733730830886
+    },
+    {
+      "name": "near_front_upper",
+      "parent": "chest",
+      "position": [
+        282,
+        -194
+      ],
+      "rotation": -57.43956201884656,
+      "length": 98.47842403288143
+    },
+    {
+      "name": "near_front_lower",
+      "parent": "near_front_upper",
+      "position": [
+        335,
+        -277
+      ],
+      "rotation": -122.85572195043301,
+      "length": 114.28035701729323
+    },
+    {
+      "name": "near_front_paw",
+      "parent": "near_front_lower",
+      "position": [
+        273,
+        -373
+      ],
+      "rotation": -122.47119229084849,
+      "length": 52.15361924162119
+    },
+    {
+      "name": "far_hind_upper",
+      "parent": "hips",
+      "position": [
+        421,
+        -177
+      ],
+      "rotation": -137.17474411461006,
+      "length": 111.80339887498948
+    },
+    {
+      "name": "far_hind_lower",
+      "parent": "far_hind_upper",
+      "position": [
+        339,
+        -253
+      ],
+      "rotation": -52.43140797117251,
+      "length": 82.00609733428362
+    },
+    {
+      "name": "far_hind_paw",
+      "parent": "far_hind_lower",
+      "position": [
+        389,
+        -318
+      ],
+      "rotation": -122.24246783912334,
+      "length": 76.8505042273634
+    },
+    {
+      "name": "near_hind_upper",
+      "parent": "hips",
+      "position": [
+        449,
+        -198
+      ],
+      "rotation": -73.89869760084159,
+      "length": 100.96038827183659
+    },
+    {
+      "name": "near_hind_lower",
+      "parent": "near_hind_upper",
+      "position": [
+        477,
+        -295
+      ],
+      "rotation": -54.16234704572171,
+      "length": 88.81441324469807
+    },
+    {
+      "name": "near_hind_paw",
+      "parent": "near_hind_lower",
+      "position": [
+        529,
+        -367
+      ],
+      "rotation": -83.418055344822,
+      "length": 52.3450093132096
+    }
+  ],
+  "limbs": {
+    "far_front": {
+      "parent": "chest",
+      "hip": [
+        233,
+        -140
+      ],
+      "knee": [
+        232,
+        -272
+      ],
+      "ankle": [
+        151,
+        -373
+      ],
+      "toe": [
+        133,
+        -408
+      ],
+      "image": "youqiantui",
+      "phase": 3.141592653589793
+    },
+    "near_front": {
+      "parent": "chest",
+      "hip": [
+        282,
+        -194
+      ],
+      "knee": [
+        335,
+        -277
+      ],
+      "ankle": [
+        273,
+        -373
+      ],
+      "toe": [
+        245,
+        -417
+      ],
+      "image": "zuoqiantui",
+      "phase": 0
+    },
+    "far_hind": {
+      "parent": "hips",
+      "hip": [
+        421,
+        -177
+      ],
+      "knee": [
+        339,
+        -253
+      ],
+      "ankle": [
+        389,
+        -318
+      ],
+      "toe": [
+        348,
+        -383
+      ],
+      "image": "youhoutui",
+      "phase": 0
+    },
+    "near_hind": {
+      "parent": "hips",
+      "hip": [
+        449,
+        -198
+      ],
+      "knee": [
+        477,
+        -295
+      ],
+      "ankle": [
+        529,
+        -367
+      ],
+      "toe": [
+        535,
+        -419
+      ],
+      "image": "zuohoutui",
+      "phase": 3.141592653589793
+    }
+  },
+  "bindings": {
+    "qugan": "chest",
+    "tou": "head",
+    "weiba": "tail_base",
+    "youqiantui": "far_front_upper",
+    "zuoqiantui": "near_front_upper",
+    "youhoutui": "far_hind_upper",
+    "zuohoutui": "near_hind_upper"
+  },
+  "attack_hit_frame": 12,
+  "motion_direction": "Mobile-readable expressive quadruped; anticipation, forward bite, recoil and delayed tail; move loops in place."
+}

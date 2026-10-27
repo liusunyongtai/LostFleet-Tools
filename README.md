@@ -157,6 +157,10 @@ LOSTFLEET_URL=http://127.0.0.1:8000/ PYTHON=/workspace/.venvs/lostfleet-tools/bi
 
 [`examples/bsq-spine`](examples/bsq-spine/README.md) 包含 `stand`、`dead`、`hit`、`attack_1`（向前抓击）、`attack_2`（喷吐）和原地循环 `move`，以及单独的 `bullet` 动画。Spine PRO 主版本使用连续加权网格处理原图合在一起的躯干与双腿，另附纯图片兼容版。目标编辑器为 4.3.23，官方运行库采样通过，但未实机测试桌面编辑器。独立动画包位于 `downloads/bsq-spine-4.3.23.zip`，无需启动网页工具即可导入本地 Spine。
 
+## BTMG 四足机械犬 · Spine 五动作
+
+[`examples/btmg-spine`](examples/btmg-spine/README.md) 包含 `stand`、`dead`、`hit`、`attack`（后撤蓄力后前冲撕咬）和原地四足循环 `move`。使用 22 根骨骼和连续加权网格处理四肢、牙区与尾部，目标版本为 Spine PRO 4.3.23。已做官方运行库的 383 个 60 Hz 姿态检查（含关键帧之间），未实机验证桌面编辑器导入。独立包为 `downloads/btmg-spine-4.3.23.zip`。
+
 ## 后续扩展接口
 
 `lostfleet_tools/providers.py` 预留 `SegmentationProvider.suggest_regions()` 与 `InpaintingProvider.complete_occlusion()` 协议。未来模型建议应转换成可编辑的原图坐标选区；遮挡补绘应作为独立、可审阅的生成结果。MVP 未启用任何 AI 提供方，也不声称恢复遮挡部位。图像处理位于 `pipeline.py`，与本地 HTTP 界面解耦。

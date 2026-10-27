@@ -1,0 +1,110 @@
+{
+  "skeleton": {
+    "images": "../images/"
+  },
+  "bones": [
+    {
+      "name": "root"
+    }
+  ],
+  "slots": [
+    {
+      "name": "weiba",
+      "bone": "root",
+      "attachment": "weiba"
+    },
+    {
+      "name": "youhoutui",
+      "bone": "root",
+      "attachment": "youhoutui"
+    },
+    {
+      "name": "youqiantui",
+      "bone": "root",
+      "attachment": "youqiantui"
+    },
+    {
+      "name": "qugan",
+      "bone": "root",
+      "attachment": "qugan"
+    },
+    {
+      "name": "zuoqiantui",
+      "bone": "root",
+      "attachment": "zuoqiantui"
+    },
+    {
+      "name": "zuohoutui",
+      "bone": "root",
+      "attachment": "zuohoutui"
+    },
+    {
+      "name": "tou",
+      "bone": "root",
+      "attachment": "tou"
+    }
+  ],
+  "skins": {
+    "default": {
+      "weiba": {
+        "weiba": {
+          "x": 514.5,
+          "y": -141.5,
+          "width": 95,
+          "height": 117
+        }
+      },
+      "youhoutui": {
+        "youhoutui": {
+          "x": 367,
+          "y": -280,
+          "width": 136,
+          "height": 246
+        }
+      },
+      "youqiantui": {
+        "youqiantui": {
+          "x": 181.5,
+          "y": -271,
+          "width": 187,
+          "height": 312
+        }
+      },
+      "qugan": {
+        "qugan": {
+          "x": 318.5,
+          "y": -150.5,
+          "width": 381,
+          "height": 261
+        }
+      },
+      "zuoqiantui": {
+        "zuoqiantui": {
+          "x": 293.5,
+          "y": -310.5,
+          "width": 187,
+          "height": 259
+        }
+      },
+      "zuohoutui": {
+        "zuohoutui": {
+          "x": 496,
+          "y": -307.5,
+          "width": 170,
+          "height": 255
+        }
+      },
+      "tou": {
+        "tou": {
+          "x": 145.5,
+          "y": -199,
+          "width": 241,
+          "height": 284
+        }
+      }
+    }
+  },
+  "animations": {
+    "animation": {}
+  }
+}
