@@ -1,0 +1,136 @@
+{
+  "skeleton": {
+    "images": "../images/"
+  },
+  "bones": [
+    {
+      "name": "root"
+    }
+  ],
+  "slots": [
+    {
+      "name": "dipan",
+      "bone": "root",
+      "attachment": "dipan"
+    },
+    {
+      "name": "zuobi",
+      "bone": "root",
+      "attachment": "zuobi"
+    },
+    {
+      "name": "zuoshou",
+      "bone": "root",
+      "attachment": "zuoshou"
+    },
+    {
+      "name": "tui2",
+      "bone": "root",
+      "attachment": "tui2"
+    },
+    {
+      "name": "tui1",
+      "bone": "root",
+      "attachment": "tui1"
+    },
+    {
+      "name": "shangshen",
+      "bone": "root",
+      "attachment": "shangshen"
+    },
+    {
+      "name": "youbi",
+      "bone": "root",
+      "attachment": "youbi"
+    },
+    {
+      "name": "youshou",
+      "bone": "root",
+      "attachment": "youshou"
+    },
+    {
+      "name": "tou",
+      "bone": "root",
+      "attachment": "tou"
+    }
+  ],
+  "skins": {
+    "default": {
+      "dipan": {
+        "dipan": {
+          "x": 330,
+          "y": -532.5,
+          "width": 270,
+          "height": 169
+        }
+      },
+      "zuobi": {
+        "zuobi": {
+          "x": 227.5,
+          "y": -380.5,
+          "width": 97,
+          "height": 91
+        }
+      },
+      "zuoshou": {
+        "zuoshou": {
+          "x": 165,
+          "y": -366,
+          "width": 126,
+          "height": 120
+        }
+      },
+      "tui2": {
+        "tui2": {
+          "x": 314.5,
+          "y": -480.5,
+          "width": 91,
+          "height": 105
+        }
+      },
+      "tui1": {
+        "tui1": {
+          "x": 312.5,
+          "y": -415,
+          "width": 111,
+          "height": 92
+        }
+      },
+      "shangshen": {
+        "shangshen": {
+          "x": 306,
+          "y": -351,
+          "width": 146,
+          "height": 112
+        }
+      },
+      "youbi": {
+        "youbi": {
+          "x": 391.5,
+          "y": -374,
+          "width": 105,
+          "height": 90
+        }
+      },
+      "youshou": {
+        "youshou": {
+          "x": 448,
+          "y": -341.5,
+          "width": 106,
+          "height": 169
+        }
+      },
+      "tou": {
+        "tou": {
+          "x": 293,
+          "y": -233,
+          "width": 256,
+          "height": 262
+        }
+      }
+    }
+  },
+  "animations": {
+    "animation": {}
+  }
+}

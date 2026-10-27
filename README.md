@@ -174,3 +174,8 @@ LOSTFLEET_URL=http://127.0.0.1:8000/ PYTHON=/workspace/.venvs/lostfleet-tools/bi
 ### GRDGR 感染工人 · 前景手挥拳
 
 新增 [Spine PRO 4.3.23 动画包说明](examples/grdgr-spine/README.md) 与 [五动作预览](examples/grdgr-spine/preview.html)：`stand`、`dead`、`hit`、`attack`、`move`。27 根骨骼、5 个加权网格，保留原始透明 PNG；移动原地循环，攻击包含收拳蓄力、向左挥拳、躯干跟进和回弹。下载 [独立 ZIP](downloads/grdgr-spine-4.3.23.zip)。官方 4.3 运行库检查范围及桌面 Spine 未实测的说明见包内 README。
+
+
+### XD 悬浮锯盘机器人 · 投掷叉形工具
+
+新增 [Spine PRO 4.3.23 动画包说明](examples/xd-spine/README.md) 与 [五动作预览](examples/xd-spine/preview.html)：`stand`、`dead`、`hit`、`attack`、`move`。待机悬浮呼吸、锯盘在倾斜盘面内旋转；移动前倾并原地悬浮循环；攻击投出带握柄的整件叉形工具，附脱手事件和演示飞行轨迹。保留九张原始透明 PNG。下载 [独立 ZIP](downloads/xd-spine-4.3.23.zip)。官方 4.3 运行库检查范围及桌面 Spine 未实测的说明见包内 README。

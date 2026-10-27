@@ -204,7 +204,8 @@ def pose(skeleton, animation=None, t=0):
         x=b.get('x',0)+sample(channels.get('translate'),t,'x',0)
         y=b.get('y',0)+sample(channels.get('translate'),t,'y',0)
         angle=b.get('rotation',0)+sample(channels.get('rotate'),t,'value',0)
-        scale=[sample(channels.get('scale'),t,'x',1),sample(channels.get('scale'),t,'y',1)]
+        scale=[b.get('scaleX',1)*sample(channels.get('scale'),t,'x',1),
+               b.get('scaleY',1)*sample(channels.get('scale'),t,'y',1)]
         matrix=np.eye(3);matrix[:2,:2]=rotation(angle) @ np.diag(scale);matrix[:2,2]=[x,y]
         world[b['name']]=world[b['parent']] @ matrix if b.get('parent') else matrix
     return world

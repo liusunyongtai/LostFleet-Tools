@@ -1,0 +1,195 @@
+{
+  "target_version": "4.3.23",
+  "origin": [
+    320,
+    -680
+  ],
+  "fps": 30,
+  "bones": [
+    {
+      "name": "root",
+      "position": [
+        320,
+        -680
+      ],
+      "rotation": 0,
+      "length": 0
+    },
+    {
+      "name": "hover",
+      "position": [
+        320,
+        -500
+      ],
+      "rotation": 0,
+      "length": 0,
+      "parent": "root"
+    },
+    {
+      "name": "disc_plane",
+      "position": [
+        325,
+        -517
+      ],
+      "rotation": 0,
+      "length": 0,
+      "scaleY": 0.56,
+      "parent": "hover"
+    },
+    {
+      "name": "disc_spin",
+      "position": [
+        325,
+        -517
+      ],
+      "rotation": 0,
+      "length": 0,
+      "parent": "disc_plane"
+    },
+    {
+      "name": "lower_column",
+      "position": [
+        318,
+        -487
+      ],
+      "rotation": 90,
+      "length": 56,
+      "parent": "hover"
+    },
+    {
+      "name": "upper_column",
+      "position": [
+        312,
+        -431
+      ],
+      "rotation": 90,
+      "length": 49,
+      "parent": "lower_column"
+    },
+    {
+      "name": "body",
+      "position": [
+        306,
+        -382
+      ],
+      "rotation": 90,
+      "length": 63,
+      "parent": "upper_column"
+    },
+    {
+      "name": "neck",
+      "position": [
+        296,
+        -319
+      ],
+      "rotation": 90,
+      "length": 20,
+      "parent": "body"
+    },
+    {
+      "name": "head",
+      "position": [
+        291,
+        -301
+      ],
+      "rotation": 90,
+      "length": 145,
+      "parent": "neck"
+    },
+    {
+      "name": "back_upper_arm",
+      "position": [
+        244,
+        -349
+      ],
+      "rotation": -125.4333140102856,
+      "length": 63.8200595424354,
+      "parent": "body"
+    },
+    {
+      "name": "back_forearm",
+      "position": [
+        207,
+        -401
+      ],
+      "rotation": 140.3558250428552,
+      "length": 90.9065454189081,
+      "parent": "back_upper_arm"
+    },
+    {
+      "name": "front_upper_arm",
+      "position": [
+        368,
+        -355
+      ],
+      "rotation": -43.111811993259074,
+      "length": 64.38167441127949,
+      "parent": "body"
+    },
+    {
+      "name": "front_forearm",
+      "position": [
+        415,
+        -399
+      ],
+      "rotation": 60.64224645720873,
+      "length": 55.072679252057455,
+      "parent": "front_upper_arm"
+    },
+    {
+      "name": "fork_mount",
+      "position": [
+        442,
+        -351
+      ],
+      "rotation": 69.92847413546127,
+      "length": 55.362442142665635,
+      "parent": "front_forearm"
+    },
+    {
+      "name": "throw_point",
+      "position": [
+        461,
+        -299
+      ],
+      "rotation": 180,
+      "length": 25,
+      "parent": "fork_mount"
+    },
+    {
+      "name": "fork_flight",
+      "position": [
+        448,
+        -341.5
+      ],
+      "rotation": 0,
+      "length": 75,
+      "parent": "root"
+    }
+  ],
+  "bindings": {
+    "dipan": "disc_spin",
+    "tui2": "lower_column",
+    "tui1": "upper_column",
+    "shangshen": "body",
+    "tou": "head",
+    "zuobi": "back_upper_arm",
+    "zuoshou": "back_forearm",
+    "youbi": "front_upper_arm",
+    "youshou": "fork_mount"
+  },
+  "release_frame": 15,
+  "release_time": 0.5,
+  "flight_end": 0.9,
+  "refill_time": 1.1,
+  "disc_projection": 0.56,
+  "facing": "left",
+  "motion_direction": "Hovering, perspective saw rotation, forward lean during in-place move, anticipation and fork throw.",
+  "projectile_region": {
+    "x": 448,
+    "y": -341.5,
+    "width": 106,
+    "height": 169,
+    "path": "youshou"
+  }
+}

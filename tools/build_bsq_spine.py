@@ -303,10 +303,14 @@ def draw_order(skeleton,animation,t):
         if key.get('time',0)<=t+1e-6:selected=key
     offsets=selected.get('offsets',[])
     if offsets:
-        # This rig only swaps the near forearm across the immediately adjacent head.
+        # Offsets refer to setup indices, including when several slots move together.
+        order=[None]*len(slots);unchanged=[];cursor=0
         for item in offsets:
             index=next(i for i,s in enumerate(slots) if s['name']==item['slot'])
-            slot=slots.pop(index);slots.insert(index+item['offset'],slot)
+            unchanged.extend(slots[cursor:index])
+            order[index+item['offset']]=slots[index];cursor=index+1
+        unchanged.extend(slots[cursor:]);remaining=iter(unchanged)
+        slots=[slot if slot is not None else next(remaining) for slot in order]
     return slots
 
 
