@@ -189,3 +189,8 @@ LOSTFLEET_URL=http://127.0.0.1:8000/ PYTHON=/workspace/.venvs/lostfleet-tools/bi
 ### SJT 机械右臂 · 前戳与下砸
 
 新增 [Spine PRO 4.3.23 动画包说明](examples/sjt-spine/README.md) 与 [六动作预览](examples/sjt-spine/preview.html)：`stand`、`dead`、`hit`、`attack_1`、`attack_2`、`move`。右臂分别完成活塞前戳与举臂下砸，强调蓄力和回弹；移动原地循环。17 根骨骼、8 个加权网格，保留八张原始透明 PNG。下载 [独立 ZIP](downloads/sjt-spine-4.3.23.zip)。官方 4.3 运行库检查范围及桌面 Spine 未实测的说明见包内 README。
+
+
+### SSJNL 双头机械爪 · 前抓与斜劈
+
+新增 [Spine PRO 4.3.23 动画包说明](examples/ssjnl-spine/README.md) 与 [六动作预览](examples/ssjnl-spine/preview.html)：`stand`、`dead`、`hit`、`attack_1`、`attack_2`、`move`。右爪分别完成前伸抓击和抬爪斜劈，双头、背包、腰包和锁链做延迟跟随；移动原地循环。24 根骨骼、11 个加权网格，保留十一张原始透明 PNG。下载 [独立 ZIP](downloads/ssjnl-spine-4.3.23.zip)。官方 4.3 运行库检查范围及桌面 Spine 未实测的说明见包内 README。

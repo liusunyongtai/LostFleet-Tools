@@ -1,0 +1,352 @@
+{
+  "target_version": "4.3.23",
+  "origin": [
+    192,
+    -447
+  ],
+  "fps": 30,
+  "bones": [
+    {
+      "name": "root",
+      "position": [
+        192,
+        -447
+      ],
+      "rotation": 0,
+      "length": 0
+    },
+    {
+      "name": "pelvis",
+      "position": [
+        185,
+        -311
+      ],
+      "rotation": 90,
+      "length": 53,
+      "parent": "root"
+    },
+    {
+      "name": "body",
+      "position": [
+        198,
+        -259
+      ],
+      "rotation": 90,
+      "length": 40,
+      "parent": "pelvis"
+    },
+    {
+      "name": "neck_main",
+      "position": [
+        204,
+        -222
+      ],
+      "rotation": 90,
+      "length": 15,
+      "parent": "body"
+    },
+    {
+      "name": "head_main",
+      "position": [
+        198,
+        -214
+      ],
+      "rotation": 90,
+      "length": 85,
+      "parent": "neck_main"
+    },
+    {
+      "name": "neck_secondary",
+      "position": [
+        155,
+        -234
+      ],
+      "rotation": 90,
+      "length": 20,
+      "parent": "body"
+    },
+    {
+      "name": "head_secondary",
+      "position": [
+        128,
+        -229
+      ],
+      "rotation": 90,
+      "length": 65,
+      "parent": "neck_secondary"
+    },
+    {
+      "name": "eye",
+      "position": [
+        156.5,
+        -170
+      ],
+      "rotation": 0,
+      "length": 12,
+      "parent": "head_main"
+    },
+    {
+      "name": "backpack",
+      "position": [
+        249,
+        -210
+      ],
+      "rotation": 90,
+      "length": 75,
+      "parent": "body"
+    },
+    {
+      "name": "waist_bag",
+      "position": [
+        171,
+        -303
+      ],
+      "rotation": 0,
+      "length": 35,
+      "parent": "pelvis"
+    },
+    {
+      "name": "chain",
+      "position": [
+        128,
+        -300
+      ],
+      "rotation": -100,
+      "length": 115,
+      "parent": "pelvis"
+    },
+    {
+      "name": "back_leg_upper",
+      "position": [
+        155,
+        -314
+      ],
+      "rotation": -87.75425743410493,
+      "length": 51.03920062069938,
+      "parent": "pelvis"
+    },
+    {
+      "name": "back_leg_lower",
+      "position": [
+        157,
+        -365
+      ],
+      "rotation": -94.96974072811031,
+      "length": 46.17358552246078,
+      "parent": "back_leg_upper"
+    },
+    {
+      "name": "back_leg_paw",
+      "position": [
+        153,
+        -411
+      ],
+      "rotation": -131.63353933657018,
+      "length": 24.08318915758459,
+      "parent": "back_leg_lower"
+    },
+    {
+      "name": "front_leg_upper",
+      "position": [
+        192,
+        -304
+      ],
+      "rotation": -68.00887008282287,
+      "length": 56.08029957123981,
+      "parent": "pelvis"
+    },
+    {
+      "name": "front_leg_lower",
+      "position": [
+        213,
+        -356
+      ],
+      "rotation": -78.27488798483493,
+      "length": 54.12947441089743,
+      "parent": "front_leg_upper"
+    },
+    {
+      "name": "front_leg_paw",
+      "position": [
+        224,
+        -409
+      ],
+      "rotation": -99.09027692082232,
+      "length": 25.317977802344327,
+      "parent": "front_leg_lower"
+    },
+    {
+      "name": "left_arm_upper",
+      "position": [
+        159,
+        -235
+      ],
+      "rotation": -124.21570213243739,
+      "length": 60.4648658313239,
+      "parent": "body"
+    },
+    {
+      "name": "left_arm_lower",
+      "position": [
+        125,
+        -285
+      ],
+      "rotation": -113.96248897457819,
+      "length": 29.546573405388315,
+      "parent": "left_arm_upper"
+    },
+    {
+      "name": "left_arm_paw",
+      "position": [
+        113,
+        -312
+      ],
+      "rotation": -131.63353933657018,
+      "length": 12.041594578792296,
+      "parent": "left_arm_lower"
+    },
+    {
+      "name": "right_arm_upper",
+      "position": [
+        241,
+        -185
+      ],
+      "rotation": -61.44037952168017,
+      "length": 89.94442728707543,
+      "parent": "body"
+    },
+    {
+      "name": "right_arm_lower",
+      "position": [
+        284,
+        -264
+      ],
+      "rotation": -61.26020470831195,
+      "length": 35.35533905932738,
+      "parent": "right_arm_upper"
+    },
+    {
+      "name": "right_arm_paw",
+      "position": [
+        301,
+        -295
+      ],
+      "rotation": -96.96825674137854,
+      "length": 90.6697303403953,
+      "parent": "right_arm_lower"
+    },
+    {
+      "name": "claw_tip",
+      "position": [
+        290,
+        -385
+      ],
+      "rotation": 180,
+      "length": 20,
+      "parent": "right_arm_paw"
+    }
+  ],
+  "limbs": {
+    "back_leg": {
+      "parent": "pelvis",
+      "hip": [
+        155,
+        -314
+      ],
+      "knee": [
+        157,
+        -365
+      ],
+      "ankle": [
+        153,
+        -411
+      ],
+      "toe": [
+        137,
+        -429
+      ],
+      "phase": 0,
+      "image": "zuotui"
+    },
+    "front_leg": {
+      "parent": "pelvis",
+      "hip": [
+        192,
+        -304
+      ],
+      "knee": [
+        213,
+        -356
+      ],
+      "ankle": [
+        224,
+        -409
+      ],
+      "toe": [
+        220,
+        -434
+      ],
+      "phase": 3.141592653589793,
+      "image": "youtui"
+    }
+  },
+  "arms": {
+    "left_arm": {
+      "parent": "body",
+      "hip": [
+        159,
+        -235
+      ],
+      "knee": [
+        125,
+        -285
+      ],
+      "ankle": [
+        113,
+        -312
+      ],
+      "toe": [
+        105,
+        -321
+      ],
+      "image": "zuoshoubi"
+    },
+    "right_arm": {
+      "parent": "body",
+      "hip": [
+        241,
+        -185
+      ],
+      "knee": [
+        284,
+        -264
+      ],
+      "ankle": [
+        301,
+        -295
+      ],
+      "toe": [
+        290,
+        -385
+      ],
+      "image": "youshoubi"
+    }
+  },
+  "bindings": {
+    "beibao": "backpack",
+    "zuoshoubi": "left_arm_upper",
+    "shangshen": "body",
+    "youshoubi": "right_arm_upper",
+    "zuotui": "back_leg_upper",
+    "youtui": "front_leg_upper",
+    "lianzi": "chain",
+    "yaobao": "waist_bag",
+    "tou_2": "head_secondary",
+    "tou_1": "head_main",
+    "yanjing": "eye"
+  },
+  "attack_1_frame": 15,
+  "attack_2_frame": 19,
+  "facing": "left",
+  "motion_direction": "Dual-head cyborg: forward claw reach and raised downward claw slash, anticipation, rebound, secondary mass follow-through; in-place walk."
+}

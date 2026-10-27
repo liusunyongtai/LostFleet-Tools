@@ -1,0 +1,162 @@
+{
+  "skeleton": {
+    "images": "../images/"
+  },
+  "bones": [
+    {
+      "name": "root"
+    }
+  ],
+  "slots": [
+    {
+      "name": "beibao",
+      "bone": "root",
+      "attachment": "beibao"
+    },
+    {
+      "name": "zuoshoubi",
+      "bone": "root",
+      "attachment": "zuoshoubi"
+    },
+    {
+      "name": "shangshen",
+      "bone": "root",
+      "attachment": "shangshen"
+    },
+    {
+      "name": "youshoubi",
+      "bone": "root",
+      "attachment": "youshoubi"
+    },
+    {
+      "name": "zuotui",
+      "bone": "root",
+      "attachment": "zuotui"
+    },
+    {
+      "name": "youtui",
+      "bone": "root",
+      "attachment": "youtui"
+    },
+    {
+      "name": "lianzi",
+      "bone": "root",
+      "attachment": "lianzi"
+    },
+    {
+      "name": "yaobao",
+      "bone": "root",
+      "attachment": "yaobao"
+    },
+    {
+      "name": "tou_2",
+      "bone": "root",
+      "attachment": "tou_2"
+    },
+    {
+      "name": "tou_1",
+      "bone": "root",
+      "attachment": "tou_1"
+    },
+    {
+      "name": "yanjing",
+      "bone": "root",
+      "attachment": "yanjing"
+    }
+  ],
+  "skins": {
+    "default": {
+      "beibao": {
+        "beibao": {
+          "x": 259,
+          "y": -230,
+          "width": 178,
+          "height": 198
+        }
+      },
+      "zuoshoubi": {
+        "zuoshoubi": {
+          "x": 135,
+          "y": -279.5,
+          "width": 92,
+          "height": 111
+        }
+      },
+      "shangshen": {
+        "shangshen": {
+          "x": 197.5,
+          "y": -250.5,
+          "width": 135,
+          "height": 129
+        }
+      },
+      "youshoubi": {
+        "youshoubi": {
+          "x": 289,
+          "y": -286.5,
+          "width": 140,
+          "height": 245
+        }
+      },
+      "zuotui": {
+        "zuotui": {
+          "x": 156.5,
+          "y": -371,
+          "width": 75,
+          "height": 140
+        }
+      },
+      "youtui": {
+        "youtui": {
+          "x": 196.5,
+          "y": -363,
+          "width": 123,
+          "height": 170
+        }
+      },
+      "lianzi": {
+        "lianzi": {
+          "x": 121,
+          "y": -358.5,
+          "width": 52,
+          "height": 139
+        }
+      },
+      "yaobao": {
+        "yaobao": {
+          "x": 171,
+          "y": -303,
+          "width": 88,
+          "height": 60
+        }
+      },
+      "tou_2": {
+        "tou_2": {
+          "x": 115.5,
+          "y": -181,
+          "width": 165,
+          "height": 178
+        }
+      },
+      "tou_1": {
+        "tou_1": {
+          "x": 188,
+          "y": -146,
+          "width": 198,
+          "height": 196
+        }
+      },
+      "yanjing": {
+        "yanjing": {
+          "x": 156.5,
+          "y": -170,
+          "width": 59,
+          "height": 60
+        }
+      }
+    }
+  },
+  "animations": {
+    "animation": {}
+  }
+}
