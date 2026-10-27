@@ -1,0 +1,452 @@
+{
+  "target_version": "4.3.23",
+  "fps": 30,
+  "origin": [
+    195,
+    -514
+  ],
+  "bones": [
+    {
+      "name": "root",
+      "position": [
+        195,
+        -514
+      ],
+      "rotation": 0,
+      "length": 0
+    },
+    {
+      "name": "pelvis",
+      "position": [
+        196,
+        -398
+      ],
+      "rotation": 90,
+      "length": 30,
+      "parent": "root"
+    },
+    {
+      "name": "body",
+      "position": [
+        195,
+        -363
+      ],
+      "rotation": 90,
+      "length": 72,
+      "parent": "pelvis"
+    },
+    {
+      "name": "neck",
+      "position": [
+        195,
+        -291
+      ],
+      "rotation": 90,
+      "length": 24,
+      "parent": "body"
+    },
+    {
+      "name": "head",
+      "position": [
+        187,
+        -280
+      ],
+      "rotation": 90,
+      "length": 160,
+      "parent": "neck"
+    },
+    {
+      "name": "back_leg_upper",
+      "position": [
+        155,
+        -402
+      ],
+      "rotation": -92.38594403038883,
+      "length": 48.041648597857254,
+      "parent": "pelvis"
+    },
+    {
+      "name": "back_leg_lower",
+      "position": [
+        153,
+        -450
+      ],
+      "rotation": -96.3401917459099,
+      "length": 36.22154055254967,
+      "parent": "back_leg_upper"
+    },
+    {
+      "name": "back_leg_paw",
+      "position": [
+        149,
+        -486
+      ],
+      "rotation": -151.18920625702694,
+      "length": 22.825424421026653,
+      "parent": "back_leg_lower"
+    },
+    {
+      "name": "front_leg_upper",
+      "position": [
+        229,
+        -402
+      ],
+      "rotation": -83.29016319224307,
+      "length": 51.35172830587107,
+      "parent": "pelvis"
+    },
+    {
+      "name": "front_leg_lower",
+      "position": [
+        235,
+        -453
+      ],
+      "rotation": -83.99099404250548,
+      "length": 38.2099463490856,
+      "parent": "front_leg_upper"
+    },
+    {
+      "name": "front_leg_paw",
+      "position": [
+        239,
+        -491
+      ],
+      "rotation": -150.25511870305778,
+      "length": 24.186773244895647,
+      "parent": "front_leg_lower"
+    },
+    {
+      "name": "back_arm_upper",
+      "position": [
+        163,
+        -309
+      ],
+      "rotation": -125.63980919808668,
+      "length": 65.21502894272147,
+      "parent": "body"
+    },
+    {
+      "name": "back_arm_lower",
+      "position": [
+        125,
+        -362
+      ],
+      "rotation": -129.98688624496418,
+      "length": 40.45985664828782,
+      "parent": "back_arm_upper"
+    },
+    {
+      "name": "back_arm_paw",
+      "position": [
+        99,
+        -393
+      ],
+      "rotation": -107.10272896905236,
+      "length": 27.202941017470888,
+      "parent": "back_arm_lower"
+    },
+    {
+      "name": "front_arm_upper",
+      "position": [
+        244,
+        -310
+      ],
+      "rotation": -70.40771810894847,
+      "length": 62.625873247404705,
+      "parent": "body"
+    },
+    {
+      "name": "front_arm_lower",
+      "position": [
+        265,
+        -369
+      ],
+      "rotation": -78.36636600105956,
+      "length": 34.713109915419565,
+      "parent": "front_arm_upper"
+    },
+    {
+      "name": "front_arm_paw",
+      "position": [
+        272,
+        -403
+      ],
+      "rotation": -90.0,
+      "length": 23.0,
+      "parent": "front_arm_lower"
+    },
+    {
+      "name": "punch_point",
+      "position": [
+        272,
+        -426
+      ],
+      "rotation": 180,
+      "length": 20,
+      "parent": "front_arm_paw"
+    },
+    {
+      "name": "tendril_top_base",
+      "position": [
+        254,
+        -117
+      ],
+      "rotation": 64.85521436932105,
+      "length": 54.12947441089743,
+      "parent": "head"
+    },
+    {
+      "name": "tendril_top_tip",
+      "position": [
+        277,
+        -68
+      ],
+      "rotation": 8.880659150520245,
+      "length": 32.38826948140329,
+      "parent": "tendril_top_base"
+    },
+    {
+      "name": "tendril_right_base",
+      "position": [
+        294,
+        -183
+      ],
+      "rotation": -45.0,
+      "length": 38.18376618407357,
+      "parent": "head"
+    },
+    {
+      "name": "tendril_right_tip",
+      "position": [
+        321,
+        -210
+      ],
+      "rotation": -90.0,
+      "length": 40.0,
+      "parent": "tendril_right_base"
+    },
+    {
+      "name": "tendril_lower_base",
+      "position": [
+        254,
+        -239
+      ],
+      "rotation": -57.03059609653788,
+      "length": 44.10215414239989,
+      "parent": "head"
+    },
+    {
+      "name": "tendril_lower_tip",
+      "position": [
+        278,
+        -276
+      ],
+      "rotation": -65.22485943116808,
+      "length": 42.95346318982906,
+      "parent": "tendril_lower_base"
+    },
+    {
+      "name": "neck_tendril_0",
+      "position": [
+        167,
+        -264
+      ],
+      "rotation": -158.68208772453846,
+      "length": 44.01136216933077,
+      "parent": "neck"
+    },
+    {
+      "name": "neck_tendril_1",
+      "position": [
+        126,
+        -280
+      ],
+      "rotation": -121.21840276434638,
+      "length": 38.58756276314948,
+      "parent": "neck_tendril_0"
+    },
+    {
+      "name": "neck_tendril_2",
+      "position": [
+        106,
+        -313
+      ],
+      "rotation": -156.80140948635182,
+      "length": 45.69463863518345,
+      "parent": "neck_tendril_1"
+    }
+  ],
+  "limbs": {
+    "back_leg": {
+      "parent": "pelvis",
+      "hip": [
+        155,
+        -402
+      ],
+      "knee": [
+        153,
+        -450
+      ],
+      "ankle": [
+        149,
+        -486
+      ],
+      "toe": [
+        129,
+        -497
+      ],
+      "phase": 0
+    },
+    "front_leg": {
+      "parent": "pelvis",
+      "hip": [
+        229,
+        -402
+      ],
+      "knee": [
+        235,
+        -453
+      ],
+      "ankle": [
+        239,
+        -491
+      ],
+      "toe": [
+        218,
+        -503
+      ],
+      "phase": 3.141592653589793
+    }
+  },
+  "arms": {
+    "back_arm": {
+      "parent": "body",
+      "hip": [
+        163,
+        -309
+      ],
+      "knee": [
+        125,
+        -362
+      ],
+      "ankle": [
+        99,
+        -393
+      ],
+      "toe": [
+        91,
+        -419
+      ],
+      "image": "youshoubi"
+    },
+    "front_arm": {
+      "parent": "body",
+      "hip": [
+        244,
+        -310
+      ],
+      "knee": [
+        265,
+        -369
+      ],
+      "ankle": [
+        272,
+        -403
+      ],
+      "toe": [
+        272,
+        -426
+      ],
+      "image": "zuoshoubi"
+    }
+  },
+  "tendrils": {
+    "top": {
+      "points": [
+        [
+          254,
+          -117
+        ],
+        [
+          277,
+          -68
+        ],
+        [
+          309,
+          -63
+        ]
+      ],
+      "radii": [
+        12,
+        24
+      ]
+    },
+    "right": {
+      "points": [
+        [
+          294,
+          -183
+        ],
+        [
+          321,
+          -210
+        ],
+        [
+          321,
+          -250
+        ]
+      ],
+      "radii": [
+        10,
+        21
+      ]
+    },
+    "lower": {
+      "points": [
+        [
+          254,
+          -239
+        ],
+        [
+          278,
+          -276
+        ],
+        [
+          296,
+          -315
+        ]
+      ],
+      "radii": [
+        10,
+        23
+      ]
+    }
+  },
+  "neck_tendril": [
+    [
+      167,
+      -264
+    ],
+    [
+      126,
+      -280
+    ],
+    [
+      106,
+      -313
+    ],
+    [
+      64,
+      -331
+    ]
+  ],
+  "bindings": {
+    "shenti": "body",
+    "tou": "head",
+    "chushou": "neck_tendril_0",
+    "youshoubi": "back_arm_upper",
+    "zuoshoubi": "front_arm_upper"
+  },
+  "impact_frame": 12,
+  "motion_direction": "Left-facing foreground-arm punch; anticipation, body follow-through, recovery; in-place walk."
+}

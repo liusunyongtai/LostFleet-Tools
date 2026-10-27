@@ -1,0 +1,84 @@
+{
+  "skeleton": {
+    "images": "../images/"
+  },
+  "bones": [
+    {
+      "name": "root"
+    }
+  ],
+  "slots": [
+    {
+      "name": "youshoubi",
+      "bone": "root",
+      "attachment": "youshoubi"
+    },
+    {
+      "name": "shenti",
+      "bone": "root",
+      "attachment": "shenti"
+    },
+    {
+      "name": "zuoshoubi",
+      "bone": "root",
+      "attachment": "zuoshoubi"
+    },
+    {
+      "name": "chushou",
+      "bone": "root",
+      "attachment": "chushou"
+    },
+    {
+      "name": "tou",
+      "bone": "root",
+      "attachment": "tou"
+    }
+  ],
+  "skins": {
+    "default": {
+      "youshoubi": {
+        "youshoubi": {
+          "x": 124.5,
+          "y": -365,
+          "width": 113,
+          "height": 142
+        }
+      },
+      "shenti": {
+        "shenti": {
+          "x": 193,
+          "y": -397.5,
+          "width": 166,
+          "height": 235
+        }
+      },
+      "zuoshoubi": {
+        "zuoshoubi": {
+          "x": 269.5,
+          "y": -365.5,
+          "width": 77,
+          "height": 143
+        }
+      },
+      "chushou": {
+        "chushou": {
+          "x": 123.5,
+          "y": -292,
+          "width": 137,
+          "height": 104
+        }
+      },
+      "tou": {
+        "tou": {
+          "x": 208,
+          "y": -184.5,
+          "width": 280,
+          "height": 279
+        }
+      }
+    }
+  },
+  "animations": {
+    "animation": {}
+  }
+}

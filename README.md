@@ -169,3 +169,8 @@ LOSTFLEET_URL=http://127.0.0.1:8000/ PYTHON=/workspace/.venvs/lostfleet-tools/bi
 ### GRYHY 感染宇航员 · 头部顶撞
 
 新增 [Spine PRO 4.3.23 动画包说明](examples/gryhy-spine/README.md) 和 [五动作预览](examples/gryhy-spine/preview.html)：`stand`、`dead`、`hit`、`attack`、`move`。27 根骨骼、6 个加权网格，保留原始透明 PNG；移动原地循环，攻击以后仰蓄力、头盔前顶和回弹为主。可下载 [独立 ZIP](downloads/gryhy-spine-4.3.23.zip)。官方 4.3 运行库验证不等于桌面 Spine 实测，具体范围见包内说明。
+
+
+### GRDGR 感染工人 · 前景手挥拳
+
+新增 [Spine PRO 4.3.23 动画包说明](examples/grdgr-spine/README.md) 与 [五动作预览](examples/grdgr-spine/preview.html)：`stand`、`dead`、`hit`、`attack`、`move`。27 根骨骼、5 个加权网格，保留原始透明 PNG；移动原地循环，攻击包含收拳蓄力、向左挥拳、躯干跟进和回弹。下载 [独立 ZIP](downloads/grdgr-spine-4.3.23.zip)。官方 4.3 运行库检查范围及桌面 Spine 未实测的说明见包内 README。
