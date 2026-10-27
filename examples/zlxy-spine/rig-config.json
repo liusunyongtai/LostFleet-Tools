@@ -1,0 +1,373 @@
+{
+  "target_version": "4.3.23",
+  "origin": [
+    279,
+    -522
+  ],
+  "fps": 30,
+  "bones": [
+    {
+      "name": "root",
+      "position": [
+        279,
+        -522
+      ],
+      "rotation": 0,
+      "length": 0
+    },
+    {
+      "name": "pelvis",
+      "position": [
+        279,
+        -372
+      ],
+      "rotation": 90,
+      "length": 90,
+      "parent": "root"
+    },
+    {
+      "name": "body",
+      "position": [
+        279,
+        -282
+      ],
+      "rotation": 90,
+      "length": 60,
+      "parent": "pelvis"
+    },
+    {
+      "name": "neck",
+      "position": [
+        265,
+        -239
+      ],
+      "rotation": 90,
+      "length": 20,
+      "parent": "body"
+    },
+    {
+      "name": "head",
+      "position": [
+        264,
+        -230
+      ],
+      "rotation": 90,
+      "length": 90,
+      "parent": "neck"
+    },
+    {
+      "name": "backpack",
+      "position": [
+        332,
+        -269
+      ],
+      "rotation": 90,
+      "length": 55,
+      "parent": "body"
+    },
+    {
+      "name": "hose_top",
+      "position": [
+        322,
+        -155
+      ],
+      "rotation": 0,
+      "length": 0,
+      "parent": "head"
+    },
+    {
+      "name": "hose_mid",
+      "position": [
+        377,
+        -207
+      ],
+      "rotation": 0,
+      "length": 0,
+      "parent": "body"
+    },
+    {
+      "name": "hose_bottom",
+      "position": [
+        365,
+        -266
+      ],
+      "rotation": 0,
+      "length": 0,
+      "parent": "backpack"
+    },
+    {
+      "name": "weapon",
+      "position": [
+        235,
+        -326
+      ],
+      "rotation": 180,
+      "length": 175,
+      "parent": "body"
+    },
+    {
+      "name": "muzzle",
+      "position": [
+        63,
+        -281
+      ],
+      "rotation": 180,
+      "length": 25,
+      "parent": "weapon"
+    },
+    {
+      "name": "projectile_spawn",
+      "position": [
+        -27,
+        -281
+      ],
+      "rotation": 0,
+      "length": 0,
+      "parent": "weapon"
+    },
+    {
+      "name": "melee_tip",
+      "position": [
+        63,
+        -304
+      ],
+      "rotation": 180,
+      "length": 25,
+      "parent": "weapon"
+    },
+    {
+      "name": "back_leg_upper",
+      "position": [
+        230,
+        -374
+      ],
+      "rotation": -93.94518622903756,
+      "length": 58.137767414994535,
+      "parent": "pelvis"
+    },
+    {
+      "name": "back_leg_lower",
+      "position": [
+        226,
+        -432
+      ],
+      "rotation": -101.30993247402021,
+      "length": 50.99019513592785,
+      "parent": "back_leg_upper"
+    },
+    {
+      "name": "back_leg_paw",
+      "position": [
+        216,
+        -482
+      ],
+      "rotation": -151.82140989004085,
+      "length": 31.76476034853718,
+      "parent": "back_leg_lower"
+    },
+    {
+      "name": "front_leg_upper",
+      "position": [
+        302,
+        -370
+      ],
+      "rotation": -63.838433557980764,
+      "length": 63.50590523722971,
+      "parent": "pelvis"
+    },
+    {
+      "name": "front_leg_lower",
+      "position": [
+        330,
+        -427
+      ],
+      "rotation": -93.75172907052598,
+      "length": 61.1310068623117,
+      "parent": "front_leg_upper"
+    },
+    {
+      "name": "front_leg_paw",
+      "position": [
+        326,
+        -488
+      ],
+      "rotation": -137.6025622024998,
+      "length": 31.144823004794873,
+      "parent": "front_leg_lower"
+    },
+    {
+      "name": "back_arm_upper",
+      "position": [
+        229,
+        -260
+      ],
+      "rotation": -109.79887635452492,
+      "length": 53.14132102234569,
+      "parent": "body"
+    },
+    {
+      "name": "back_arm_lower",
+      "position": [
+        211,
+        -310
+      ],
+      "rotation": -165.4655449194599,
+      "length": 55.78530272392541,
+      "parent": "back_arm_upper"
+    },
+    {
+      "name": "back_arm_paw",
+      "position": [
+        157,
+        -324
+      ],
+      "rotation": -175.2363583092738,
+      "length": 12.041594578792296,
+      "parent": "back_arm_lower"
+    },
+    {
+      "name": "front_arm_upper",
+      "position": [
+        319,
+        -242
+      ],
+      "rotation": -101.97613244420336,
+      "length": 67.468511173732,
+      "parent": "body"
+    },
+    {
+      "name": "front_arm_lower",
+      "position": [
+        305,
+        -308
+      ],
+      "rotation": -154.41148685868356,
+      "length": 78.7210264160726,
+      "parent": "front_arm_upper"
+    },
+    {
+      "name": "front_arm_paw",
+      "position": [
+        234,
+        -342
+      ],
+      "rotation": -171.86989764584402,
+      "length": 14.142135623730951,
+      "parent": "front_arm_lower"
+    }
+  ],
+  "limbs": {
+    "back_leg": {
+      "parent": "pelvis",
+      "hip": [
+        230,
+        -374
+      ],
+      "knee": [
+        226,
+        -432
+      ],
+      "ankle": [
+        216,
+        -482
+      ],
+      "toe": [
+        188,
+        -497
+      ],
+      "phase": 0,
+      "image": "zuotui"
+    },
+    "front_leg": {
+      "parent": "pelvis",
+      "hip": [
+        302,
+        -370
+      ],
+      "knee": [
+        330,
+        -427
+      ],
+      "ankle": [
+        326,
+        -488
+      ],
+      "toe": [
+        303,
+        -509
+      ],
+      "phase": 3.141592653589793,
+      "image": "youtui"
+    }
+  },
+  "arms": {
+    "back_arm": {
+      "parent": "body",
+      "hip": [
+        229,
+        -260
+      ],
+      "knee": [
+        211,
+        -310
+      ],
+      "ankle": [
+        157,
+        -324
+      ],
+      "toe": [
+        145,
+        -325
+      ],
+      "image": "zuobi"
+    },
+    "front_arm": {
+      "parent": "body",
+      "hip": [
+        319,
+        -242
+      ],
+      "knee": [
+        305,
+        -308
+      ],
+      "ankle": [
+        234,
+        -342
+      ],
+      "toe": [
+        220,
+        -344
+      ],
+      "image": "youbi"
+    }
+  },
+  "bindings": {
+    "zuotui": "back_leg_upper",
+    "beibao": "backpack",
+    "guanzi": "hose_mid",
+    "zuobi": "back_arm_upper",
+    "qugan": "body",
+    "wuqi": "weapon",
+    "youtui": "front_leg_upper",
+    "youbi": "front_arm_upper",
+    "tou": "head"
+  },
+  "melee_frame": 18,
+  "shot_frame": 12,
+  "grips": {
+    "front_arm": [
+      234,
+      -342
+    ],
+    "back_arm": [
+      157,
+      -324
+    ]
+  },
+  "facing": "left",
+  "projectile": "flying-bullet-4.3.json",
+  "projectile_animation": "bullet",
+  "projectile_duration": 0.4,
+  "motion_direction": "Weapon forward smash, offhand release and return; aimed shooting with strong muzzle flash, warm reflected additive light, recoil; in-place walk; stationary projectile loop."
+}

@@ -13,7 +13,8 @@ import cv2
 import numpy as np
 from PIL import Image, ImageDraw
 from tools.build_xqdz_spine import (rotation, rounded, interpolate_controls, pose,
-                                   render as region_render, save_gif, load_images, attachment_matrix, visible_attachments)
+                                   render as region_render, save_gif, load_images, attachment_matrix, visible_attachments,
+                                   sample, additive_over)
 
 BASE = Path(__file__).resolve().parents[1] / 'examples' / 'bsq-spine'
 FPS = 30
@@ -348,7 +349,8 @@ def render(skeleton,images,animation=None,t=0,size=SIZE,camera=CAMERA,background
         image=images[attachment.get('path',slot['name'])]
         if attachment.get('type')=='mesh':
             result=mesh_tile(skeleton,attachment,image,world,camera,size)
-            if result:out.alpha_composite(*result)
+            if not result:continue
+            tile,(x0,y0)=result;x1=x0+tile.width;y1=y0+tile.height
         else:
             transform=screen @ attachment_matrix(world,slot,attachment,image)
             corners=transform @ np.array([[0,image.width,image.width,0],[0,0,image.height,image.height],[1,1,1,1]])
@@ -357,6 +359,12 @@ def render(skeleton,images,animation=None,t=0,size=SIZE,camera=CAMERA,background
             if x1<=x0 or y1<=y0:continue
             inverse=np.linalg.inv(transform);offset=np.array([[1,0,x0],[0,1,y0],[0,0,1]])
             tile=image.transform((x1-x0,y1-y0),Image.Transform.AFFINE,(inverse@offset)[:2].ravel(),Image.Resampling.BICUBIC)
+        slot_track=skeleton['animations'].get(animation,{}).get('slots',{}).get(slot['name'],{})
+        alpha=sample(slot_track.get('alpha'),t,'value',1)
+        if alpha<1:tile.putalpha(tile.getchannel('A').point(lambda value:round(value*max(0,alpha))))
+        if slot.get('blend')=='additive':
+            out.paste(additive_over(out.crop((x0,y0,x1,y1)),tile),(x0,y0))
+        else:
             out.alpha_composite(tile,(x0,y0))
     if rig:
         draw=ImageDraw.Draw(out)

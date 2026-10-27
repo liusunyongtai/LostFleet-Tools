@@ -1,0 +1,136 @@
+{
+  "skeleton": {
+    "images": "../images/"
+  },
+  "bones": [
+    {
+      "name": "root"
+    }
+  ],
+  "slots": [
+    {
+      "name": "zuotui",
+      "bone": "root",
+      "attachment": "zuotui"
+    },
+    {
+      "name": "beibao",
+      "bone": "root",
+      "attachment": "beibao"
+    },
+    {
+      "name": "guanzi",
+      "bone": "root",
+      "attachment": "guanzi"
+    },
+    {
+      "name": "zuobi",
+      "bone": "root",
+      "attachment": "zuobi"
+    },
+    {
+      "name": "qugan",
+      "bone": "root",
+      "attachment": "qugan"
+    },
+    {
+      "name": "wuqi",
+      "bone": "root",
+      "attachment": "wuqi"
+    },
+    {
+      "name": "youtui",
+      "bone": "root",
+      "attachment": "youtui"
+    },
+    {
+      "name": "youbi",
+      "bone": "root",
+      "attachment": "youbi"
+    },
+    {
+      "name": "tou",
+      "bone": "root",
+      "attachment": "tou"
+    }
+  ],
+  "skins": {
+    "default": {
+      "zuotui": {
+        "zuotui": {
+          "x": 212.5,
+          "y": -434,
+          "width": 95,
+          "height": 158
+        }
+      },
+      "beibao": {
+        "beibao": {
+          "x": 334,
+          "y": -282,
+          "width": 126,
+          "height": 158
+        }
+      },
+      "guanzi": {
+        "guanzi": {
+          "x": 350.5,
+          "y": -207,
+          "width": 83,
+          "height": 130
+        }
+      },
+      "zuobi": {
+        "zuobi": {
+          "x": 194.5,
+          "y": -297,
+          "width": 121,
+          "height": 108
+        }
+      },
+      "qugan": {
+        "qugan": {
+          "x": 279.5,
+          "y": -300.5,
+          "width": 171,
+          "height": 189
+        }
+      },
+      "wuqi": {
+        "wuqi": {
+          "x": 201.5,
+          "y": -309.5,
+          "width": 297,
+          "height": 151
+        }
+      },
+      "youtui": {
+        "youtui": {
+          "x": 313.5,
+          "y": -434,
+          "width": 105,
+          "height": 178
+        }
+      },
+      "youbi": {
+        "youbi": {
+          "x": 289.5,
+          "y": -291.5,
+          "width": 157,
+          "height": 139
+        }
+      },
+      "tou": {
+        "tou": {
+          "x": 261.5,
+          "y": -163.5,
+          "width": 189,
+          "height": 191
+        }
+      }
+    }
+  },
+  "animations": {
+    "animation": {}
+  }
+}

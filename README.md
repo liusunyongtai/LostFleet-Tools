@@ -199,3 +199,8 @@ LOSTFLEET_URL=http://127.0.0.1:8000/ PYTHON=/workspace/.venvs/lostfleet-tools/bi
 ### ZSX 喷毒怪物 · 近战、喷吐和独立毒液子弹
 
 新增 [Spine PRO 4.3.23 动画包说明](examples/zsx-spine/README.md) 与 [角色及子弹预览](examples/zsx-spine/preview.html)：角色包含 `stand`、`dead`、`hit`、`attack_1`、`attack_2`、`move`，另附 `poison-bullet-4.3.json` 的 `bullet` 原地循环。近战前扑抓击，喷吐鼓腹蓄力后前送；原始四张角色 PNG 不变，新增透明毒液团块贴图。下载 [独立 ZIP](downloads/zsx-spine-4.3.23.zip)。生成位置、朝向、事件接入及桌面 Spine 未实测的说明见包内 README。
+
+
+### ZLXY 重甲枪兵 · 武器前砸、开枪和独立子弹
+
+新增 [Spine PRO 4.3.23 动画包说明](examples/zlxy-spine/README.md) 与 [角色及子弹预览](examples/zlxy-spine/preview.html)：`stand`、`dead`、`hit`、`move`、`attack_1`（举枪前砸）、`attack_2`（开枪、枪口火花与表面暖光）。另附 `flying-bullet-4.3.json` 的 `bullet` 原地循环。保留九张原始 PNG，25 根角色骨骼，新增透明子弹及特效。下载 [独立 ZIP](downloads/zlxy-spine-4.3.23.zip)。两份 JSON 均以缩放 1 导入，移动及子弹飞行位移由游戏控制；官方运行库验证范围及桌面 Spine 未实测说明见包内 README。

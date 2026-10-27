@@ -1,0 +1,32 @@
+{
+  "targetEditor": "Spine PRO 4.3.23",
+  "desktopEditorTested": false,
+  "officialRuntime": "@esotericsoftware/spine-core 4.3.13",
+  "characterPoses60Hz": 480,
+  "bulletPoses60Hz": 25,
+  "automatedTests": {
+    "passed": 194,
+    "failed": 0
+  },
+  "gallery": {
+    "decodedImages": 16,
+    "allHttp200": true,
+    "pageErrors": 0
+  },
+  "manualDiagnostic": {
+    "limbAndCableKeyPoses": "No detached alpha components larger than 30 pixels on either arm, either leg or cable at setup, walk quarter/three-quarter, melee wind/impact, firing or settled death.",
+    "deathPrimaryGripMaxErrorPixels": 3e-06,
+    "warmLightOpaqueArmorMeanRGBIncrease": [
+      61.33,
+      53.21,
+      26.52
+    ],
+    "opaqueArmorPixelsRedIncreaseOver50": 39206
+  },
+  "limitations": [
+    "Desktop Spine PRO 4.3.23 import not executed in this environment.",
+    "GIF previews use independent software rendering, not desktop screenshots.",
+    "Game controls projectile motion and collisions.",
+    "Lighting uses 2D additive masks, not a game engine dynamic light."
+  ]
+}
