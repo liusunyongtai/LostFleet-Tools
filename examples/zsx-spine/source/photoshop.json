@@ -1,0 +1,71 @@
+{
+  "skeleton": {
+    "images": "../images/"
+  },
+  "bones": [
+    {
+      "name": "root"
+    }
+  ],
+  "slots": [
+    {
+      "name": "youbi",
+      "bone": "root",
+      "attachment": "youbi"
+    },
+    {
+      "name": "shenti",
+      "bone": "root",
+      "attachment": "shenti"
+    },
+    {
+      "name": "zuobi",
+      "bone": "root",
+      "attachment": "zuobi"
+    },
+    {
+      "name": "tou",
+      "bone": "root",
+      "attachment": "tou"
+    }
+  ],
+  "skins": {
+    "default": {
+      "youbi": {
+        "youbi": {
+          "x": 538,
+          "y": -775,
+          "width": 300,
+          "height": 374
+        }
+      },
+      "shenti": {
+        "shenti": {
+          "x": 733,
+          "y": -847.5,
+          "width": 542,
+          "height": 725
+        }
+      },
+      "zuobi": {
+        "zuobi": {
+          "x": 924.5,
+          "y": -726,
+          "width": 327,
+          "height": 420
+        }
+      },
+      "tou": {
+        "tou": {
+          "x": 656.5,
+          "y": -434.5,
+          "width": 679,
+          "height": 613
+        }
+      }
+    }
+  },
+  "animations": {
+    "animation": {}
+  }
+}

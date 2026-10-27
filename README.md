@@ -194,3 +194,8 @@ LOSTFLEET_URL=http://127.0.0.1:8000/ PYTHON=/workspace/.venvs/lostfleet-tools/bi
 ### SSJNL 双头机械爪 · 前抓与斜劈
 
 新增 [Spine PRO 4.3.23 动画包说明](examples/ssjnl-spine/README.md) 与 [六动作预览](examples/ssjnl-spine/preview.html)：`stand`、`dead`、`hit`、`attack_1`、`attack_2`、`move`。右爪分别完成前伸抓击和抬爪斜劈，双头、背包、腰包和锁链做延迟跟随；移动原地循环。24 根骨骼、11 个加权网格，保留十一张原始透明 PNG。下载 [独立 ZIP](downloads/ssjnl-spine-4.3.23.zip)。官方 4.3 运行库检查范围及桌面 Spine 未实测的说明见包内 README。
+
+
+### ZSX 喷毒怪物 · 近战、喷吐和独立毒液子弹
+
+新增 [Spine PRO 4.3.23 动画包说明](examples/zsx-spine/README.md) 与 [角色及子弹预览](examples/zsx-spine/preview.html)：角色包含 `stand`、`dead`、`hit`、`attack_1`、`attack_2`、`move`，另附 `poison-bullet-4.3.json` 的 `bullet` 原地循环。近战前扑抓击，喷吐鼓腹蓄力后前送；原始四张角色 PNG 不变，新增透明毒液团块贴图。下载 [独立 ZIP](downloads/zsx-spine-4.3.23.zip)。生成位置、朝向、事件接入及桌面 Spine 未实测的说明见包内 README。

@@ -1,0 +1,366 @@
+{
+  "target_version": "4.3.23",
+  "origin": [
+    733,
+    -1209
+  ],
+  "fps": 30,
+  "bones": [
+    {
+      "name": "root",
+      "position": [
+        733,
+        -1209
+      ],
+      "rotation": 0,
+      "length": 0
+    },
+    {
+      "name": "pelvis",
+      "position": [
+        742,
+        -1030
+      ],
+      "rotation": 90,
+      "length": 173,
+      "parent": "root"
+    },
+    {
+      "name": "body",
+      "position": [
+        731,
+        -867
+      ],
+      "rotation": 90,
+      "length": 230,
+      "parent": "pelvis"
+    },
+    {
+      "name": "sac",
+      "position": [
+        703,
+        -877
+      ],
+      "rotation": 90,
+      "length": 150,
+      "parent": "body"
+    },
+    {
+      "name": "neck",
+      "position": [
+        712,
+        -657
+      ],
+      "rotation": 90,
+      "length": 40,
+      "parent": "body"
+    },
+    {
+      "name": "head",
+      "position": [
+        689,
+        -606
+      ],
+      "rotation": 90,
+      "length": 230,
+      "parent": "neck"
+    },
+    {
+      "name": "jaw",
+      "position": [
+        621,
+        -544
+      ],
+      "rotation": -132,
+      "length": 145,
+      "parent": "head"
+    },
+    {
+      "name": "tongue_base",
+      "position": [
+        514,
+        -551
+      ],
+      "rotation": -142.07353767496136,
+      "length": 97.6165969494942,
+      "parent": "head"
+    },
+    {
+      "name": "tongue_tip",
+      "position": [
+        437,
+        -611
+      ],
+      "rotation": -139.22599817795847,
+      "length": 143.93401265857906,
+      "parent": "tongue_base"
+    },
+    {
+      "name": "mouth",
+      "position": [
+        410,
+        -550
+      ],
+      "rotation": 180,
+      "length": 35,
+      "parent": "head"
+    },
+    {
+      "name": "projectile_spawn",
+      "position": [
+        235,
+        -550
+      ],
+      "rotation": 0,
+      "length": 25,
+      "parent": "head"
+    },
+    {
+      "name": "spit_fx",
+      "position": [
+        300,
+        -550
+      ],
+      "rotation": 0,
+      "length": 0,
+      "parent": "projectile_spawn"
+    },
+    {
+      "name": "face_contact",
+      "position": [
+        329,
+        -431
+      ],
+      "rotation": 0,
+      "length": 0,
+      "parent": "head"
+    },
+    {
+      "name": "back_leg_upper",
+      "position": [
+        610,
+        -1038
+      ],
+      "rotation": -105.94539590092286,
+      "length": 58.240879114244144,
+      "parent": "pelvis"
+    },
+    {
+      "name": "back_leg_lower",
+      "position": [
+        594,
+        -1094
+      ],
+      "rotation": -109.6538240580533,
+      "length": 59.464274989274024,
+      "parent": "back_leg_upper"
+    },
+    {
+      "name": "back_leg_paw",
+      "position": [
+        574,
+        -1150
+      ],
+      "rotation": -157.83365417791757,
+      "length": 58.309518948453004,
+      "parent": "back_leg_lower"
+    },
+    {
+      "name": "front_leg_upper",
+      "position": [
+        865,
+        -1040
+      ],
+      "rotation": -66.69510946079689,
+      "length": 70.77428911688199,
+      "parent": "pelvis"
+    },
+    {
+      "name": "front_leg_lower",
+      "position": [
+        893,
+        -1105
+      ],
+      "rotation": -76.6075022462489,
+      "length": 64.76109943476871,
+      "parent": "front_leg_upper"
+    },
+    {
+      "name": "front_leg_paw",
+      "position": [
+        908,
+        -1168
+      ],
+      "rotation": -157.4569389999421,
+      "length": 57.38466694161429,
+      "parent": "front_leg_lower"
+    },
+    {
+      "name": "back_arm_upper",
+      "position": [
+        645,
+        -626
+      ],
+      "rotation": -122.1443660270909,
+      "length": 174.79416466232504,
+      "parent": "body"
+    },
+    {
+      "name": "back_arm_lower",
+      "position": [
+        552,
+        -774
+      ],
+      "rotation": -138.57633437499737,
+      "length": 113.35784048754634,
+      "parent": "back_arm_upper"
+    },
+    {
+      "name": "back_arm_paw",
+      "position": [
+        467,
+        -849
+      ],
+      "rotation": -119.44542872992561,
+      "length": 71.19691004531025,
+      "parent": "back_arm_lower"
+    },
+    {
+      "name": "front_arm_upper",
+      "position": [
+        851,
+        -564
+      ],
+      "rotation": -46.9901722497549,
+      "length": 183.25119372053214,
+      "parent": "body"
+    },
+    {
+      "name": "front_arm_lower",
+      "position": [
+        976,
+        -698
+      ],
+      "rotation": -59.03624346792648,
+      "length": 104.95713410721541,
+      "parent": "front_arm_upper"
+    },
+    {
+      "name": "front_arm_paw",
+      "position": [
+        1030,
+        -788
+      ],
+      "rotation": -105.14098383507691,
+      "length": 88.05679985100527,
+      "parent": "front_arm_lower"
+    },
+    {
+      "name": "melee_tip",
+      "position": [
+        1007,
+        -873
+      ],
+      "rotation": 180,
+      "length": 30,
+      "parent": "front_arm_paw"
+    }
+  ],
+  "limbs": {
+    "back_leg": {
+      "parent": "pelvis",
+      "hip": [
+        610,
+        -1038
+      ],
+      "knee": [
+        594,
+        -1094
+      ],
+      "ankle": [
+        574,
+        -1150
+      ],
+      "toe": [
+        520,
+        -1172
+      ],
+      "phase": 0
+    },
+    "front_leg": {
+      "parent": "pelvis",
+      "hip": [
+        865,
+        -1040
+      ],
+      "knee": [
+        893,
+        -1105
+      ],
+      "ankle": [
+        908,
+        -1168
+      ],
+      "toe": [
+        855,
+        -1190
+      ],
+      "phase": 3.141592653589793
+    }
+  },
+  "arms": {
+    "back_arm": {
+      "parent": "body",
+      "hip": [
+        645,
+        -626
+      ],
+      "knee": [
+        552,
+        -774
+      ],
+      "ankle": [
+        467,
+        -849
+      ],
+      "toe": [
+        432,
+        -911
+      ],
+      "image": "youbi"
+    },
+    "front_arm": {
+      "parent": "body",
+      "hip": [
+        851,
+        -564
+      ],
+      "knee": [
+        976,
+        -698
+      ],
+      "ankle": [
+        1030,
+        -788
+      ],
+      "toe": [
+        1007,
+        -873
+      ],
+      "image": "zuobi"
+    }
+  },
+  "bindings": {
+    "youbi": "back_arm_upper",
+    "shenti": "body",
+    "zuobi": "front_arm_upper",
+    "tou": "head"
+  },
+  "melee_frame": 15,
+  "spit_frame": 15,
+  "facing": "left",
+  "projectile": "poison-bullet-4.3.json",
+  "projectile_animation": "bullet",
+  "projectile_duration": 0.6,
+  "motion_direction": "Anticipated lunging claw melee; inhale and belly compression followed by forward spit; in-place walk and independent stationary poison projectile loop."
+}
