@@ -179,3 +179,8 @@ LOSTFLEET_URL=http://127.0.0.1:8000/ PYTHON=/workspace/.venvs/lostfleet-tools/bi
 ### XD 悬浮锯盘机器人 · 投掷叉形工具
 
 新增 [Spine PRO 4.3.23 动画包说明](examples/xd-spine/README.md) 与 [五动作预览](examples/xd-spine/preview.html)：`stand`、`dead`、`hit`、`attack`、`move`。待机悬浮呼吸、锯盘在倾斜盘面内旋转；移动前倾并原地悬浮循环；攻击投出带握柄的整件叉形工具，附脱手事件和演示飞行轨迹。保留九张原始透明 PNG。下载 [独立 ZIP](downloads/xd-spine-4.3.23.zip)。官方 4.3 运行库检查范围及桌面 Spine 未实测的说明见包内 README。
+
+
+### JBJS 单臂感染者 · 单手前抓
+
+新增 [Spine PRO 4.3.23 动画包说明](examples/jbjs-spine/README.md) 与 [五动作预览](examples/jbjs-spine/preview.html)：`stand`、`dead`、`hit`、`attack`、`move`。15 根骨骼、8 个加权网格，保留原始透明 PNG；单手抓击包含后收蓄力、前伸、手腕下扣与回弹，移动原地循环。下载 [独立 ZIP](downloads/jbjs-spine-4.3.23.zip)。官方 4.3 运行库检查范围及桌面 Spine 未实测的说明见包内 README。

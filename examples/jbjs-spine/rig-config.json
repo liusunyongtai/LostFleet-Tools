@@ -1,0 +1,237 @@
+{
+  "target_version": "4.3.23",
+  "origin": [
+    380,
+    -884
+  ],
+  "fps": 30,
+  "bones": [
+    {
+      "name": "root",
+      "position": [
+        380,
+        -884
+      ],
+      "rotation": 0,
+      "length": 0
+    },
+    {
+      "name": "pelvis",
+      "position": [
+        383,
+        -664
+      ],
+      "rotation": 90,
+      "length": 66,
+      "parent": "root"
+    },
+    {
+      "name": "body",
+      "position": [
+        388,
+        -598
+      ],
+      "rotation": 90,
+      "length": 100,
+      "parent": "pelvis"
+    },
+    {
+      "name": "neck",
+      "position": [
+        373,
+        -493
+      ],
+      "rotation": 90,
+      "length": 24,
+      "parent": "body"
+    },
+    {
+      "name": "head",
+      "position": [
+        363,
+        -477
+      ],
+      "rotation": 90,
+      "length": 210,
+      "parent": "neck"
+    },
+    {
+      "name": "back_leg_upper",
+      "position": [
+        348,
+        -680
+      ],
+      "rotation": -90.93919094573559,
+      "length": 61.00819617067857,
+      "parent": "pelvis"
+    },
+    {
+      "name": "back_leg_lower",
+      "position": [
+        347,
+        -741
+      ],
+      "rotation": -85.84035770628736,
+      "length": 55.14526271584895,
+      "parent": "back_leg_upper"
+    },
+    {
+      "name": "back_leg_paw",
+      "position": [
+        351,
+        -796
+      ],
+      "rotation": -137.72631099390625,
+      "length": 74.33034373659252,
+      "parent": "back_leg_lower"
+    },
+    {
+      "name": "front_leg_upper",
+      "position": [
+        414,
+        -680
+      ],
+      "rotation": -84.8055710922652,
+      "length": 66.27216610312357,
+      "parent": "pelvis"
+    },
+    {
+      "name": "front_leg_lower",
+      "position": [
+        420,
+        -746
+      ],
+      "rotation": -80.69005982501396,
+      "length": 61.814237842102365,
+      "parent": "front_leg_upper"
+    },
+    {
+      "name": "front_leg_paw",
+      "position": [
+        430,
+        -807
+      ],
+      "rotation": -128.07278187399083,
+      "length": 76.21679604916491,
+      "parent": "front_leg_lower"
+    },
+    {
+      "name": "attack_arm_upper",
+      "position": [
+        322,
+        -493
+      ],
+      "rotation": -112.98871680208065,
+      "length": 107.54068997360952,
+      "parent": "body"
+    },
+    {
+      "name": "attack_arm_lower",
+      "position": [
+        280,
+        -592
+      ],
+      "rotation": -115.55996517182382,
+      "length": 101.9803902718557,
+      "parent": "attack_arm_upper"
+    },
+    {
+      "name": "attack_arm_paw",
+      "position": [
+        236,
+        -684
+      ],
+      "rotation": -118.96766064606402,
+      "length": 64.00781202322104,
+      "parent": "attack_arm_lower"
+    },
+    {
+      "name": "claw_tip",
+      "position": [
+        205,
+        -740
+      ],
+      "rotation": 180,
+      "length": 25,
+      "parent": "attack_arm_paw"
+    }
+  ],
+  "limbs": {
+    "back_leg": {
+      "parent": "pelvis",
+      "hip": [
+        348,
+        -680
+      ],
+      "knee": [
+        347,
+        -741
+      ],
+      "ankle": [
+        351,
+        -796
+      ],
+      "toe": [
+        296,
+        -846
+      ],
+      "phase": 0,
+      "image": "zuotui"
+    },
+    "front_leg": {
+      "parent": "pelvis",
+      "hip": [
+        414,
+        -680
+      ],
+      "knee": [
+        420,
+        -746
+      ],
+      "ankle": [
+        430,
+        -807
+      ],
+      "toe": [
+        383,
+        -867
+      ],
+      "phase": 3.141592653589793,
+      "image": "youtui"
+    }
+  },
+  "arms": {
+    "attack_arm": {
+      "parent": "body",
+      "hip": [
+        322,
+        -493
+      ],
+      "knee": [
+        280,
+        -592
+      ],
+      "ankle": [
+        236,
+        -684
+      ],
+      "toe": [
+        205,
+        -740
+      ]
+    }
+  },
+  "bindings": {
+    "tou": "head",
+    "shangshen": "body",
+    "duanku": "pelvis",
+    "zuotui": "back_leg_upper",
+    "youtui": "front_leg_upper",
+    "zuogebo": "attack_arm_upper",
+    "zuoshoubi": "attack_arm_lower",
+    "zuoshou": "attack_arm_paw"
+  },
+  "impact_frame": 15,
+  "facing": "left",
+  "motion_direction": "One existing arm only: windup, forward claw swipe, follow-through and recoil. In-place walk; no reconstructed missing arm."
+}

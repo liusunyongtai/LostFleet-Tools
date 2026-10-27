@@ -1,0 +1,123 @@
+{
+  "skeleton": {
+    "images": "../images/"
+  },
+  "bones": [
+    {
+      "name": "root"
+    }
+  ],
+  "slots": [
+    {
+      "name": "zuotui",
+      "bone": "root",
+      "attachment": "zuotui"
+    },
+    {
+      "name": "youtui",
+      "bone": "root",
+      "attachment": "youtui"
+    },
+    {
+      "name": "duanku",
+      "bone": "root",
+      "attachment": "duanku"
+    },
+    {
+      "name": "zuoshou",
+      "bone": "root",
+      "attachment": "zuoshou"
+    },
+    {
+      "name": "zuoshoubi",
+      "bone": "root",
+      "attachment": "zuoshoubi"
+    },
+    {
+      "name": "zuogebo",
+      "bone": "root",
+      "attachment": "zuogebo"
+    },
+    {
+      "name": "shangshen",
+      "bone": "root",
+      "attachment": "shangshen"
+    },
+    {
+      "name": "tou",
+      "bone": "root",
+      "attachment": "tou"
+    }
+  ],
+  "skins": {
+    "default": {
+      "zuotui": {
+        "zuotui": {
+          "x": 330,
+          "y": -762.5,
+          "width": 120,
+          "height": 207
+        }
+      },
+      "youtui": {
+        "youtui": {
+          "x": 412,
+          "y": -773.5,
+          "width": 126,
+          "height": 223
+        }
+      },
+      "duanku": {
+        "duanku": {
+          "x": 387.5,
+          "y": -666,
+          "width": 157,
+          "height": 116
+        }
+      },
+      "zuoshou": {
+        "zuoshou": {
+          "x": 217,
+          "y": -712.5,
+          "width": 82,
+          "height": 101
+        }
+      },
+      "zuoshoubi": {
+        "zuoshoubi": {
+          "x": 263,
+          "y": -630.5,
+          "width": 64,
+          "height": 101
+        }
+      },
+      "zuogebo": {
+        "zuogebo": {
+          "x": 301,
+          "y": -547,
+          "width": 90,
+          "height": 128
+        }
+      },
+      "shangshen": {
+        "shangshen": {
+          "x": 402.5,
+          "y": -553,
+          "width": 233,
+          "height": 234
+        }
+      },
+      "tou": {
+        "tou": {
+          "x": 378.5,
+          "y": -323,
+          "width": 425,
+          "height": 450
+        }
+      }
+    }
+  },
+  "animations": {
+    "animation": {}
+  }
+}
