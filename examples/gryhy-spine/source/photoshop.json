@@ -1,0 +1,97 @@
+{
+  "skeleton": {
+    "images": "../images/"
+  },
+  "bones": [
+    {
+      "name": "root"
+    }
+  ],
+  "slots": [
+    {
+      "name": "beibao",
+      "bone": "root",
+      "attachment": "beibao"
+    },
+    {
+      "name": "zuobi",
+      "bone": "root",
+      "attachment": "zuobi"
+    },
+    {
+      "name": "qugan",
+      "bone": "root",
+      "attachment": "qugan"
+    },
+    {
+      "name": "xiashen",
+      "bone": "root",
+      "attachment": "xiashen"
+    },
+    {
+      "name": "youbi",
+      "bone": "root",
+      "attachment": "youbi"
+    },
+    {
+      "name": "tou",
+      "bone": "root",
+      "attachment": "tou"
+    }
+  ],
+  "skins": {
+    "default": {
+      "beibao": {
+        "beibao": {
+          "x": 282,
+          "y": -272,
+          "width": 80,
+          "height": 126
+        }
+      },
+      "zuobi": {
+        "zuobi": {
+          "x": 137.5,
+          "y": -305.5,
+          "width": 83,
+          "height": 133
+        }
+      },
+      "qugan": {
+        "qugan": {
+          "x": 210.5,
+          "y": -290,
+          "width": 147,
+          "height": 150
+        }
+      },
+      "xiashen": {
+        "xiashen": {
+          "x": 203.5,
+          "y": -374.5,
+          "width": 133,
+          "height": 105
+        }
+      },
+      "youbi": {
+        "youbi": {
+          "x": 287.5,
+          "y": -305.5,
+          "width": 91,
+          "height": 141
+        }
+      },
+      "tou": {
+        "tou": {
+          "x": 163,
+          "y": -179.5,
+          "width": 292,
+          "height": 331
+        }
+      }
+    }
+  },
+  "animations": {
+    "animation": {}
+  }
+}

@@ -164,3 +164,8 @@ LOSTFLEET_URL=http://127.0.0.1:8000/ PYTHON=/workspace/.venvs/lostfleet-tools/bi
 ## 后续扩展接口
 
 `lostfleet_tools/providers.py` 预留 `SegmentationProvider.suggest_regions()` 与 `InpaintingProvider.complete_occlusion()` 协议。未来模型建议应转换成可编辑的原图坐标选区；遮挡补绘应作为独立、可审阅的生成结果。MVP 未启用任何 AI 提供方，也不声称恢复遮挡部位。图像处理位于 `pipeline.py`，与本地 HTTP 界面解耦。
+
+
+### GRYHY 感染宇航员 · 头部顶撞
+
+新增 [Spine PRO 4.3.23 动画包说明](examples/gryhy-spine/README.md) 和 [五动作预览](examples/gryhy-spine/preview.html)：`stand`、`dead`、`hit`、`attack`、`move`。27 根骨骼、6 个加权网格，保留原始透明 PNG；移动原地循环，攻击以后仰蓄力、头盔前顶和回弹为主。可下载 [独立 ZIP](downloads/gryhy-spine-4.3.23.zip)。官方 4.3 运行库验证不等于桌面 Spine 实测，具体范围见包内说明。
