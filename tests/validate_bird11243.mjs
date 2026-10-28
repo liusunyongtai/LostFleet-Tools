@@ -26,7 +26,7 @@ function validate(filename,reportFile,names,bonesCount,slotsCount){
    for(const b of skeleton.bones){const p=b.appliedPose,v=[p.a,p.b,p.c,p.d,p.worldX,p.worldY];assert.ok(v.every(Number.isFinite));bones[b.data.name]=v;}
    for(const s of skeleton.slots){
     alpha[s.data.name]=s.appliedPose.color.a;const a=s.appliedPose.attachment;attachments[s.data.name]=a?.name??null;if(!a)continue;
-    const points=[];a.computeWorldVertices(skeleton,s,0,a.worldVerticesLength,points,0,2);assert.ok(points.every(Number.isFinite));
+    const points=[];if(a.worldVerticesLength!==undefined)a.computeWorldVertices(skeleton,s,0,a.worldVerticesLength,points,0,2);else a.computeWorldVertices(s,a.getOffsets(s.appliedPose),points,0,2);assert.ok(points.every(Number.isFinite));
     const count=points.length/2,indices=[];for(let n=0;n<count;n+=8)indices.push(n);if(indices.at(-1)!==count-1)indices.push(count-1);
     meshes[s.data.name]={count,indices,vertices:indices.flatMap(n=>[points[n*2],points[n*2+1]])};
    }
@@ -37,4 +37,5 @@ function validate(filename,reportFile,names,bonesCount,slotsCount){
  writeFileSync(path.join(root,reportFile),JSON.stringify(report,null,2)+'\n');return report.samples.length;
 }
 const actor=validate('bird112-4.3.json','runtime-validation.json',['stand','dead','hit','move','attack'],25,11);
-console.log(`PASS: ${actor} bird poses at 60Hz; desktop editor not tested.`);
+const compatible=validate('bird112-regions-4.3.json','regions-runtime-validation.json',['stand','dead','hit','move','attack'],25,11);
+console.log(`PASS: ${actor} weighted + ${compatible} region poses at 60Hz; desktop editor not tested.`);

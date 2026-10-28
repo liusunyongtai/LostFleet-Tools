@@ -1,0 +1,106 @@
+{
+  "skeletonSHA256": "949db1eb48fbfbf0d01c88e835cab3bb0a6ec311da317489f73fa8666e1bf3fd",
+  "desktopEditorTested": false,
+  "scope": "Structural UV/triangle/hull/edges checks; not execution of the proprietary editor.",
+  "meshes": [
+    {
+      "slot": "youchibang",
+      "attachment": "youchibang",
+      "vertices": 247,
+      "triangles": 432,
+      "hull": 60,
+      "editorEdgeCount": 60,
+      "errors": []
+    },
+    {
+      "slot": "beiqi03",
+      "attachment": "beiqi03",
+      "vertices": 4,
+      "triangles": 2,
+      "hull": 4,
+      "editorEdgeCount": 4,
+      "errors": []
+    },
+    {
+      "slot": "beiqi02",
+      "attachment": "beiqi02",
+      "vertices": 4,
+      "triangles": 2,
+      "hull": 4,
+      "editorEdgeCount": 4,
+      "errors": []
+    },
+    {
+      "slot": "bqiqi01",
+      "attachment": "bqiqi01",
+      "vertices": 4,
+      "triangles": 2,
+      "hull": 4,
+      "editorEdgeCount": 4,
+      "errors": []
+    },
+    {
+      "slot": "shenti",
+      "attachment": "shenti",
+      "vertices": 325,
+      "triangles": 576,
+      "hull": 72,
+      "editorEdgeCount": 72,
+      "errors": []
+    },
+    {
+      "slot": "toubu",
+      "attachment": "toubu",
+      "vertices": 4,
+      "triangles": 2,
+      "hull": 4,
+      "editorEdgeCount": 4,
+      "errors": []
+    },
+    {
+      "slot": "zuoxiae",
+      "attachment": "zuoxiae",
+      "vertices": 231,
+      "triangles": 400,
+      "hull": 60,
+      "editorEdgeCount": 60,
+      "errors": []
+    },
+    {
+      "slot": "youxiae",
+      "attachment": "youxiae",
+      "vertices": 231,
+      "triangles": 400,
+      "hull": 60,
+      "editorEdgeCount": 60,
+      "errors": []
+    },
+    {
+      "slot": "zuoya",
+      "attachment": "zuoya",
+      "vertices": 4,
+      "triangles": 2,
+      "hull": 4,
+      "editorEdgeCount": 4,
+      "errors": []
+    },
+    {
+      "slot": "youya",
+      "attachment": "youya",
+      "vertices": 4,
+      "triangles": 2,
+      "hull": 4,
+      "editorEdgeCount": 4,
+      "errors": []
+    },
+    {
+      "slot": "zuochibang",
+      "attachment": "zuochibang",
+      "vertices": 273,
+      "triangles": 480,
+      "hull": 64,
+      "editorEdgeCount": 64,
+      "errors": []
+    }
+  ]
+}

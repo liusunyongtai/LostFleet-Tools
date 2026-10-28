@@ -8,9 +8,12 @@ import numpy as np
 from PIL import Image,ImageDraw
 if __package__ in (None,''):sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 from tools.build_bsq_spine import render as shared_render,write_json
+from tools.build_jbjs_spine import grid
+from tools.spine_mesh_topology import perimeter_edges,editor_mesh_check
 from tools.build_xqdz_spine import load_images,save_gif
 BASE=Path(__file__).resolve().parents[1]/'examples/sjt-airflow-spine'
-FX_SLOTS=('airflow_trail','impact_air')
+TRAIL_SLOTS=('airflow_trail','airflow_inner','airflow_outer')
+FX_SLOTS=(*TRAIL_SLOTS,'impact_air')
 START=.5
 CONTACT=.6
 END=.9
@@ -54,27 +57,24 @@ def make_effects():
     im.resize((512,256),Image.Resampling.LANCZOS).save(d/'impact_air.png')
 
 
-def ribbon(samples,t,bone_index):
-    vertices=[];uvs=[];triangles=[];segments=36
-    # Three ribbons follow the real edited tool path over the previous 0.10 seconds.
-    for band in (-1,0,1):
-        offset=band*82;thickness=145 if band==0 else 55;base=len(uvs)//2
-        for i in range(segments+1):
-            u=i/segments;tt=max(.475,t-.10)+(t-max(.475,t-.10))*u;point=sample_point(samples,tt)
-            tangent=sample_point(samples,tt+.004)-sample_point(samples,tt-.004);length=np.linalg.norm(tangent)
-            normal=np.array([-tangent[1],tangent[0]])/max(length,1e-8)
-            center=point+normal*offset;half=thickness*(.1+.9*math.sin(math.pi*u)**.6)/2
-            for sign,v in [(-1,0),(1,1)]:
-                xy=center+normal*half*sign;uvs.extend([u,v]);vertices.extend([1,bone_index,float(xy[0]),float(xy[1]),1])
-        for i in range(segments):
-            a=base+i*2;b=a+1;c=a+2;d=a+3;triangles.extend([a,b,d,a,d,c])
-    return {'type':'mesh','path':'fx/air_streak','width':512,'height':128,'uvs':uvs,'triangles':triangles,'vertices':vertices}
+def ribbon(samples,t,bone_index,band=0):
+    vertices=[];uvs=[];segments=36;points,triangles,hull=grid(segments,1)
+    offset=band*82;thickness=145 if band==0 else 55
+    for col,row in points:
+        u,v=col/segments,float(row);tt=max(.475,t-.10)+(t-max(.475,t-.10))*u;point=sample_point(samples,tt)
+        tangent=sample_point(samples,tt+.004)-sample_point(samples,tt-.004);length=np.linalg.norm(tangent)
+        normal=np.array([-tangent[1],tangent[0]])/max(length,1e-8);center=point+normal*offset;half=thickness*(.1+.9*math.sin(math.pi*u)**.6)/2
+        xy=center+normal*half*(1 if row==0 else -1);uvs.extend([u,v]);vertices.extend([1,bone_index,float(xy[0]),float(xy[1]),1])
+    result={'type':'mesh','path':'fx/air_streak','width':512,'height':128,'uvs':uvs,'triangles':triangles,'vertices':vertices,'hull':hull,'edges':perimeter_edges(hull)}
+    errors=editor_mesh_check(result)
+    if errors:raise ValueError(f'airflow band {band}: {errors}')
+    return result
 
 
 def quad(bone_index,width,height):
     uv=[0,0,1,0,1,1,0,1];vertices=[]
     for x,y in [(-width/2,height/2),(width/2,height/2),(width/2,-height/2),(-width/2,-height/2)]:vertices.extend([1,bone_index,x,y,1])
-    return {'type':'mesh','path':'fx/impact_air','width':width,'height':height,'uvs':uv,'vertices':vertices,'triangles':[0,1,2,0,2,3],'hull':4}
+    return {'type':'mesh','path':'fx/impact_air','width':width,'height':height,'uvs':uv,'vertices':vertices,'triangles':[0,1,2,0,2,3],'hull':4,'edges':perimeter_edges(4)}
 
 
 def pack_atlas():
@@ -91,20 +91,23 @@ def build():
     actor['skeleton'].pop('hash',None);actor['skeleton'].update(x=-850,y=-80,width=1600,height=1400)
     trail_index=len(actor['bones']);impact_index=trail_index+1;contact=sample_point(samples,CONTACT)
     actor['bones'] += [{'name':'airflow_anchor','parent':'root'},{'name':'impact_anchor','parent':'root','x':round(float(contact[0]),5),'y':8}]
-    actor['slots'].insert(0,{'name':'airflow_trail','bone':'airflow_anchor','blend':'additive'})
+    actor['slots']=[{'name':n,'bone':'airflow_anchor','blend':'additive'} for n in TRAIL_SLOTS]+actor['slots']
     actor['slots'].append({'name':'impact_air','bone':'impact_anchor','blend':'additive'})
-    skin=actor['skins'][0]['attachments'];skin['airflow_trail']={};keys=[{'time':0,'name':None}]
+    skin=actor['skins'][0]['attachments'];keys=[{'time':0,'name':None}]
+    for n in TRAIL_SLOTS:skin[n]={}
     for frame in range(15,20):
-        t=frame/30;name=f'airflow_{frame:02d}';skin['airflow_trail'][name]=ribbon(samples,t,trail_index);keys.append({'time':t,'name':name})
+        t=frame/30;attachment=f'airflow_{frame:02d}';keys.append({'time':t,'name':attachment})
+        for n,band in zip(TRAIL_SLOTS,(0,-1,1)):skin[n][attachment]=ribbon(samples,t,trail_index,band)
     keys.append({'time':20/30,'name':None});skin['impact_air']={'impact_air':quad(impact_index,520,260)}
     for name,a in actor['animations'].items():
         slots=a.setdefault('slots',{})
         for n in FX_SLOTS:slots[n]={'attachment':[{'time':0,'name':None}],'alpha':[{'time':0,'value':0}]}
         if name=='attack_2':
             slots['airflow_trail']={'attachment':keys,'alpha':[{'time':0,'value':0},{'time':14/30,'value':0},{'time':START,'value':.9},{'time':16/30,'value':1},{'time':.6,'value':.9},{'time':20/30,'value':0}]}
+            for n in TRAIL_SLOTS[1:]:slots[n]=deepcopy(slots['airflow_trail'])
             slots['impact_air']={'attachment':[{'time':0,'name':None},{'time':CONTACT,'name':'impact_air'},{'time':END,'name':None}],'alpha':[{'time':0,'value':0},{'time':17/30,'value':0},{'time':CONTACT,'value':1},{'time':19/30,'value':.9},{'time':.75,'value':.45},{'time':END,'value':0}]}
             a['bones']['impact_anchor']={'scale':[{'time':0,'x':1,'y':1},{'time':CONTACT-.001,'x':.28,'y':.28},{'time':CONTACT,'x':.35,'y':.35},{'time':19/30,'x':.8,'y':.7},{'time':.75,'x':1.35,'y':.95},{'time':END,'x':1.85,'y':1.1}]}
-    write_json(BASE/'sjt-4.3.json',actor);pack_atlas();print('Built airflow: original 17 bones/8 slots/6 action curves preserved; added 2 bones, 2 VFX slots, 5 ribbon meshes and pressure ring.')
+    write_json(BASE/'sjt-4.3.json',actor);pack_atlas();print('Built airflow: original 17 bones/8 slots/6 action curves preserved; added 2 bones, 4 VFX slots, 15 single-island ribbon meshes and pressure ring.')
     return actor
 
 

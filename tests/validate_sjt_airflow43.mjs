@@ -35,5 +35,5 @@ function validate(filename,reportFile,names,bonesCount,slotsCount){
  }
  writeFileSync(path.join(root,reportFile),JSON.stringify(report,null,2)+'\n');return report.samples.length;
 }
-const count=validate(process.env.SJT_AIRFLOW_BASE?'source/uploaded-skeleton.json':'sjt-4.3.json',process.env.SJT_AIRFLOW_REPORT||'runtime-validation.json',['stand','dead','hit','attack_1','attack_2','move'],process.env.SJT_AIRFLOW_BASE?17:19,process.env.SJT_AIRFLOW_BASE?8:10);
+const count=validate(process.env.SJT_AIRFLOW_BASE?'source/uploaded-skeleton.json':'sjt-4.3.json',process.env.SJT_AIRFLOW_REPORT||'runtime-validation.json',['stand','dead','hit','attack_1','attack_2','move'],process.env.SJT_AIRFLOW_BASE?17:19,process.env.SJT_AIRFLOW_BASE?8:12);
 console.log(`PASS: ${count} poses, desktop editor not tested.`);

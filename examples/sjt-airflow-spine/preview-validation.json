@@ -145,11 +145,6 @@
       "contentType": "image/gif"
     },
     {
-      "url": "/previews/mobile-attack_1.gif",
-      "status": 200,
-      "contentType": "image/gif"
-    },
-    {
       "url": "/previews/attack_1.gif",
       "status": 200,
       "contentType": "image/gif"
@@ -160,17 +155,12 @@
       "contentType": "image/gif"
     },
     {
+      "url": "/previews/mobile-attack_1.gif",
+      "status": 200,
+      "contentType": "image/gif"
+    },
+    {
       "url": "/previews/mobile-hit.gif",
-      "status": 200,
-      "contentType": "image/gif"
-    },
-    {
-      "url": "/previews/mobile-dead.gif",
-      "status": 200,
-      "contentType": "image/gif"
-    },
-    {
-      "url": "/previews/dead.gif",
       "status": 200,
       "contentType": "image/gif"
     },
@@ -178,6 +168,16 @@
       "url": "/previews/airflow-contact.png",
       "status": 200,
       "contentType": "image/png"
+    },
+    {
+      "url": "/previews/dead.gif",
+      "status": 200,
+      "contentType": "image/gif"
+    },
+    {
+      "url": "/previews/mobile-dead.gif",
+      "status": 200,
+      "contentType": "image/gif"
     },
     {
       "url": "/images/fx/air_streak.png",

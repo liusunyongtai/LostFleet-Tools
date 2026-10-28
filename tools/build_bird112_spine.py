@@ -9,6 +9,7 @@ if __package__ in (None,''):sys.path.insert(0,str(Path(__file__).resolve().paren
 from tools.build_xqdz_spine import rotation,rounded,pose,load_images,save_gif,interpolate_controls
 from tools.build_bsq_spine import mesh_world,render as shared_render,smoothstep,write_json
 from tools.build_jbjs_spine import grid,nearest_arc
+from tools.spine_mesh_topology import perimeter_edges,editor_mesh_check
 BASE=Path(__file__).resolve().parents[1]/'examples/bird112-spine'
 FPS=30
 DURATIONS={'stand':2.4,'dead':1.6,'hit':.5,'move':.8,'attack':.8}
@@ -53,13 +54,15 @@ def build_rig(source,config):
         result['bones'].append(entry)
     rest=pose(result);indices={b['name']:i for i,b in enumerate(result['bones'])}
     for slot in source['slots']:
-        n=slot['name'];a=source['skins']['default'][n][n];cols,rows={'shenti':(30,16),'zuochibang':(20,12),'youchibang':(18,12),'zuoxiae':(10,20),'youxiae':(10,20)}.get(n,(1,1))
+        n=slot['name'];a=source['skins']['default'][n][n];cols,rows={'shenti':(24,12),'zuochibang':(20,12),'youchibang':(18,12),'zuoxiae':(10,20),'youxiae':(10,20)}.get(n,(1,1))
         points,triangles,hull=grid(cols,rows);vertices=[];uvs=[]
         for col,row in points:
             u,v=col/cols,row/rows;uvs.extend([u,v]);world=np.array([a['x']+(u-.5)*a['width'],a['y']+(.5-v)*a['height']]);active={k:w for k,w in weights(n,world,config).items() if w>1e-8};total=sum(active.values());vertices.append(len(active))
             for bone,w in active.items():
                 local=world-definitions[bone]['position'];vertices.extend([indices[bone],rounded(local[0]),rounded(local[1]),w/total])
-        attachment={'type':'mesh','path':n,'width':a['width'],'height':a['height'],'uvs':uvs,'vertices':vertices,'triangles':triangles,'hull':hull}
+        attachment={'type':'mesh','path':n,'width':a['width'],'height':a['height'],'uvs':uvs,'vertices':vertices,'triangles':triangles,'hull':hull,'edges':perimeter_edges(hull)}
+        errors=editor_mesh_check(attachment)
+        if errors:raise ValueError(f'{n}: {errors}')
         result['slots'].append({'name':n,'bone':config['bindings'][n],'attachment':n});result['skins'][0]['attachments'][n]={n:attachment}
     return result
 
@@ -168,6 +171,13 @@ def build(previews=True):
         a=e[n]
         if images[n].size!=(a['width'],a['height']):raise ValueError('Image dimensions mismatch: '+n)
     actor=build_rig(source,config);actor['animations']=make_animations(actor,config);correct_ground(actor,images);write_json(BASE/'bird112-4.3.json',actor)
+    compat=deepcopy(actor)
+    for slot in compat['slots']:
+        n=slot['name'];a=source['skins']['default'][n][n];bone=next(b for b in config['bones'] if b['name']==slot['bone'])
+        compat['skins'][0]['attachments'][n]={n:{'path':n,'x':a['x']-bone['position'][0],'y':a['y']-bone['position'][1],'width':a['width'],'height':a['height']}}
+    for k in compat['animations']['dead']['bones']['root']['translate']:k['y']=0
+    correct_ground(compat,images)
+    write_json(BASE/'bird112-regions-4.3.json',compat)
     if previews:make_previews(actor,images)
     print('Built Bird112:',len(actor['bones']),'bones;',len(actor['slots']),'meshes;',list(actor['animations']));return actor
 

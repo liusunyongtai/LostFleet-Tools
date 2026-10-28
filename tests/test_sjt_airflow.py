@@ -5,7 +5,7 @@ import json
 import unittest
 import numpy as np
 from PIL import Image
-from tools.build_sjt_airflow import BASE,FX_SLOTS,runtime_render,matrices,sample_point,report_samples
+from tools.build_sjt_airflow import BASE,FX_SLOTS,TRAIL_SLOTS,runtime_render,matrices,sample_point,report_samples
 from tools.build_xqdz_spine import load_images,visible_attachments,sample
 from tools.build_bsq_spine import mesh_world,draw_order
 
@@ -17,7 +17,7 @@ class SjtAirflowTests(unittest.TestCase):
 
     def test_uploaded_bones_slots_and_meshes_are_preserved(self):
         self.assertEqual(self.actor['bones'][:17],self.source['bones']);self.assertEqual([s for s in self.actor['slots'] if s['name'] not in FX_SLOTS],self.source['slots'])
-        self.assertEqual(len(self.actor['bones']),19);self.assertEqual(len(self.actor['slots']),10)
+        self.assertEqual(len(self.actor['bones']),19);self.assertEqual(len(self.actor['slots']),12)
         for n,entries in self.source['skins'][0]['attachments'].items():self.assertEqual(self.actor['skins'][0]['attachments'][n],entries)
 
     def test_all_original_action_curves_and_events_remain_exact(self):
@@ -69,17 +69,17 @@ class SjtAirflowTests(unittest.TestCase):
         for t in (0,.4,.49,.91,1.2,1.4):self.assertFalse({s['name'] for s,a in visible_attachments(self.actor,'attack_2',t)}&set(FX_SLOTS))
 
     def test_airflow_and_impact_windows(self):
-        for t,wanted in [(.5,{'airflow_trail'}),(.55,{'airflow_trail'}),(.6,set(FX_SLOTS)),(.65,set(FX_SLOTS)),(.7,{'impact_air'}),(.8,{'impact_air'})]:
+        for t,wanted in [(.5,set(TRAIL_SLOTS)),(.55,set(TRAIL_SLOTS)),(.6,set(FX_SLOTS)),(.65,set(FX_SLOTS)),(.7,{'impact_air'}),(.8,{'impact_air'})]:
             visible={s['name'] for s,a in visible_attachments(self.actor,'attack_2',t)}&set(FX_SLOTS);self.assertEqual(visible,wanted)
 
     def test_ribbon_heads_follow_actual_uploaded_tool_trajectory(self):
         skin=self.actor['skins'][0]['attachments']['airflow_trail'];trajectory=report_samples()
         for f in range(15,20):
             t=f/30;name=f'airflow_{f:02d}';a=skin[name];points=mesh_world(self.actor,a,matrices(self.report['samples'][0]));uv=np.array(a['uvs']).reshape(-1,2)
-            # Middle ribbon is the second band; its leading edge is centered exactly on the tool.
-            bandlen=len(points)//3;head=points[bandlen:bandlen*2][uv[bandlen:bandlen*2,0]>.99].mean(axis=0)
+            # The center ribbon has its own nonoverlapping UV disk.
+            head=points[uv[:,0]>.99].mean(axis=0)
             np.testing.assert_allclose(head,sample_point(trajectory,t),atol=.001)
-            self.assertEqual(len(a['triangles']),3*36*6)
+            self.assertEqual(len(a['triangles']),36*6)
 
     def test_added_meshes_agree_with_official_runtime(self):
         skin=self.actor['skins'][0]['attachments']

@@ -65,6 +65,12 @@
       "complete": true
     },
     {
+      "src": "previews/regions-comparison.gif",
+      "width": 1200,
+      "height": 500,
+      "complete": true
+    },
+    {
       "src": "previews/animation-contact.png",
       "width": 1440,
       "height": 1500,
@@ -101,6 +107,11 @@
       "contentType": "image/gif"
     },
     {
+      "url": "/previews/move.gif",
+      "status": 200,
+      "contentType": "image/gif"
+    },
+    {
       "url": "/previews/mobile-attack.gif",
       "status": 200,
       "contentType": "image/gif"
@@ -116,12 +127,12 @@
       "contentType": "image/gif"
     },
     {
-      "url": "/previews/move.gif",
+      "url": "/previews/mobile-hit.gif",
       "status": 200,
       "contentType": "image/gif"
     },
     {
-      "url": "/previews/mobile-hit.gif",
+      "url": "/previews/dead.gif",
       "status": 200,
       "contentType": "image/gif"
     },
@@ -131,19 +142,19 @@
       "contentType": "image/gif"
     },
     {
-      "url": "/previews/rig-setup.png",
-      "status": 200,
-      "contentType": "image/png"
-    },
-    {
       "url": "/previews/animation-contact.png",
       "status": 200,
       "contentType": "image/png"
     },
     {
-      "url": "/previews/dead.gif",
+      "url": "/previews/regions-comparison.gif",
       "status": 200,
       "contentType": "image/gif"
+    },
+    {
+      "url": "/previews/rig-setup.png",
+      "status": 200,
+      "contentType": "image/png"
     }
   ]
 }

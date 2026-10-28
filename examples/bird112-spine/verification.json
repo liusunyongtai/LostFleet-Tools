@@ -2,42 +2,31 @@
   "targetEditor": "Spine PRO 4.3.23",
   "desktopEditorTested": false,
   "officialRuntime": "@esotericsoftware/spine-core 4.3.13",
-  "sampleHz": 60,
-  "runtimePoses": 371,
+  "runtimePoses60Hz": 371,
   "automatedTests": {
-    "passed": 250,
+    "passed": 270,
     "failed": 0
   },
+  "topologyMeshesChecked": 11,
   "gallery": {
-    "decodedImages": 12,
+    "decodedImages": 13,
     "allHttp200": true,
     "pageErrors": 0
   },
+  "limitations": [
+    "Structural editor-oriented topology validation does not execute the proprietary desktop editor.",
+    "Actual desktop Spine 4.3.23 import remains untested in this environment.",
+    "GIF previews are independent software rendering, not desktop screenshots."
+  ],
+  "regionCompatibilityPoses60Hz": 371,
+  "compatibilityFile": "bird112-regions-4.3.json",
+  "compatibilityTradeoff": "No mesh import; primary action poses preserved, wing-tip/tail/jaw bending simplified; death floor height corrected separately.",
+  "fullBoneAndAnimationCurvesUnchanged": true,
+  "bodyMeshVerticesBefore": 527,
+  "bodyMeshVerticesNow": 325,
   "rootStationaryAnimations": [
     "stand",
     "move",
     "attack"
-  ],
-  "attackLoop": {
-    "duration": 0.8,
-    "bodyDownwardPitchDegrees": [
-      32,
-      40
-    ],
-    "reducedWingSpan": true,
-    "headDownTailUp": true,
-    "startAndEndBothDiving": true
-  },
-  "sourcePNGCount": 11,
-  "originalUploadJSONSHA256": "4417e14dcf61b417f3b387db0f8c1a702cbd5ce8a786190524c49b0636ab93dc",
-  "death": {
-    "settledFromSeconds": 1.4,
-    "headFloorClearancePixels": 3
-  },
-  "limitations": [
-    "Desktop Spine PRO 4.3.23 import not executed in this environment.",
-    "Previews use independent software rendering, not desktop screenshots.",
-    "World flight/dive paths and collisions are controlled by the game.",
-    "Import data and original images supplied; export a game atlas in the local editor."
   ]
 }

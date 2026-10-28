@@ -213,9 +213,12 @@ LOSTFLEET_URL=http://127.0.0.1:8000/ PYTHON=/workspace/.venvs/lostfleet-tools/bi
 
 ### SJT · attack_2 气流增强版
 
-基于用户重新上传的 Spine 4.3.23 导出数据，保留原曲线、事件、角色 PNG 和原始图集页，为 `attack_2` 增加沿拳端轨迹的半透明气流及扩散气浪。新增双页图集、对比 GIF 与手机尺寸预览。见 [导入说明](examples/sjt-airflow-spine/README.md)、[效果对比](examples/sjt-airflow-spine/preview.html)、[完整 ZIP](downloads/sjt-spine-airflow-4.3.23.zip)。导入根目录新版 JSON；上传的旧 `.spine` 仅保存在备份目录。官方运行库验证范围及桌面编辑器未实测说明见包内 README。
+基于用户重新上传的 Spine 4.3.23 导出数据，保留原曲线、事件、角色 PNG 和原始图集页，为 `attack_2` 增加沿拳端轨迹的半透明气流及扩散气浪。新增双页图集、对比 GIF 与手机尺寸预览。见 [导入说明](examples/sjt-airflow-spine/README.md)、[效果对比](examples/sjt-airflow-spine/preview.html)、[完整 ZIP](downloads/sjt-spine-airflow-4.3.23-editor-fix.zip)。导入根目录新版 JSON；上传的旧 `.spine` 仅保存在备份目录。官方运行库验证范围及桌面编辑器未实测说明见包内 README。
 
 
 ### 112 双翼飞行生物 · 原地俯冲循环
 
-新增 [Spine PRO 4.3.23 导入说明](examples/bird112-spine/README.md) 与 [五动作预览](examples/bird112-spine/preview.html)：`stand`、`dead`、`hit`、`move`、`attack`。25 根骨骼，保留原始 11 张透明 PNG；双翼、尾巴和颚部连续网格，振翅与翼尖、尾尖有延迟跟随。`move` 原地飞行，`attack` 保持头低尾高、收翼俯冲并原地循环。下载 [完整 ZIP](downloads/bird112-spine-4.3.23.zip)。根节点、混合切换、运行库验证及桌面 Spine 未实测说明见包内 README。
+新增 [Spine PRO 4.3.23 导入说明](examples/bird112-spine/README.md) 与 [五动作预览](examples/bird112-spine/preview.html)：`stand`、`dead`、`hit`、`move`、`attack`。25 根骨骼，保留原始 11 张透明 PNG；双翼、尾巴和颚部连续网格，振翅与翼尖、尾尖有延迟跟随。`move` 原地飞行，`attack` 保持头低尾高、收翼俯冲并原地循环。下载 [完整 ZIP](downloads/bird112-spine-4.3.23-import-fix.zip)。根节点、混合切换、运行库验证及桌面 Spine 未实测说明见包内 README。
+
+
+鸟类 112 导入修复版补齐编辑器网格边数据，并附无 mesh 的 region 兼容版本。SJT 气流修复版将三条气流拆为独立 UV 网格。新增拓扑校验与负例测试；桌面编辑器导入尚待本机确认。

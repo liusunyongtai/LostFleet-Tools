@@ -1,3 +1,23 @@
+test_death_ground_contact_and_settled_end (test_bird112_spine.Bird112SpineTests.test_death_ground_contact_and_settled_end) ... ok
+test_dive_loop_does_not_emit_unrequested_damage_events (test_bird112_spine.Bird112SpineTests.test_dive_loop_does_not_emit_unrequested_damage_events) ... ok
+test_dive_stays_head_down_for_entire_loop (test_bird112_spine.Bird112SpineTests.test_dive_stays_head_down_for_entire_loop) ... ok
+test_dive_wings_have_reduced_span (test_bird112_spine.Bird112SpineTests.test_dive_wings_have_reduced_span) ... ok
+test_eleven_pngs_are_unchanged_and_transparent (test_bird112_spine.Bird112SpineTests.test_eleven_pngs_are_unchanged_and_transparent) ... ok
+test_five_names_version_bones_and_original_layers (test_bird112_spine.Bird112SpineTests.test_five_names_version_bones_and_original_layers) ... ok
+test_flight_and_dive_root_never_move (test_bird112_spine.Bird112SpineTests.test_flight_and_dive_root_never_move) ... ok
+test_flight_clearance_and_preview_bounds (test_bird112_spine.Bird112SpineTests.test_flight_clearance_and_preview_bounds) ... ok
+test_head_and_fangs_keep_rigid_shape_during_flight_dive_hit (test_bird112_spine.Bird112SpineTests.test_head_and_fangs_keep_rigid_shape_during_flight_dive_hit) ... ok
+test_hit_recoils_and_recovers_without_reset_pop (test_bird112_spine.Bird112SpineTests.test_hit_recoils_and_recovers_without_reset_pop) ... ok
+test_move_has_large_wingtip_excursions (test_bird112_spine.Bird112SpineTests.test_move_has_large_wingtip_excursions) ... ok
+test_no_full_turn_adjacent_key_jumps (test_bird112_spine.Bird112SpineTests.test_no_full_turn_adjacent_key_jumps) ... ok
+test_official_runtime_371_poses_match_independent_world_and_mesh (test_bird112_spine.Bird112SpineTests.test_official_runtime_371_poses_match_independent_world_and_mesh) ... ok
+test_preview_scale_is_uniform_and_does_not_modify_source (test_bird112_spine.Bird112SpineTests.test_preview_scale_is_uniform_and_does_not_modify_source) ... ok
+test_setup_coordinates_and_normalized_positive_weights (test_bird112_spine.Bird112SpineTests.test_setup_coordinates_and_normalized_positive_weights) ... ok
+test_setup_render_matches_photoshop_assembly (test_bird112_spine.Bird112SpineTests.test_setup_render_matches_photoshop_assembly) ... ok
+test_tail_chain_has_delayed_follow_through (test_bird112_spine.Bird112SpineTests.test_tail_chain_has_delayed_follow_through) ... ok
+test_three_flight_loops_have_matching_endpoints (test_bird112_spine.Bird112SpineTests.test_three_flight_loops_have_matching_endpoints) ... ok
+test_wing_elbow_and_tip_lag_the_primary_stroke (test_bird112_spine.Bird112SpineTests.test_wing_elbow_and_tip_lag_the_primary_stroke) ... ok
+test_wings_jaws_and_tail_stay_connected_at_key_poses (test_bird112_spine.Bird112SpineTests.test_wings_jaws_and_tail_stay_connected_at_key_poses) ... ok
 test_dead_is_grounded_and_holds_last_pose (test_bsq_spine.BsqSpineTests.test_dead_is_grounded_and_holds_last_pose) ... ok
 test_exact_animation_names_and_independent_bullet (test_bsq_spine.BsqSpineTests.test_exact_animation_names_and_independent_bullet) ... ok
 test_fallback_has_no_mesh_dependencies (test_bsq_spine.BsqSpineTests.test_fallback_has_no_mesh_dependencies) ... ok
@@ -65,7 +85,7 @@ test_setup_render_keeps_original_assembly (test_jbjs_spine.JbjsSpineTests.test_s
 test_setup_vertices_preserve_ps_image_positions_and_weights_sum_one (test_jbjs_spine.JbjsSpineTests.test_setup_vertices_preserve_ps_image_positions_and_weights_sum_one) ... ok
 test_single_arm_claw_winds_back_then_reaches_forward_and_rakes (test_jbjs_spine.JbjsSpineTests.test_single_arm_claw_winds_back_then_reaches_forward_and_rakes) ... ok
 test_default_does_not_launch_browser (test_launcher.LauncherTests.test_default_does_not_launch_browser) ... Verified PNG: 512x512 RGBA; alpha range 0..0; 262144 transparent pixels
-LostFleet editor running on 127.0.0.1:<MagicMock name='EditorServer().__enter__().server_port' id='139883434940304'>
+LostFleet editor running on 127.0.0.1:<MagicMock name='EditorServer().__enter__().server_port' id='139643819620304'>
 ok
 test_occupied_port_does_not_open_an_unrelated_service (test_launcher.LauncherTests.test_occupied_port_does_not_open_an_unrelated_service) ... ok
 test_open_browser_uses_bound_port_and_local_host (test_launcher.LauncherTests.test_open_browser_uses_bound_port_and_local_host) ... LostFleet editor running on 0.0.0.0:8123
@@ -100,28 +120,48 @@ test_right_arm_smash_raises_above_head_then_drops_near_ground (test_sjt_spine.Sj
 test_runtime_bones_and_sampled_mesh_match_preview_even_between_keys (test_sjt_spine.SjtSpineTests.test_runtime_bones_and_sampled_mesh_match_preview_even_between_keys) ... ok
 test_setup_render_keeps_original_assembly (test_sjt_spine.SjtSpineTests.test_setup_render_keeps_original_assembly) ... ok
 test_setup_vertices_preserve_ps_image_positions_and_weights_sum_one (test_sjt_spine.SjtSpineTests.test_setup_vertices_preserve_ps_image_positions_and_weights_sum_one) ... ok
-test_cross_origin_post_blocked (test_splitter.HTTPTests.test_cross_origin_post_blocked) ... 127.0.0.1 - - [28/Oct/2026 04:07:58] "POST /api/upload HTTP/1.1" 403 -
+test_airflow_setup_triangles_have_export_style_world_winding (test_spine_editor_import.EditorTopologyTests.test_airflow_setup_triangles_have_export_style_world_winding) ... ok
+test_bird_full_motion_curves_and_bones_unchanged (test_spine_editor_import.EditorTopologyTests.test_bird_full_motion_curves_and_bones_unchanged) ... ok
+test_bird_meshes_include_valid_editor_perimeters (test_spine_editor_import.EditorTopologyTests.test_bird_meshes_include_valid_editor_perimeters) ... ok
+test_body_density_is_reduced_conservatively (test_spine_editor_import.EditorTopologyTests.test_body_density_is_reduced_conservatively) ... ok
+test_degenerate_triangle_is_rejected (test_spine_editor_import.EditorTopologyTests.test_degenerate_triangle_is_rejected) ... ok
+test_disconnected_ribbons_are_rejected (test_spine_editor_import.EditorTopologyTests.test_disconnected_ribbons_are_rejected) ... ok
+test_duplicate_uv_is_rejected (test_spine_editor_import.EditorTopologyTests.test_duplicate_uv_is_rejected) ... ok
+test_each_sjt_airflow_layer_has_unique_uvs_and_one_hull (test_spine_editor_import.EditorTopologyTests.test_each_sjt_airflow_layer_has_unique_uvs_and_one_hull) ... ok
+test_edge_indices_are_coordinate_offsets_not_vertex_indices (test_spine_editor_import.EditorTopologyTests.test_edge_indices_are_coordinate_offsets_not_vertex_indices) ... ok
+test_missing_nonessential_edges_is_flagged (test_spine_editor_import.EditorTopologyTests.test_missing_nonessential_edges_is_flagged) ... ok
+test_out_of_range_index_is_rejected (test_spine_editor_import.EditorTopologyTests.test_out_of_range_index_is_rejected) ... ok
+test_reversed_triangle_is_rejected (test_spine_editor_import.EditorTopologyTests.test_reversed_triangle_is_rejected) ... ok
+test_sjt_all_meshes_pass_topology_checks (test_spine_editor_import.EditorTopologyTests.test_sjt_all_meshes_pass_topology_checks) ... ok
+test_valid_single_uv_disk (test_spine_editor_import.EditorTopologyTests.test_valid_single_uv_disk) ... ok
+test_wrong_hull_is_rejected (test_spine_editor_import.EditorTopologyTests.test_wrong_hull_is_rejected) ... ok
+test_compatibility_loops_and_stationary_roots (test_spine_editor_import.RegionCompatibilityTests.test_compatibility_loops_and_stationary_roots) ... ok
+test_compatibility_retains_five_actions_and_main_bones (test_spine_editor_import.RegionCompatibilityTests.test_compatibility_retains_five_actions_and_main_bones) ... ok
+test_compatible_death_is_grounded (test_spine_editor_import.RegionCompatibilityTests.test_compatible_death_is_grounded) ... ok
+test_no_mesh_fields_are_present (test_spine_editor_import.RegionCompatibilityTests.test_no_mesh_fields_are_present) ... ok
+test_region_runtime_geometry_matches_independent_transforms (test_spine_editor_import.RegionCompatibilityTests.test_region_runtime_geometry_matches_independent_transforms) ... ok
+test_cross_origin_post_blocked (test_splitter.HTTPTests.test_cross_origin_post_blocked) ... 127.0.0.1 - - [28/Oct/2026 09:04:01] "POST /api/upload HTTP/1.1" 403 -
 ok
-test_editor_document_bundles_latest_assets (test_splitter.HTTPTests.test_editor_document_bundles_latest_assets) ... 127.0.0.1 - - [28/Oct/2026 04:07:58] "GET / HTTP/1.1" 200 -
+test_editor_document_bundles_latest_assets (test_splitter.HTTPTests.test_editor_document_bundles_latest_assets) ... 127.0.0.1 - - [28/Oct/2026 09:04:01] "GET / HTTP/1.1" 200 -
 ok
-test_errors_are_actionable (test_splitter.HTTPTests.test_errors_are_actionable) ... 127.0.0.1 - - [28/Oct/2026 04:07:58] "POST /api/upload HTTP/1.1" 200 -
-127.0.0.1 - - [28/Oct/2026 04:07:58] "POST /api/upload HTTP/1.1" 400 -
-127.0.0.1 - - [28/Oct/2026 04:07:58] "POST /api/export HTTP/1.1" 404 -
-127.0.0.1 - - [28/Oct/2026 04:07:58] "POST /api/export HTTP/1.1" 400 -
-127.0.0.1 - - [28/Oct/2026 04:07:58] "POST /api/preview HTTP/1.1" 400 -
-127.0.0.1 - - [28/Oct/2026 04:07:58] "POST /api/export HTTP/1.1" 400 -
+test_errors_are_actionable (test_splitter.HTTPTests.test_errors_are_actionable) ... 127.0.0.1 - - [28/Oct/2026 09:04:01] "POST /api/upload HTTP/1.1" 200 -
+127.0.0.1 - - [28/Oct/2026 09:04:01] "POST /api/upload HTTP/1.1" 400 -
+127.0.0.1 - - [28/Oct/2026 09:04:01] "POST /api/export HTTP/1.1" 404 -
+127.0.0.1 - - [28/Oct/2026 09:04:01] "POST /api/export HTTP/1.1" 400 -
+127.0.0.1 - - [28/Oct/2026 09:04:01] "POST /api/preview HTTP/1.1" 400 -
+127.0.0.1 - - [28/Oct/2026 09:04:01] "POST /api/export HTTP/1.1" 400 -
 ok
-test_pages_are_served (test_splitter.HTTPTests.test_pages_are_served) ... 127.0.0.1 - - [28/Oct/2026 04:07:58] "GET / HTTP/1.1" 200 -
-127.0.0.1 - - [28/Oct/2026 04:07:58] "GET /index.html HTTP/1.1" 200 -
-127.0.0.1 - - [28/Oct/2026 04:07:58] "GET /app.js HTTP/1.1" 200 -
-127.0.0.1 - - [28/Oct/2026 04:07:58] "GET /style.css?v=3 HTTP/1.1" 200 -
+test_pages_are_served (test_splitter.HTTPTests.test_pages_are_served) ... 127.0.0.1 - - [28/Oct/2026 09:04:01] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [28/Oct/2026 09:04:01] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [28/Oct/2026 09:04:01] "GET /app.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Oct/2026 09:04:01] "GET /style.css?v=3 HTTP/1.1" 200 -
 ok
-test_unknown_route_does_not_expose_files (test_splitter.HTTPTests.test_unknown_route_does_not_expose_files) ... 127.0.0.1 - - [28/Oct/2026 04:07:58] "GET /../requirements.txt HTTP/1.1" 404 -
+test_unknown_route_does_not_expose_files (test_splitter.HTTPTests.test_unknown_route_does_not_expose_files) ... 127.0.0.1 - - [28/Oct/2026 09:04:01] "GET /../requirements.txt HTTP/1.1" 404 -
 ok
-test_upload_preview_export_end_to_end (test_splitter.HTTPTests.test_upload_preview_export_end_to_end) ... 127.0.0.1 - - [28/Oct/2026 04:07:58] "POST /api/upload HTTP/1.1" 200 -
-127.0.0.1 - - [28/Oct/2026 04:07:58] "GET /api/image/urJjA2Hy6E44IIylpZrGeZBJ HTTP/1.1" 200 -
-127.0.0.1 - - [28/Oct/2026 04:07:58] "POST /api/preview HTTP/1.1" 200 -
-127.0.0.1 - - [28/Oct/2026 04:07:58] "POST /api/export HTTP/1.1" 200 -
+test_upload_preview_export_end_to_end (test_splitter.HTTPTests.test_upload_preview_export_end_to_end) ... 127.0.0.1 - - [28/Oct/2026 09:04:01] "POST /api/upload HTTP/1.1" 200 -
+127.0.0.1 - - [28/Oct/2026 09:04:01] "GET /api/image/e_sd8sAMZhfj1eZrL3mWQvCl HTTP/1.1" 200 -
+127.0.0.1 - - [28/Oct/2026 09:04:01] "POST /api/preview HTTP/1.1" 200 -
+127.0.0.1 - - [28/Oct/2026 09:04:01] "POST /api/export HTTP/1.1" 200 -
 ok
 test_all_sixteen_supported_parts_export (test_splitter.PipelineTests.test_all_sixteen_supported_parts_export) ... ok
 test_edge_expansion_erosion_and_feather (test_splitter.PipelineTests.test_edge_expansion_erosion_and_feather) ... ok
@@ -251,6 +291,6 @@ test_spit_trailing_edge_stays_at_mouth_while_liquid_grows (test_zsx_spine.ZsxSpi
 test_stand_move_loops_and_move_root_stays_in_place (test_zsx_spine.ZsxSpineTests.test_stand_move_loops_and_move_root_stays_in_place) ... ok
 
 ----------------------------------------------------------------------
-Ran 230 tests in 112.346s
+Ran 270 tests in 142.105s
 
 OK

@@ -1,0 +1,223 @@
+{
+  "skeletonSHA256": "011b5dcf263b6de613a7e730a6701a44abfda0ea3a4334ec7d0cd549518f7a4e",
+  "desktopEditorTested": false,
+  "scope": "Structural UV/triangle/hull/edges checks; not execution of the proprietary editor.",
+  "meshes": [
+    {
+      "slot": "shenti",
+      "attachment": "shenti",
+      "vertices": 315,
+      "triangles": 560,
+      "hull": 68,
+      "editorEdgeCount": 68,
+      "errors": []
+    },
+    {
+      "slot": "tou",
+      "attachment": "tou",
+      "vertices": 4,
+      "triangles": 2,
+      "hull": 4,
+      "editorEdgeCount": 4,
+      "errors": []
+    },
+    {
+      "slot": "youjiao",
+      "attachment": "youjiao",
+      "vertices": 4,
+      "triangles": 2,
+      "hull": 4,
+      "editorEdgeCount": 4,
+      "errors": []
+    },
+    {
+      "slot": "youshoubi",
+      "attachment": "youshoubi",
+      "vertices": 425,
+      "triangles": 768,
+      "hull": 80,
+      "editorEdgeCount": 80,
+      "errors": []
+    },
+    {
+      "slot": "youtui",
+      "attachment": "youtui",
+      "vertices": 247,
+      "triangles": 432,
+      "hull": 60,
+      "editorEdgeCount": 60,
+      "errors": []
+    },
+    {
+      "slot": "zuojiao",
+      "attachment": "zuojiao",
+      "vertices": 4,
+      "triangles": 2,
+      "hull": 4,
+      "editorEdgeCount": 4,
+      "errors": []
+    },
+    {
+      "slot": "zuoshoubi",
+      "attachment": "zuoshoubi",
+      "vertices": 273,
+      "triangles": 480,
+      "hull": 64,
+      "editorEdgeCount": 64,
+      "errors": []
+    },
+    {
+      "slot": "zuotui",
+      "attachment": "zuotui",
+      "vertices": 247,
+      "triangles": 432,
+      "hull": 60,
+      "editorEdgeCount": 60,
+      "errors": []
+    },
+    {
+      "slot": "airflow_trail",
+      "attachment": "airflow_15",
+      "vertices": 74,
+      "triangles": 72,
+      "hull": 74,
+      "editorEdgeCount": 74,
+      "errors": []
+    },
+    {
+      "slot": "airflow_trail",
+      "attachment": "airflow_16",
+      "vertices": 74,
+      "triangles": 72,
+      "hull": 74,
+      "editorEdgeCount": 74,
+      "errors": []
+    },
+    {
+      "slot": "airflow_trail",
+      "attachment": "airflow_17",
+      "vertices": 74,
+      "triangles": 72,
+      "hull": 74,
+      "editorEdgeCount": 74,
+      "errors": []
+    },
+    {
+      "slot": "airflow_trail",
+      "attachment": "airflow_18",
+      "vertices": 74,
+      "triangles": 72,
+      "hull": 74,
+      "editorEdgeCount": 74,
+      "errors": []
+    },
+    {
+      "slot": "airflow_trail",
+      "attachment": "airflow_19",
+      "vertices": 74,
+      "triangles": 72,
+      "hull": 74,
+      "editorEdgeCount": 74,
+      "errors": []
+    },
+    {
+      "slot": "airflow_inner",
+      "attachment": "airflow_15",
+      "vertices": 74,
+      "triangles": 72,
+      "hull": 74,
+      "editorEdgeCount": 74,
+      "errors": []
+    },
+    {
+      "slot": "airflow_inner",
+      "attachment": "airflow_16",
+      "vertices": 74,
+      "triangles": 72,
+      "hull": 74,
+      "editorEdgeCount": 74,
+      "errors": []
+    },
+    {
+      "slot": "airflow_inner",
+      "attachment": "airflow_17",
+      "vertices": 74,
+      "triangles": 72,
+      "hull": 74,
+      "editorEdgeCount": 74,
+      "errors": []
+    },
+    {
+      "slot": "airflow_inner",
+      "attachment": "airflow_18",
+      "vertices": 74,
+      "triangles": 72,
+      "hull": 74,
+      "editorEdgeCount": 74,
+      "errors": []
+    },
+    {
+      "slot": "airflow_inner",
+      "attachment": "airflow_19",
+      "vertices": 74,
+      "triangles": 72,
+      "hull": 74,
+      "editorEdgeCount": 74,
+      "errors": []
+    },
+    {
+      "slot": "airflow_outer",
+      "attachment": "airflow_15",
+      "vertices": 74,
+      "triangles": 72,
+      "hull": 74,
+      "editorEdgeCount": 74,
+      "errors": []
+    },
+    {
+      "slot": "airflow_outer",
+      "attachment": "airflow_16",
+      "vertices": 74,
+      "triangles": 72,
+      "hull": 74,
+      "editorEdgeCount": 74,
+      "errors": []
+    },
+    {
+      "slot": "airflow_outer",
+      "attachment": "airflow_17",
+      "vertices": 74,
+      "triangles": 72,
+      "hull": 74,
+      "editorEdgeCount": 74,
+      "errors": []
+    },
+    {
+      "slot": "airflow_outer",
+      "attachment": "airflow_18",
+      "vertices": 74,
+      "triangles": 72,
+      "hull": 74,
+      "editorEdgeCount": 74,
+      "errors": []
+    },
+    {
+      "slot": "airflow_outer",
+      "attachment": "airflow_19",
+      "vertices": 74,
+      "triangles": 72,
+      "hull": 74,
+      "editorEdgeCount": 74,
+      "errors": []
+    },
+    {
+      "slot": "impact_air",
+      "attachment": "impact_air",
+      "vertices": 4,
+      "triangles": 2,
+      "hull": 4,
+      "editorEdgeCount": 4,
+      "errors": []
+    }
+  ]
+}
