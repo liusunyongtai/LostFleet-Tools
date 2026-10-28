@@ -1,0 +1,344 @@
+{
+  "target_version": "4.3.23",
+  "origin": [
+    790,
+    -1210
+  ],
+  "fps": 30,
+  "bones": [
+    {
+      "name": "root",
+      "position": [
+        790,
+        -1210
+      ],
+      "rotation": 0,
+      "length": 0
+    },
+    {
+      "name": "pelvis",
+      "position": [
+        780,
+        -911
+      ],
+      "rotation": 90,
+      "length": 180,
+      "parent": "root"
+    },
+    {
+      "name": "body",
+      "position": [
+        790,
+        -695
+      ],
+      "rotation": 90,
+      "length": 95,
+      "parent": "pelvis"
+    },
+    {
+      "name": "neck",
+      "position": [
+        725,
+        -605
+      ],
+      "rotation": 90,
+      "length": 35,
+      "parent": "body"
+    },
+    {
+      "name": "head",
+      "position": [
+        700,
+        -596
+      ],
+      "rotation": 90,
+      "length": 230,
+      "parent": "neck"
+    },
+    {
+      "name": "crown",
+      "position": [
+        625,
+        -280
+      ],
+      "rotation": 90,
+      "length": 140,
+      "parent": "head"
+    },
+    {
+      "name": "mouth",
+      "position": [
+        575,
+        -565
+      ],
+      "rotation": 180,
+      "length": 35,
+      "parent": "head"
+    },
+    {
+      "name": "projectile_spawn",
+      "position": [
+        455,
+        -565
+      ],
+      "rotation": 0,
+      "length": 0,
+      "parent": "head"
+    },
+    {
+      "name": "back_leg_upper",
+      "position": [
+        710,
+        -908
+      ],
+      "rotation": -114.94390526342458,
+      "length": 94.847245611035,
+      "parent": "pelvis"
+    },
+    {
+      "name": "back_leg_lower",
+      "position": [
+        670,
+        -994
+      ],
+      "rotation": -91.6523046776513,
+      "length": 104.04326023342406,
+      "parent": "back_leg_upper"
+    },
+    {
+      "name": "back_leg_paw",
+      "position": [
+        667,
+        -1098
+      ],
+      "rotation": -87.35745470593528,
+      "length": 65.06919393998976,
+      "parent": "back_leg_lower"
+    },
+    {
+      "name": "front_leg_upper",
+      "position": [
+        807,
+        -932
+      ],
+      "rotation": -79.43898930880363,
+      "length": 120.03332870498926,
+      "parent": "pelvis"
+    },
+    {
+      "name": "front_leg_lower",
+      "position": [
+        829,
+        -1050
+      ],
+      "rotation": -56.13630943118173,
+      "length": 91.52595260361949,
+      "parent": "front_leg_upper"
+    },
+    {
+      "name": "front_leg_paw",
+      "position": [
+        880,
+        -1126
+      ],
+      "rotation": -84.88268515002737,
+      "length": 67.26812023536856,
+      "parent": "front_leg_lower"
+    },
+    {
+      "name": "back_arm_upper",
+      "position": [
+        643,
+        -642
+      ],
+      "rotation": -105.45201064112969,
+      "length": 127.61269529321916,
+      "parent": "body"
+    },
+    {
+      "name": "back_arm_lower",
+      "position": [
+        609,
+        -765
+      ],
+      "rotation": -117.62596286734222,
+      "length": 120.7683733433551,
+      "parent": "back_arm_upper"
+    },
+    {
+      "name": "back_arm_paw",
+      "position": [
+        553,
+        -872
+      ],
+      "rotation": -104.89869543440031,
+      "length": 112.79184367674819,
+      "parent": "back_arm_lower"
+    },
+    {
+      "name": "front_arm_upper",
+      "position": [
+        877,
+        -621
+      ],
+      "rotation": -67.41268946863428,
+      "length": 135.38463723776047,
+      "parent": "body"
+    },
+    {
+      "name": "front_arm_lower",
+      "position": [
+        929,
+        -746
+      ],
+      "rotation": -77.366638064725,
+      "length": 178.31713322056297,
+      "parent": "front_arm_upper"
+    },
+    {
+      "name": "front_arm_paw",
+      "position": [
+        968,
+        -920
+      ],
+      "rotation": -83.51692630710276,
+      "length": 88.56635930193812,
+      "parent": "front_arm_lower"
+    },
+    {
+      "name": "slash_anchor",
+      "position": [
+        440,
+        -780
+      ],
+      "rotation": 0,
+      "length": 100,
+      "parent": "root"
+    }
+  ],
+  "bindings": {
+    "youdatui": "back_leg_upper",
+    "youxiaotui": "back_leg_lower",
+    "youjiao": "back_leg_paw",
+    "zuodatui": "front_leg_upper",
+    "zuoxiaotui": "front_leg_lower",
+    "zuojiao": "front_leg_paw",
+    "yougebo": "back_arm_upper",
+    "youshoubi": "back_arm_lower",
+    "youshou": "back_arm_paw",
+    "zuogebo": "front_arm_upper",
+    "zuoshoubi": "front_arm_lower",
+    "zuoshou": "front_arm_paw",
+    "qugan": "body",
+    "tou": "head"
+  },
+  "limbs": {
+    "back_leg": {
+      "parent": "pelvis",
+      "hip": [
+        710,
+        -908
+      ],
+      "knee": [
+        670,
+        -994
+      ],
+      "ankle": [
+        667,
+        -1098
+      ],
+      "toe": [
+        670,
+        -1163
+      ],
+      "phase": 0,
+      "images": [
+        "youdatui",
+        "youxiaotui",
+        "youjiao"
+      ]
+    },
+    "front_leg": {
+      "parent": "pelvis",
+      "hip": [
+        807,
+        -932
+      ],
+      "knee": [
+        829,
+        -1050
+      ],
+      "ankle": [
+        880,
+        -1126
+      ],
+      "toe": [
+        886,
+        -1193
+      ],
+      "phase": 3.141592653589793,
+      "images": [
+        "zuodatui",
+        "zuoxiaotui",
+        "zuojiao"
+      ]
+    }
+  },
+  "arms": {
+    "back_arm": {
+      "parent": "body",
+      "hip": [
+        643,
+        -642
+      ],
+      "knee": [
+        609,
+        -765
+      ],
+      "ankle": [
+        553,
+        -872
+      ],
+      "toe": [
+        524,
+        -981
+      ],
+      "phase": 0,
+      "images": [
+        "yougebo",
+        "youshoubi",
+        "youshou"
+      ]
+    },
+    "front_arm": {
+      "parent": "body",
+      "hip": [
+        877,
+        -621
+      ],
+      "knee": [
+        929,
+        -746
+      ],
+      "ankle": [
+        968,
+        -920
+      ],
+      "toe": [
+        978,
+        -1008
+      ],
+      "phase": 3.141592653589793,
+      "images": [
+        "zuogebo",
+        "zuoshoubi",
+        "zuoshou"
+      ]
+    }
+  },
+  "facing": "left",
+  "claw_hit": 0.5,
+  "spit_time": 0.5,
+  "projectile_duration": 0.6,
+  "projectile": "poison-bullet-4.3.json"
+}

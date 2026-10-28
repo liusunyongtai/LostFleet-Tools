@@ -1,0 +1,193 @@
+{
+  "browser": "Chromium headless",
+  "transport": "Temporary local HTTP server",
+  "desktopSpineTested": false,
+  "embeddedCodexPreviewTested": false,
+  "images": [
+    {
+      "src": "previews/stand.gif",
+      "width": 840,
+      "height": 630,
+      "complete": true
+    },
+    {
+      "src": "previews/mobile-stand.gif",
+      "width": 420,
+      "height": 264,
+      "complete": true
+    },
+    {
+      "src": "previews/dead.gif",
+      "width": 840,
+      "height": 630,
+      "complete": true
+    },
+    {
+      "src": "previews/mobile-dead.gif",
+      "width": 420,
+      "height": 264,
+      "complete": true
+    },
+    {
+      "src": "previews/hit.gif",
+      "width": 840,
+      "height": 630,
+      "complete": true
+    },
+    {
+      "src": "previews/mobile-hit.gif",
+      "width": 420,
+      "height": 264,
+      "complete": true
+    },
+    {
+      "src": "previews/attack_1.gif",
+      "width": 840,
+      "height": 630,
+      "complete": true
+    },
+    {
+      "src": "previews/mobile-attack_1.gif",
+      "width": 420,
+      "height": 264,
+      "complete": true
+    },
+    {
+      "src": "previews/attack_2.gif",
+      "width": 840,
+      "height": 630,
+      "complete": true
+    },
+    {
+      "src": "previews/mobile-attack_2.gif",
+      "width": 420,
+      "height": 264,
+      "complete": true
+    },
+    {
+      "src": "previews/move.gif",
+      "width": 840,
+      "height": 630,
+      "complete": true
+    },
+    {
+      "src": "previews/mobile-move.gif",
+      "width": 420,
+      "height": 264,
+      "complete": true
+    },
+    {
+      "src": "previews/bullet.gif",
+      "width": 640,
+      "height": 360,
+      "complete": true
+    },
+    {
+      "src": "images/fx/poison-flight.png",
+      "width": 1774,
+      "height": 887,
+      "complete": true
+    },
+    {
+      "src": "previews/animation-contact.png",
+      "width": 1440,
+      "height": 1800,
+      "complete": true
+    },
+    {
+      "src": "previews/rig-setup.png",
+      "width": 800,
+      "height": 600,
+      "complete": true
+    }
+  ],
+  "errors": [],
+  "failed": [],
+  "requests": [
+    {
+      "url": "/preview.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "/previews/mobile-stand.gif",
+      "status": 200,
+      "contentType": "image/gif"
+    },
+    {
+      "url": "/previews/stand.gif",
+      "status": 200,
+      "contentType": "image/gif"
+    },
+    {
+      "url": "/previews/mobile-dead.gif",
+      "status": 200,
+      "contentType": "image/gif"
+    },
+    {
+      "url": "/previews/mobile-hit.gif",
+      "status": 200,
+      "contentType": "image/gif"
+    },
+    {
+      "url": "/previews/hit.gif",
+      "status": 200,
+      "contentType": "image/gif"
+    },
+    {
+      "url": "/previews/dead.gif",
+      "status": 200,
+      "contentType": "image/gif"
+    },
+    {
+      "url": "/previews/attack_1.gif",
+      "status": 200,
+      "contentType": "image/gif"
+    },
+    {
+      "url": "/previews/mobile-attack_1.gif",
+      "status": 200,
+      "contentType": "image/gif"
+    },
+    {
+      "url": "/previews/attack_2.gif",
+      "status": 200,
+      "contentType": "image/gif"
+    },
+    {
+      "url": "/previews/mobile-attack_2.gif",
+      "status": 200,
+      "contentType": "image/gif"
+    },
+    {
+      "url": "/previews/mobile-move.gif",
+      "status": 200,
+      "contentType": "image/gif"
+    },
+    {
+      "url": "/previews/move.gif",
+      "status": 200,
+      "contentType": "image/gif"
+    },
+    {
+      "url": "/previews/bullet.gif",
+      "status": 200,
+      "contentType": "image/gif"
+    },
+    {
+      "url": "/images/fx/poison-flight.png",
+      "status": 200,
+      "contentType": "image/png"
+    },
+    {
+      "url": "/previews/animation-contact.png",
+      "status": 200,
+      "contentType": "image/png"
+    },
+    {
+      "url": "/previews/rig-setup.png",
+      "status": 200,
+      "contentType": "image/png"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "targetEditor": "Spine PRO 4.3.23",
+  "desktopEditorTested": false,
+  "officialRuntime": "@esotericsoftware/spine-core 4.3.13",
+  "sampleHz": 60,
+  "characterPoses": 492,
+  "poisonPoses": 37,
+  "automatedTests": {
+    "passed": 215,
+    "failed": 0
+  },
+  "gallery": {
+    "decodedImages": 16,
+    "allHttp200": true,
+    "pageErrors": 0
+  },
+  "silhouetteDiagnostic": {
+    "description": "At scale 0.4, all ten sampled body poses form a single alpha component larger than 40 pixels. Each of four isolated limb groups stays connected at nine key poses.",
+    "bodyKeyPoses": [
+      "stand 0",
+      "move .25",
+      "move .75",
+      "attack_1 .23",
+      "attack_1 .4",
+      "attack_1 .5",
+      "attack_1 .7",
+      "attack_2 .5",
+      "hit .1",
+      "dead 1.6"
+    ]
+  },
+  "limitations": [
+    "Desktop Spine PRO 4.3.23 import not executed in this environment.",
+    "GIF previews use independent software rendering, not desktop screenshots.",
+    "Game controls projectile motion and collision.",
+    "Poison art reuses the existing AI-generated ZSX texture; provenance is included.",
+    "No hidden anatomy or jaw reconstruction."
+  ]
+}
