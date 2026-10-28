@@ -1,0 +1,53 @@
+{
+  "targetEditor": "Spine PRO 4.3.23",
+  "desktopEditorTested": false,
+  "officialRuntime": "@esotericsoftware/spine-core 4.3.13",
+  "sampleHz": 60,
+  "runtimePoses": 515,
+  "bones": 42,
+  "slots": 28,
+  "editorTopologyMeshesChecked": 22,
+  "originalPNGCount": 17,
+  "bubbleLayers": 8,
+  "bubbleCycleSeconds": 1.6,
+  "bubbleContainment": "Visible bubble circles tested against the jar-local glass polygon; invisible wrap at bottom.",
+  "rootStationaryAnimations": [
+    "stand",
+    "move",
+    "attack"
+  ],
+  "attackEvent": {
+    "name": "whip_hit",
+    "time": 0.6,
+    "bone": "strike_tip"
+  },
+  "attackTipSourcePositions": {
+    "rest": [
+      1170,
+      -755
+    ],
+    "windup": [
+      1260,
+      -525
+    ],
+    "strike": [
+      -80,
+      -820
+    ]
+  },
+  "automatedTests": {
+    "passed": 297,
+    "failed": 0
+  },
+  "gallery": {
+    "decodedImages": 13,
+    "allHttp200": true,
+    "pageErrors": 0
+  },
+  "limitations": [
+    "Desktop Spine PRO 4.3.23 import has not been executed in this environment.",
+    "Topology checks and official runtime validation are not a substitute for proprietary editor testing.",
+    "Previews use independent software rendering, not desktop screenshots.",
+    "World movement, damage and collision are controlled by the game; export an atlas in the local editor."
+  ]
+}

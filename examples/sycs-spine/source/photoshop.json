@@ -1,0 +1,240 @@
+{
+  "skeleton": {
+    "images": "../images/"
+  },
+  "bones": [
+    {
+      "name": "root"
+    }
+  ],
+  "slots": [
+    {
+      "name": "beihouguanzi_03",
+      "bone": "root",
+      "attachment": "beihouguanzi_03"
+    },
+    {
+      "name": "beihouguanzi_02",
+      "bone": "root",
+      "attachment": "beihouguanzi_02"
+    },
+    {
+      "name": "beihouguanzi_01",
+      "bone": "root",
+      "attachment": "beihouguanzi_01"
+    },
+    {
+      "name": "maoziguanzi_01",
+      "bone": "root",
+      "attachment": "maoziguanzi_01"
+    },
+    {
+      "name": "maoziguanzi_02",
+      "bone": "root",
+      "attachment": "maoziguanzi_02"
+    },
+    {
+      "name": "maoziguanzi_04",
+      "bone": "root",
+      "attachment": "maoziguanzi_04"
+    },
+    {
+      "name": "maoziguanzi_03",
+      "bone": "root",
+      "attachment": "maoziguanzi_03"
+    },
+    {
+      "name": "zuochushou_02_01",
+      "bone": "root",
+      "attachment": "zuochushou_02_01"
+    },
+    {
+      "name": "zuochushou_02_02",
+      "bone": "root",
+      "attachment": "zuochushou_02_02"
+    },
+    {
+      "name": "youchusou_02",
+      "bone": "root",
+      "attachment": "youchusou_02"
+    },
+    {
+      "name": "youchushou_01",
+      "bone": "root",
+      "attachment": "youchushou_01"
+    },
+    {
+      "name": "zuochushou_01",
+      "bone": "root",
+      "attachment": "zuochushou_01"
+    },
+    {
+      "name": "youshou",
+      "bone": "root",
+      "attachment": "youshou"
+    },
+    {
+      "name": "sehnti",
+      "bone": "root",
+      "attachment": "sehnti"
+    },
+    {
+      "name": "zuoshou",
+      "bone": "root",
+      "attachment": "zuoshou"
+    },
+    {
+      "name": "maozi",
+      "bone": "root",
+      "attachment": "maozi"
+    },
+    {
+      "name": "toubu",
+      "bone": "root",
+      "attachment": "toubu"
+    }
+  ],
+  "skins": {
+    "default": {
+      "beihouguanzi_03": {
+        "beihouguanzi_03": {
+          "x": 386.5,
+          "y": -515,
+          "width": 103,
+          "height": 218
+        }
+      },
+      "beihouguanzi_02": {
+        "beihouguanzi_02": {
+          "x": 412,
+          "y": -357.5,
+          "width": 146,
+          "height": 415
+        }
+      },
+      "beihouguanzi_01": {
+        "beihouguanzi_01": {
+          "x": 791,
+          "y": -871,
+          "width": 208,
+          "height": 376
+        }
+      },
+      "maoziguanzi_01": {
+        "maoziguanzi_01": {
+          "x": 844,
+          "y": -272,
+          "width": 170,
+          "height": 404
+        }
+      },
+      "maoziguanzi_02": {
+        "maoziguanzi_02": {
+          "x": 878,
+          "y": -429,
+          "width": 146,
+          "height": 402
+        }
+      },
+      "maoziguanzi_04": {
+        "maoziguanzi_04": {
+          "x": 799.5,
+          "y": -725,
+          "width": 129,
+          "height": 240
+        }
+      },
+      "maoziguanzi_03": {
+        "maoziguanzi_03": {
+          "x": 848,
+          "y": -656.5,
+          "width": 124,
+          "height": 249
+        }
+      },
+      "zuochushou_02_01": {
+        "zuochushou_02_01": {
+          "x": 825,
+          "y": -1062,
+          "width": 272,
+          "height": 150
+        }
+      },
+      "zuochushou_02_02": {
+        "zuochushou_02_02": {
+          "x": 965,
+          "y": -1072.5,
+          "width": 244,
+          "height": 175
+        }
+      },
+      "youchusou_02": {
+        "youchusou_02": {
+          "x": 275.5,
+          "y": -1060.5,
+          "width": 381,
+          "height": 207
+        }
+      },
+      "youchushou_01": {
+        "youchushou_01": {
+          "x": 243.5,
+          "y": -700,
+          "width": 393,
+          "height": 482
+        }
+      },
+      "zuochushou_01": {
+        "zuochushou_01": {
+          "x": 999.5,
+          "y": -772,
+          "width": 523,
+          "height": 544
+        }
+      },
+      "youshou": {
+        "youshou": {
+          "x": 405.5,
+          "y": -982.5,
+          "width": 223,
+          "height": 321
+        }
+      },
+      "sehnti": {
+        "sehnti": {
+          "x": 590.5,
+          "y": -973.5,
+          "width": 367,
+          "height": 457
+        }
+      },
+      "zuoshou": {
+        "zuoshou": {
+          "x": 796,
+          "y": -1027.5,
+          "width": 232,
+          "height": 353
+        }
+      },
+      "maozi": {
+        "maozi": {
+          "x": 604,
+          "y": -380.5,
+          "width": 524,
+          "height": 715
+        }
+      },
+      "toubu": {
+        "toubu": {
+          "x": 540,
+          "y": -786.5,
+          "width": 500,
+          "height": 495
+        }
+      }
+    }
+  },
+  "animations": {
+    "animation": {}
+  }
+}

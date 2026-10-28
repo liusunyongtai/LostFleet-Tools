@@ -1,0 +1,205 @@
+{
+  "skeletonSHA256": "e44b884a6f8bcee5fe2887eb3841264a90c6c0dc52fce875d2c8d4a9294ea105",
+  "desktopEditorTested": false,
+  "scope": "UV, triangles, connected disk, explicit hull/edges. Not execution of the proprietary editor.",
+  "meshes": [
+    {
+      "slot": "beihouguanzi_03",
+      "attachment": "beihouguanzi_03",
+      "vertices": 187,
+      "triangles": 320,
+      "hull": 52,
+      "editorEdgeCount": 52,
+      "errors": []
+    },
+    {
+      "slot": "beihouguanzi_02",
+      "attachment": "beihouguanzi_02",
+      "vertices": 187,
+      "triangles": 320,
+      "hull": 52,
+      "editorEdgeCount": 52,
+      "errors": []
+    },
+    {
+      "slot": "beihouguanzi_01",
+      "attachment": "beihouguanzi_01",
+      "vertices": 187,
+      "triangles": 320,
+      "hull": 52,
+      "editorEdgeCount": 52,
+      "errors": []
+    },
+    {
+      "slot": "maoziguanzi_01",
+      "attachment": "maoziguanzi_01",
+      "vertices": 187,
+      "triangles": 320,
+      "hull": 52,
+      "editorEdgeCount": 52,
+      "errors": []
+    },
+    {
+      "slot": "maoziguanzi_02",
+      "attachment": "maoziguanzi_02",
+      "vertices": 187,
+      "triangles": 320,
+      "hull": 52,
+      "editorEdgeCount": 52,
+      "errors": []
+    },
+    {
+      "slot": "maoziguanzi_04",
+      "attachment": "maoziguanzi_04",
+      "vertices": 187,
+      "triangles": 320,
+      "hull": 52,
+      "editorEdgeCount": 52,
+      "errors": []
+    },
+    {
+      "slot": "maoziguanzi_03",
+      "attachment": "maoziguanzi_03",
+      "vertices": 187,
+      "triangles": 320,
+      "hull": 52,
+      "editorEdgeCount": 52,
+      "errors": []
+    },
+    {
+      "slot": "zuochushou_02_01",
+      "attachment": "zuochushou_02_01",
+      "vertices": 187,
+      "triangles": 320,
+      "hull": 52,
+      "editorEdgeCount": 52,
+      "errors": []
+    },
+    {
+      "slot": "zuochushou_02_02",
+      "attachment": "zuochushou_02_02",
+      "vertices": 187,
+      "triangles": 320,
+      "hull": 52,
+      "editorEdgeCount": 52,
+      "errors": []
+    },
+    {
+      "slot": "youchusou_02",
+      "attachment": "youchusou_02",
+      "vertices": 187,
+      "triangles": 320,
+      "hull": 52,
+      "editorEdgeCount": 52,
+      "errors": []
+    },
+    {
+      "slot": "youchushou_01",
+      "attachment": "youchushou_01",
+      "vertices": 357,
+      "triangles": 640,
+      "hull": 72,
+      "editorEdgeCount": 72,
+      "errors": []
+    },
+    {
+      "slot": "zuochushou_01",
+      "attachment": "zuochushou_01",
+      "vertices": 357,
+      "triangles": 640,
+      "hull": 72,
+      "editorEdgeCount": 72,
+      "errors": []
+    },
+    {
+      "slot": "front_outer",
+      "attachment": "front_outer",
+      "vertices": 147,
+      "triangles": 240,
+      "hull": 52,
+      "editorEdgeCount": 52,
+      "errors": []
+    },
+    {
+      "slot": "front_mouth",
+      "attachment": "front_mouth",
+      "vertices": 4,
+      "triangles": 2,
+      "hull": 4,
+      "editorEdgeCount": 4,
+      "errors": []
+    },
+    {
+      "slot": "youshou",
+      "attachment": "youshou",
+      "vertices": 187,
+      "triangles": 320,
+      "hull": 52,
+      "editorEdgeCount": 52,
+      "errors": []
+    },
+    {
+      "slot": "sehnti",
+      "attachment": "sehnti",
+      "vertices": 285,
+      "triangles": 504,
+      "hull": 64,
+      "editorEdgeCount": 64,
+      "errors": []
+    },
+    {
+      "slot": "zuoshou",
+      "attachment": "zuoshou",
+      "vertices": 187,
+      "triangles": 320,
+      "hull": 52,
+      "editorEdgeCount": 52,
+      "errors": []
+    },
+    {
+      "slot": "toubu",
+      "attachment": "toubu",
+      "vertices": 289,
+      "triangles": 512,
+      "hull": 64,
+      "editorEdgeCount": 64,
+      "errors": []
+    },
+    {
+      "slot": "whip_air",
+      "attachment": "air_15",
+      "vertices": 58,
+      "triangles": 56,
+      "hull": 58,
+      "editorEdgeCount": 58,
+      "errors": []
+    },
+    {
+      "slot": "whip_air",
+      "attachment": "air_16",
+      "vertices": 58,
+      "triangles": 56,
+      "hull": 58,
+      "editorEdgeCount": 58,
+      "errors": []
+    },
+    {
+      "slot": "whip_air",
+      "attachment": "air_17",
+      "vertices": 58,
+      "triangles": 56,
+      "hull": 58,
+      "editorEdgeCount": 58,
+      "errors": []
+    },
+    {
+      "slot": "whip_air",
+      "attachment": "air_18",
+      "vertices": 58,
+      "triangles": 56,
+      "hull": 58,
+      "editorEdgeCount": 58,
+      "errors": []
+    }
+  ]
+}

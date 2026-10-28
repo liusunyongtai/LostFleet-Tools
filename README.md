@@ -222,3 +222,8 @@ LOSTFLEET_URL=http://127.0.0.1:8000/ PYTHON=/workspace/.venvs/lostfleet-tools/bi
 
 
 鸟类 112 导入修复版补齐编辑器网格边数据，并附无 mesh 的 region 兼容版本。SJT 气流修复版将三条气流拆为独立 UV 网格。新增拓扑校验与负例测试；桌面编辑器导入尚待本机确认。
+
+
+### SYCS 深渊触手 · 蠕动、罐内气泡与前抽
+
+新增 [Spine PRO 4.3.23 导入说明](examples/sycs-spine/README.md) 与 [五动作及气泡预览](examples/sycs-spine/preview.html)：`stand`、`dead`、`hit`、`move`、`attack`。42 根骨骼，保留原始 17 张 PNG；多段触手蠕动、身体呼吸、罐内 8 个气泡循环上浮；前景长触手蓄力后前抽，附气流拖尾与回弹。移动原地循环。下载 [完整 ZIP](downloads/sycs-spine-4.3.23.zip)。包含网格拓扑检查，桌面编辑器导入仍需本机确认，详见包内 README。

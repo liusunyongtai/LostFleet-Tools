@@ -1,0 +1,767 @@
+{
+  "target_version": "4.3.23",
+  "origin": [
+    600,
+    -1205
+  ],
+  "fps": 30,
+  "bones": [
+    {
+      "name": "root",
+      "position": [
+        600,
+        -1205
+      ],
+      "rotation": 0,
+      "length": 0
+    },
+    {
+      "name": "pelvis",
+      "position": [
+        600,
+        -1075
+      ],
+      "rotation": 0,
+      "length": 125,
+      "parent": "root"
+    },
+    {
+      "name": "body",
+      "position": [
+        600,
+        -950
+      ],
+      "rotation": 0,
+      "length": 100,
+      "parent": "pelvis"
+    },
+    {
+      "name": "breath",
+      "position": [
+        600,
+        -990
+      ],
+      "rotation": 0,
+      "length": 90,
+      "parent": "body"
+    },
+    {
+      "name": "head",
+      "position": [
+        550,
+        -825
+      ],
+      "rotation": 0,
+      "length": 120,
+      "parent": "body"
+    },
+    {
+      "name": "face_tip",
+      "position": [
+        680,
+        -940
+      ],
+      "rotation": 0,
+      "length": 90,
+      "parent": "head"
+    },
+    {
+      "name": "jar",
+      "position": [
+        604,
+        -690
+      ],
+      "rotation": 0,
+      "length": 450,
+      "parent": "head"
+    },
+    {
+      "name": "foot_back",
+      "position": [
+        520,
+        -1160
+      ],
+      "rotation": 0,
+      "length": 60,
+      "parent": "root"
+    },
+    {
+      "name": "foot_front",
+      "position": [
+        690,
+        -1160
+      ],
+      "rotation": 0,
+      "length": 60,
+      "parent": "root"
+    },
+    {
+      "name": "front_0",
+      "position": [
+        760,
+        -950
+      ],
+      "rotation": -16.85839876773828,
+      "length": 172.40939649566667,
+      "parent": "body"
+    },
+    {
+      "name": "front_1",
+      "position": [
+        925,
+        -1000
+      ],
+      "rotation": 57.52880770915151,
+      "length": 130.38404810405297,
+      "parent": "front_0"
+    },
+    {
+      "name": "front_2",
+      "position": [
+        995,
+        -890
+      ],
+      "rotation": 112.06789956241022,
+      "length": 199.6246477767713,
+      "parent": "front_1"
+    },
+    {
+      "name": "front_3",
+      "position": [
+        920,
+        -705
+      ],
+      "rotation": 85.0302592718897,
+      "length": 115.43396380615195,
+      "parent": "front_2"
+    },
+    {
+      "name": "front_4",
+      "position": [
+        930,
+        -590
+      ],
+      "rotation": 8.13010235415598,
+      "length": 141.4213562373095,
+      "parent": "front_3"
+    },
+    {
+      "name": "front_5",
+      "position": [
+        1070,
+        -570
+      ],
+      "rotation": -61.606980578617005,
+      "length": 210.2974084481309,
+      "parent": "front_4"
+    },
+    {
+      "name": "back_0",
+      "position": [
+        405,
+        -857
+      ],
+      "rotation": -145.23480276342323,
+      "length": 103.46980235798269,
+      "parent": "body"
+    },
+    {
+      "name": "back_1",
+      "position": [
+        320,
+        -916
+      ],
+      "rotation": 155.12584608587235,
+      "length": 121.24768039018313,
+      "parent": "back_0"
+    },
+    {
+      "name": "back_2",
+      "position": [
+        210,
+        -865
+      ],
+      "rotation": 83.29016319224307,
+      "length": 85.58621384311844,
+      "parent": "back_1"
+    },
+    {
+      "name": "back_3",
+      "position": [
+        220,
+        -780
+      ],
+      "rotation": 63.43494882292201,
+      "length": 111.80339887498948,
+      "parent": "back_2"
+    },
+    {
+      "name": "back_4",
+      "position": [
+        270,
+        -680
+      ],
+      "rotation": 73.05077576617856,
+      "length": 109.7679370308106,
+      "parent": "back_3"
+    },
+    {
+      "name": "back_5",
+      "position": [
+        302,
+        -575
+      ],
+      "rotation": -170.17010766536256,
+      "length": 205.00975586542216,
+      "parent": "back_4"
+    },
+    {
+      "name": "floor_front_0",
+      "position": [
+        745,
+        -1020
+      ],
+      "rotation": -26.56505117707799,
+      "length": 156.52475842498527,
+      "parent": "pelvis"
+    },
+    {
+      "name": "floor_front_1",
+      "position": [
+        885,
+        -1090
+      ],
+      "rotation": -13.570434385161485,
+      "length": 149.164338901763,
+      "parent": "floor_front_0"
+    },
+    {
+      "name": "floor_front_2",
+      "position": [
+        1030,
+        -1125
+      ],
+      "rotation": 80.13419305691563,
+      "length": 116.72617529928752,
+      "parent": "floor_front_1"
+    },
+    {
+      "name": "floor_back_0",
+      "position": [
+        450,
+        -1000
+      ],
+      "rotation": -156.5713071912546,
+      "length": 163.47782724271815,
+      "parent": "pelvis"
+    },
+    {
+      "name": "floor_back_1",
+      "position": [
+        300,
+        -1065
+      ],
+      "rotation": 149.42077312751098,
+      "length": 127.76932339180638,
+      "parent": "floor_back_0"
+    },
+    {
+      "name": "floor_back_2",
+      "position": [
+        190,
+        -1000
+      ],
+      "rotation": -124.99202019855868,
+      "length": 122.06555615733703,
+      "parent": "floor_back_1"
+    },
+    {
+      "name": "floor_back_3",
+      "position": [
+        120,
+        -1100
+      ],
+      "rotation": -23.19859051364819,
+      "length": 76.15773105863909,
+      "parent": "floor_back_2"
+    },
+    {
+      "name": "stump_back_0",
+      "position": [
+        470,
+        -860
+      ],
+      "rotation": -120.25643716352927,
+      "length": 138.92443989449805,
+      "parent": "body"
+    },
+    {
+      "name": "stump_back_1",
+      "position": [
+        400,
+        -980
+      ],
+      "rotation": -107.10272896905236,
+      "length": 136.01470508735443,
+      "parent": "stump_back_0"
+    },
+    {
+      "name": "stump_front_0",
+      "position": [
+        750,
+        -875
+      ],
+      "rotation": -73.81079374297306,
+      "length": 161.40012391568973,
+      "parent": "body"
+    },
+    {
+      "name": "stump_front_1",
+      "position": [
+        795,
+        -1030
+      ],
+      "rotation": -78.33507963020858,
+      "length": 158.26875876179733,
+      "parent": "stump_front_0"
+    },
+    {
+      "name": "strike_tip",
+      "position": [
+        1170,
+        -755
+      ],
+      "rotation": 0,
+      "length": 40,
+      "parent": "front_5"
+    },
+    {
+      "name": "bubble_0",
+      "position": [
+        483.5,
+        -462.0
+      ],
+      "rotation": 0,
+      "length": 0,
+      "parent": "jar"
+    },
+    {
+      "name": "bubble_1",
+      "position": [
+        585.8323549240395,
+        -453.8125
+      ],
+      "rotation": 0,
+      "length": 0,
+      "parent": "jar"
+    },
+    {
+      "name": "bubble_2",
+      "position": [
+        682.7964871341284,
+        -444.875
+      ],
+      "rotation": 0,
+      "length": 0,
+      "parent": "jar"
+    },
+    {
+      "name": "bubble_3",
+      "position": [
+        532.0806000402994,
+        -390.1875
+      ],
+      "rotation": 0,
+      "length": 0,
+      "parent": "jar"
+    },
+    {
+      "name": "bubble_4",
+      "position": [
+        623.2159875234604,
+        -380.75
+      ],
+      "rotation": 0,
+      "length": 0,
+      "parent": "jar"
+    },
+    {
+      "name": "bubble_5",
+      "position": [
+        716.3303786266843,
+        -370.5625
+      ],
+      "rotation": 0,
+      "length": 0,
+      "parent": "jar"
+    },
+    {
+      "name": "bubble_6",
+      "position": [
+        576.3529225090053,
+        -317.625
+      ],
+      "rotation": 0,
+      "length": 0,
+      "parent": "jar"
+    },
+    {
+      "name": "bubble_7",
+      "position": [
+        674.1599329935939,
+        -306.9375
+      ],
+      "rotation": 0,
+      "length": 0,
+      "parent": "jar"
+    },
+    {
+      "name": "air_anchor",
+      "position": [
+        600,
+        -1205
+      ],
+      "rotation": 0,
+      "length": 0,
+      "parent": "root"
+    }
+  ],
+  "chains": {
+    "front": {
+      "parent": "body",
+      "points": [
+        [
+          760,
+          -950
+        ],
+        [
+          925,
+          -1000
+        ],
+        [
+          995,
+          -890
+        ],
+        [
+          920,
+          -705
+        ],
+        [
+          930,
+          -590
+        ],
+        [
+          1070,
+          -570
+        ],
+        [
+          1170,
+          -755
+        ]
+      ],
+      "bones": [
+        "front_0",
+        "front_1",
+        "front_2",
+        "front_3",
+        "front_4",
+        "front_5"
+      ],
+      "images": [
+        "zuochushou_01"
+      ],
+      "blend": 30
+    },
+    "back": {
+      "parent": "body",
+      "points": [
+        [
+          405,
+          -857
+        ],
+        [
+          320,
+          -916
+        ],
+        [
+          210,
+          -865
+        ],
+        [
+          220,
+          -780
+        ],
+        [
+          270,
+          -680
+        ],
+        [
+          302,
+          -575
+        ],
+        [
+          100,
+          -610
+        ]
+      ],
+      "bones": [
+        "back_0",
+        "back_1",
+        "back_2",
+        "back_3",
+        "back_4",
+        "back_5"
+      ],
+      "images": [
+        "youchushou_01"
+      ],
+      "blend": 30
+    },
+    "floor_front": {
+      "parent": "pelvis",
+      "points": [
+        [
+          745,
+          -1020
+        ],
+        [
+          885,
+          -1090
+        ],
+        [
+          1030,
+          -1125
+        ],
+        [
+          1050,
+          -1010
+        ]
+      ],
+      "bones": [
+        "floor_front_0",
+        "floor_front_1",
+        "floor_front_2"
+      ],
+      "images": [
+        "zuochushou_02_01",
+        "zuochushou_02_02"
+      ],
+      "blend": 24
+    },
+    "floor_back": {
+      "parent": "pelvis",
+      "points": [
+        [
+          450,
+          -1000
+        ],
+        [
+          300,
+          -1065
+        ],
+        [
+          190,
+          -1000
+        ],
+        [
+          120,
+          -1100
+        ],
+        [
+          190,
+          -1130
+        ]
+      ],
+      "bones": [
+        "floor_back_0",
+        "floor_back_1",
+        "floor_back_2",
+        "floor_back_3"
+      ],
+      "images": [
+        "youchusou_02"
+      ],
+      "blend": 22
+    },
+    "stump_back": {
+      "parent": "body",
+      "points": [
+        [
+          470,
+          -860
+        ],
+        [
+          400,
+          -980
+        ],
+        [
+          360,
+          -1110
+        ]
+      ],
+      "bones": [
+        "stump_back_0",
+        "stump_back_1"
+      ],
+      "images": [
+        "youshou"
+      ],
+      "blend": 30
+    },
+    "stump_front": {
+      "parent": "body",
+      "points": [
+        [
+          750,
+          -875
+        ],
+        [
+          795,
+          -1030
+        ],
+        [
+          827,
+          -1185
+        ]
+      ],
+      "bones": [
+        "stump_front_0",
+        "stump_front_1"
+      ],
+      "images": [
+        "zuoshou"
+      ],
+      "blend": 30
+    }
+  },
+  "bindings": {
+    "zuochushou_01": "front_0",
+    "youchushou_01": "back_0",
+    "zuochushou_02_01": "floor_front_0",
+    "zuochushou_02_02": "floor_front_0",
+    "youchusou_02": "floor_back_0",
+    "youshou": "stump_back_0",
+    "zuoshou": "stump_front_0",
+    "beihouguanzi_03": "head",
+    "beihouguanzi_02": "jar",
+    "beihouguanzi_01": "body",
+    "maoziguanzi_01": "jar",
+    "maoziguanzi_02": "jar",
+    "maoziguanzi_03": "head",
+    "maoziguanzi_04": "head",
+    "sehnti": "body",
+    "maozi": "jar",
+    "toubu": "head"
+  },
+  "bubbles": [
+    {
+      "name": "bubble_0",
+      "lane": 0.15,
+      "phase": 0.0,
+      "size": 26
+    },
+    {
+      "name": "bubble_1",
+      "lane": 0.44999999999999996,
+      "phase": 0.125,
+      "size": 32
+    },
+    {
+      "name": "bubble_2",
+      "lane": 0.7499999999999999,
+      "phase": 0.25,
+      "size": 38
+    },
+    {
+      "name": "bubble_3",
+      "lane": 0.25,
+      "phase": 0.375,
+      "size": 26
+    },
+    {
+      "name": "bubble_4",
+      "lane": 0.5499999999999999,
+      "phase": 0.5,
+      "size": 32
+    },
+    {
+      "name": "bubble_5",
+      "lane": 0.85,
+      "phase": 0.625,
+      "size": 38
+    },
+    {
+      "name": "bubble_6",
+      "lane": 0.35,
+      "phase": 0.75,
+      "size": 26
+    },
+    {
+      "name": "bubble_7",
+      "lane": 0.65,
+      "phase": 0.875,
+      "size": 32
+    }
+  ],
+  "bubble_cycle": 1.6,
+  "jar_image_origin": [
+    342,
+    -23
+  ],
+  "bubble_bottom": [
+    [
+      95,
+      430
+    ],
+    [
+      405,
+      490
+    ]
+  ],
+  "bubble_top": [
+    [
+      145,
+      225
+    ],
+    [
+      435,
+      275
+    ]
+  ],
+  "glass_polygon": [
+    [
+      120,
+      220
+    ],
+    [
+      170,
+      185
+    ],
+    [
+      260,
+      172
+    ],
+    [
+      350,
+      192
+    ],
+    [
+      440,
+      235
+    ],
+    [
+      480,
+      280
+    ],
+    [
+      447,
+      527
+    ],
+    [
+      52,
+      462
+    ]
+  ],
+  "attack_hit": 0.6,
+  "facing": "left"
+}

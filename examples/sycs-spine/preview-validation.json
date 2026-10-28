@@ -1,0 +1,160 @@
+{
+  "browser": "Chromium headless",
+  "transport": "Temporary local HTTP server",
+  "desktopSpineTested": false,
+  "embeddedCodexPreviewTested": false,
+  "images": [
+    {
+      "src": "previews/jar-bubbles.gif",
+      "width": 600,
+      "height": 540,
+      "complete": true
+    },
+    {
+      "src": "previews/stand.gif",
+      "width": 840,
+      "height": 554,
+      "complete": true
+    },
+    {
+      "src": "previews/mobile-stand.gif",
+      "width": 420,
+      "height": 264,
+      "complete": true
+    },
+    {
+      "src": "previews/move.gif",
+      "width": 840,
+      "height": 554,
+      "complete": true
+    },
+    {
+      "src": "previews/mobile-move.gif",
+      "width": 420,
+      "height": 264,
+      "complete": true
+    },
+    {
+      "src": "previews/attack.gif",
+      "width": 840,
+      "height": 554,
+      "complete": true
+    },
+    {
+      "src": "previews/mobile-attack.gif",
+      "width": 420,
+      "height": 264,
+      "complete": true
+    },
+    {
+      "src": "previews/hit.gif",
+      "width": 840,
+      "height": 554,
+      "complete": true
+    },
+    {
+      "src": "previews/mobile-hit.gif",
+      "width": 420,
+      "height": 264,
+      "complete": true
+    },
+    {
+      "src": "previews/dead.gif",
+      "width": 840,
+      "height": 554,
+      "complete": true
+    },
+    {
+      "src": "previews/mobile-dead.gif",
+      "width": 420,
+      "height": 264,
+      "complete": true
+    },
+    {
+      "src": "previews/animation-contact.png",
+      "width": 1440,
+      "height": 1500,
+      "complete": true
+    },
+    {
+      "src": "previews/rig-setup.png",
+      "width": 1050,
+      "height": 693,
+      "complete": true
+    }
+  ],
+  "errors": [],
+  "failed": [],
+  "requests": [
+    {
+      "url": "/preview.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "/previews/stand.gif",
+      "status": 200,
+      "contentType": "image/gif"
+    },
+    {
+      "url": "/previews/jar-bubbles.gif",
+      "status": 200,
+      "contentType": "image/gif"
+    },
+    {
+      "url": "/previews/mobile-move.gif",
+      "status": 200,
+      "contentType": "image/gif"
+    },
+    {
+      "url": "/previews/mobile-stand.gif",
+      "status": 200,
+      "contentType": "image/gif"
+    },
+    {
+      "url": "/previews/move.gif",
+      "status": 200,
+      "contentType": "image/gif"
+    },
+    {
+      "url": "/previews/attack.gif",
+      "status": 200,
+      "contentType": "image/gif"
+    },
+    {
+      "url": "/previews/mobile-attack.gif",
+      "status": 200,
+      "contentType": "image/gif"
+    },
+    {
+      "url": "/previews/hit.gif",
+      "status": 200,
+      "contentType": "image/gif"
+    },
+    {
+      "url": "/previews/mobile-hit.gif",
+      "status": 200,
+      "contentType": "image/gif"
+    },
+    {
+      "url": "/previews/mobile-dead.gif",
+      "status": 200,
+      "contentType": "image/gif"
+    },
+    {
+      "url": "/previews/dead.gif",
+      "status": 200,
+      "contentType": "image/gif"
+    },
+    {
+      "url": "/previews/animation-contact.png",
+      "status": 200,
+      "contentType": "image/png"
+    },
+    {
+      "url": "/previews/rig-setup.png",
+      "status": 200,
+      "contentType": "image/png"
+    }
+  ]
+}
