@@ -1,0 +1,75 @@
+{
+  "targetEditor": "Spine PRO 4.3.23",
+  "desktopEditorTested": false,
+  "officialRuntime": "@esotericsoftware/spine-core 4.3.13",
+  "sampleHz": 60,
+  "runtimePoses": 498,
+  "independentGeometryComparison": true,
+  "bones": 51,
+  "slots": 16,
+  "originalPNGCount": 16,
+  "editorTopologyMeshesChecked": 16,
+  "animations": {
+    "stand": {
+      "duration": 2.4000000953674316,
+      "poses": 145
+    },
+    "dead": {
+      "duration": 1.600000023841858,
+      "poses": 97
+    },
+    "hit": {
+      "duration": 0.6000000238418579,
+      "poses": 37
+    },
+    "move": {
+      "duration": 1.2000000476837158,
+      "poses": 73
+    },
+    "attack": {
+      "duration": 1.2000000476837158,
+      "poses": 73
+    },
+    "attack_2": {
+      "duration": 1.2000000476837158,
+      "poses": 73
+    }
+  },
+  "automatedTests": {
+    "passed": 319,
+    "failed": 0,
+    "execution": "20 unittest modules, up to 4 independent subprocesses"
+  },
+  "rootStationaryAnimations": [
+    "stand",
+    "move",
+    "hit",
+    "attack",
+    "attack_2"
+  ],
+  "movement": "In-place diagonal quadruped gait. Swing feet move forward; grounded stance feet move monotonically backward. World movement is driven by the game.",
+  "attackEvents": {
+    "attack": {
+      "time": 0.53,
+      "name": "bite_hit",
+      "bone": "bite_point"
+    },
+    "attack_2": {
+      "time": 0.5,
+      "name": "claw_hit",
+      "bone": "near_front_tip"
+    }
+  },
+  "gallery": {
+    "decodedImages": 14,
+    "allHttp200": true,
+    "pageErrors": 0
+  },
+  "limitations": [
+    "Proprietary Spine PRO 4.3.23 desktop import has not been executed.",
+    "Topology validation and official runtime checks do not substitute for desktop editor import.",
+    "Previews use independent software rendering, not desktop screenshots.",
+    "Hidden anatomy has not been reconstructed; original 16 transparent PNGs remain byte-identical.",
+    "Create a native .spine project and export an atlas in the local editor."
+  ]
+}

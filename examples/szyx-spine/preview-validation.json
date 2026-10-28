@@ -1,0 +1,171 @@
+{
+  "browser": "Chromium headless",
+  "transport": "Temporary local HTTP server",
+  "desktopSpineTested": false,
+  "embeddedCodexPreviewTested": false,
+  "images": [
+    {
+      "src": "previews/stand.gif",
+      "width": 860,
+      "height": 640,
+      "complete": true
+    },
+    {
+      "src": "previews/mobile-stand.gif",
+      "width": 420,
+      "height": 250,
+      "complete": true
+    },
+    {
+      "src": "previews/dead.gif",
+      "width": 860,
+      "height": 640,
+      "complete": true
+    },
+    {
+      "src": "previews/mobile-dead.gif",
+      "width": 420,
+      "height": 250,
+      "complete": true
+    },
+    {
+      "src": "previews/hit.gif",
+      "width": 860,
+      "height": 640,
+      "complete": true
+    },
+    {
+      "src": "previews/mobile-hit.gif",
+      "width": 420,
+      "height": 250,
+      "complete": true
+    },
+    {
+      "src": "previews/move.gif",
+      "width": 860,
+      "height": 640,
+      "complete": true
+    },
+    {
+      "src": "previews/mobile-move.gif",
+      "width": 420,
+      "height": 250,
+      "complete": true
+    },
+    {
+      "src": "previews/attack.gif",
+      "width": 860,
+      "height": 640,
+      "complete": true
+    },
+    {
+      "src": "previews/mobile-attack.gif",
+      "width": 420,
+      "height": 250,
+      "complete": true
+    },
+    {
+      "src": "previews/attack_2.gif",
+      "width": 860,
+      "height": 640,
+      "complete": true
+    },
+    {
+      "src": "previews/mobile-attack_2.gif",
+      "width": 420,
+      "height": 250,
+      "complete": true
+    },
+    {
+      "src": "previews/animation-contact.png",
+      "width": 1720,
+      "height": 2040,
+      "complete": true
+    },
+    {
+      "src": "previews/rig-setup.png",
+      "width": 860,
+      "height": 640,
+      "complete": true
+    }
+  ],
+  "errors": [],
+  "failed": [],
+  "requests": [
+    {
+      "url": "/preview.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "/previews/mobile-stand.gif",
+      "status": 200,
+      "contentType": "image/gif"
+    },
+    {
+      "url": "/previews/stand.gif",
+      "status": 200,
+      "contentType": "image/gif"
+    },
+    {
+      "url": "/previews/mobile-dead.gif",
+      "status": 200,
+      "contentType": "image/gif"
+    },
+    {
+      "url": "/previews/mobile-hit.gif",
+      "status": 200,
+      "contentType": "image/gif"
+    },
+    {
+      "url": "/previews/hit.gif",
+      "status": 200,
+      "contentType": "image/gif"
+    },
+    {
+      "url": "/previews/dead.gif",
+      "status": 200,
+      "contentType": "image/gif"
+    },
+    {
+      "url": "/previews/move.gif",
+      "status": 200,
+      "contentType": "image/gif"
+    },
+    {
+      "url": "/previews/mobile-move.gif",
+      "status": 200,
+      "contentType": "image/gif"
+    },
+    {
+      "url": "/previews/attack.gif",
+      "status": 200,
+      "contentType": "image/gif"
+    },
+    {
+      "url": "/previews/mobile-attack.gif",
+      "status": 200,
+      "contentType": "image/gif"
+    },
+    {
+      "url": "/previews/mobile-attack_2.gif",
+      "status": 200,
+      "contentType": "image/gif"
+    },
+    {
+      "url": "/previews/attack_2.gif",
+      "status": 200,
+      "contentType": "image/gif"
+    },
+    {
+      "url": "/previews/rig-setup.png",
+      "status": 200,
+      "contentType": "image/png"
+    },
+    {
+      "url": "/previews/animation-contact.png",
+      "status": 200,
+      "contentType": "image/png"
+    }
+  ]
+}

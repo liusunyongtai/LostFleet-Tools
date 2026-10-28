@@ -1,0 +1,86 @@
+{
+  "skeletonSHA256": "5f5b544d4627972c9bd11f901de5c3a343e76b83501acc73a4d66b8b84c1e275",
+  "desktopEditorTested": false,
+  "meshes": [
+    {
+      "name": "houyoutui",
+      "vertices": 247,
+      "errors": []
+    },
+    {
+      "name": "qianyoutui",
+      "vertices": 247,
+      "errors": []
+    },
+    {
+      "name": "weiba",
+      "vertices": 247,
+      "errors": []
+    },
+    {
+      "name": "shenti",
+      "vertices": 323,
+      "errors": []
+    },
+    {
+      "name": "shentichuxu_01",
+      "vertices": 247,
+      "errors": []
+    },
+    {
+      "name": "shentichuxu_02",
+      "vertices": 247,
+      "errors": []
+    },
+    {
+      "name": "qianzuotui",
+      "vertices": 247,
+      "errors": []
+    },
+    {
+      "name": "houzuotui",
+      "vertices": 247,
+      "errors": []
+    },
+    {
+      "name": "xueye",
+      "vertices": 4,
+      "errors": []
+    },
+    {
+      "name": "xiaba",
+      "vertices": 4,
+      "errors": []
+    },
+    {
+      "name": "tou",
+      "vertices": 4,
+      "errors": []
+    },
+    {
+      "name": "toucx_04",
+      "vertices": 247,
+      "errors": []
+    },
+    {
+      "name": "toucx_01",
+      "vertices": 247,
+      "errors": []
+    },
+    {
+      "name": "toucx_02",
+      "vertices": 247,
+      "errors": []
+    },
+    {
+      "name": "toucx_03",
+      "vertices": 247,
+      "errors": []
+    },
+    {
+      "name": "touci",
+      "vertices": 4,
+      "errors": []
+    }
+  ]
+}

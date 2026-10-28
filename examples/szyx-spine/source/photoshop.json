@@ -1,0 +1,76 @@
+{ "skeleton": { "images": "E:/太空/人物/人物拆分/四足异形/images/" },
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "houyoutui", "bone": "root", "attachment": "houyoutui" },
+	{ "name": "qianyoutui", "bone": "root", "attachment": "qianyoutui" },
+	{ "name": "weiba", "bone": "root", "attachment": "weiba" },
+	{ "name": "shenti", "bone": "root", "attachment": "shenti" },
+	{ "name": "shentichuxu_01", "bone": "root", "attachment": "shentichuxu_01" },
+	{ "name": "shentichuxu_02", "bone": "root", "attachment": "shentichuxu_02" },
+	{ "name": "qianzuotui", "bone": "root", "attachment": "qianzuotui" },
+	{ "name": "houzuotui", "bone": "root", "attachment": "houzuotui" },
+	{ "name": "xueye", "bone": "root", "attachment": "xueye" },
+	{ "name": "xiaba", "bone": "root", "attachment": "xiaba" },
+	{ "name": "tou", "bone": "root", "attachment": "tou" },
+	{ "name": "toucx_04", "bone": "root", "attachment": "toucx_04" },
+	{ "name": "toucx_01", "bone": "root", "attachment": "toucx_01" },
+	{ "name": "toucx_02", "bone": "root", "attachment": "toucx_02" },
+	{ "name": "toucx_03", "bone": "root", "attachment": "toucx_03" },
+	{ "name": "touci", "bone": "root", "attachment": "touci" }
+],
+"skins": {
+	"default": {
+		"houyoutui": {
+			"houyoutui": { "x": 728, "y": -788, "width": 278, "height": 326 }
+		},
+		"qianyoutui": {
+			"qianyoutui": { "x": 320, "y": -782.5, "width": 372, "height": 377 }
+		},
+		"weiba": {
+			"weiba": { "x": 962.5, "y": -416, "width": 363, "height": 466 }
+		},
+		"shenti": {
+			"shenti": { "x": 621.5, "y": -468.5, "width": 633, "height": 531 }
+		},
+		"shentichuxu_01": {
+			"shentichuxu_01": { "x": 771.5, "y": -416.5, "width": 235, "height": 203 }
+		},
+		"shentichuxu_02": {
+			"shentichuxu_02": { "x": 880.5, "y": -579, "width": 353, "height": 220 }
+		},
+		"qianzuotui": {
+			"qianzuotui": { "x": 597.5, "y": -782.5, "width": 359, "height": 407 }
+		},
+		"houzuotui": {
+			"houzuotui": { "x": 962, "y": -781, "width": 394, "height": 396 }
+		},
+		"xueye": {
+			"xueye": { "x": 348, "y": -639.5, "width": 70, "height": 103 }
+		},
+		"xiaba": {
+			"xiaba": { "x": 224.5, "y": -692, "width": 275, "height": 256 }
+		},
+		"tou": {
+			"tou": { "x": 320.5, "y": -431, "width": 573, "height": 544 }
+		},
+		"toucx_04": {
+			"toucx_04": { "x": 513.5, "y": -158, "width": 157, "height": 254 }
+		},
+		"toucx_01": {
+			"toucx_01": { "x": 454, "y": -619.5, "width": 182, "height": 343 }
+		},
+		"toucx_02": {
+			"toucx_02": { "x": 551, "y": -489.5, "width": 104, "height": 195 }
+		},
+		"toucx_03": {
+			"toucx_03": { "x": 586, "y": -409.5, "width": 90, "height": 151 }
+		},
+		"touci": {
+			"touci": { "x": 450.5, "y": -264, "width": 159, "height": 68 }
+		}
+	}
+},
+"animations": { "animation": {} }
+}

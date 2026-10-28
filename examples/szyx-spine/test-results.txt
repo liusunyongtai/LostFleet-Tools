@@ -1,0 +1,483 @@
+Complete repository suite; 20 independent unittest modules, at most 4 subprocesses.
+
+MODULE tests.test_bird112_spine
+test_death_ground_contact_and_settled_end (tests.test_bird112_spine.Bird112SpineTests.test_death_ground_contact_and_settled_end) ... ok
+test_dive_loop_does_not_emit_unrequested_damage_events (tests.test_bird112_spine.Bird112SpineTests.test_dive_loop_does_not_emit_unrequested_damage_events) ... ok
+test_dive_stays_head_down_for_entire_loop (tests.test_bird112_spine.Bird112SpineTests.test_dive_stays_head_down_for_entire_loop) ... ok
+test_dive_wings_have_reduced_span (tests.test_bird112_spine.Bird112SpineTests.test_dive_wings_have_reduced_span) ... ok
+test_eleven_pngs_are_unchanged_and_transparent (tests.test_bird112_spine.Bird112SpineTests.test_eleven_pngs_are_unchanged_and_transparent) ... ok
+test_five_names_version_bones_and_original_layers (tests.test_bird112_spine.Bird112SpineTests.test_five_names_version_bones_and_original_layers) ... ok
+test_flight_and_dive_root_never_move (tests.test_bird112_spine.Bird112SpineTests.test_flight_and_dive_root_never_move) ... ok
+test_flight_clearance_and_preview_bounds (tests.test_bird112_spine.Bird112SpineTests.test_flight_clearance_and_preview_bounds) ... ok
+test_head_and_fangs_keep_rigid_shape_during_flight_dive_hit (tests.test_bird112_spine.Bird112SpineTests.test_head_and_fangs_keep_rigid_shape_during_flight_dive_hit) ... ok
+test_hit_recoils_and_recovers_without_reset_pop (tests.test_bird112_spine.Bird112SpineTests.test_hit_recoils_and_recovers_without_reset_pop) ... ok
+test_move_has_large_wingtip_excursions (tests.test_bird112_spine.Bird112SpineTests.test_move_has_large_wingtip_excursions) ... ok
+test_no_full_turn_adjacent_key_jumps (tests.test_bird112_spine.Bird112SpineTests.test_no_full_turn_adjacent_key_jumps) ... ok
+test_official_runtime_371_poses_match_independent_world_and_mesh (tests.test_bird112_spine.Bird112SpineTests.test_official_runtime_371_poses_match_independent_world_and_mesh) ... ok
+test_preview_scale_is_uniform_and_does_not_modify_source (tests.test_bird112_spine.Bird112SpineTests.test_preview_scale_is_uniform_and_does_not_modify_source) ... ok
+test_setup_coordinates_and_normalized_positive_weights (tests.test_bird112_spine.Bird112SpineTests.test_setup_coordinates_and_normalized_positive_weights) ... ok
+test_setup_render_matches_photoshop_assembly (tests.test_bird112_spine.Bird112SpineTests.test_setup_render_matches_photoshop_assembly) ... ok
+test_tail_chain_has_delayed_follow_through (tests.test_bird112_spine.Bird112SpineTests.test_tail_chain_has_delayed_follow_through) ... ok
+test_three_flight_loops_have_matching_endpoints (tests.test_bird112_spine.Bird112SpineTests.test_three_flight_loops_have_matching_endpoints) ... ok
+test_wing_elbow_and_tip_lag_the_primary_stroke (tests.test_bird112_spine.Bird112SpineTests.test_wing_elbow_and_tip_lag_the_primary_stroke) ... ok
+test_wings_jaws_and_tail_stay_connected_at_key_poses (tests.test_bird112_spine.Bird112SpineTests.test_wings_jaws_and_tail_stay_connected_at_key_poses) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 13.392s
+
+OK
+
+MODULE tests.test_bsq_spine
+test_dead_is_grounded_and_holds_last_pose (tests.test_bsq_spine.BsqSpineTests.test_dead_is_grounded_and_holds_last_pose) ... ok
+test_exact_animation_names_and_independent_bullet (tests.test_bsq_spine.BsqSpineTests.test_exact_animation_names_and_independent_bullet) ... ok
+test_fallback_has_no_mesh_dependencies (tests.test_bsq_spine.BsqSpineTests.test_fallback_has_no_mesh_dependencies) ... ok
+test_grab_extends_forward_and_is_drawn_in_front_of_head (tests.test_bsq_spine.BsqSpineTests.test_grab_extends_forward_and_is_drawn_in_front_of_head) ... ok
+test_move_ankles_follow_the_baked_foot_path (tests.test_bsq_spine.BsqSpineTests.test_move_ankles_follow_the_baked_foot_path) ... ok
+test_move_body_remains_continuous_at_both_deep_bends (tests.test_bsq_spine.BsqSpineTests.test_move_body_remains_continuous_at_both_deep_bends) ... ok
+test_official_runtime_report_matches_current_files_bones_mesh_and_order (tests.test_bsq_spine.BsqSpineTests.test_official_runtime_report_matches_current_files_bones_mesh_and_order) ... ok
+test_original_place_loops_and_bullet_loop_close (tests.test_bsq_spine.BsqSpineTests.test_original_place_loops_and_bullet_loop_close) ... ok
+test_reaction_and_attacks_recover_to_setup (tests.test_bsq_spine.BsqSpineTests.test_reaction_and_attacks_recover_to_setup) ... ok
+test_setup_render_preserves_original_assembly (tests.test_bsq_spine.BsqSpineTests.test_setup_render_preserves_original_assembly) ... ok
+test_six_original_images_keep_bytes_and_alpha (tests.test_bsq_spine.BsqSpineTests.test_six_original_images_keep_bytes_and_alpha) ... ok
+test_spit_timing_and_independent_projectile_spawn (tests.test_bsq_spine.BsqSpineTests.test_spit_timing_and_independent_projectile_spawn) ... ok
+test_weighted_mesh_setup_preserves_every_original_uv_position (tests.test_bsq_spine.BsqSpineTests.test_weighted_mesh_setup_preserves_every_original_uv_position) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 4.508s
+
+OK
+
+MODULE tests.test_btmg_spine
+test_all_seven_original_pngs_are_unchanged (tests.test_btmg_spine.BtmgSpineTests.test_all_seven_original_pngs_are_unchanged) ... ok
+test_attack_and_hit_recover (tests.test_btmg_spine.BtmgSpineTests.test_attack_and_hit_recover) ... ok
+test_attack_has_backwards_anticipation_and_forward_lunge (tests.test_btmg_spine.BtmgSpineTests.test_attack_has_backwards_anticipation_and_forward_lunge) ... ok
+test_death_is_grounded_and_stable_at_end (tests.test_btmg_spine.BtmgSpineTests.test_death_is_grounded_and_stable_at_end) ... ok
+test_diagonal_pairs_lift_together (tests.test_btmg_spine.BtmgSpineTests.test_diagonal_pairs_lift_together) ... ok
+test_exact_names_version_and_source_layers (tests.test_btmg_spine.BtmgSpineTests.test_exact_names_version_and_source_layers) ... ok
+test_four_paws_follow_reachable_trot_paths (tests.test_btmg_spine.BtmgSpineTests.test_four_paws_follow_reachable_trot_paths) ... ok
+test_interpolated_rotations_cannot_make_full_turns_between_keys (tests.test_btmg_spine.BtmgSpineTests.test_interpolated_rotations_cannot_make_full_turns_between_keys) ... ok
+test_jaws_open_during_windup_and_close_at_impact (tests.test_btmg_spine.BtmgSpineTests.test_jaws_open_during_windup_and_close_at_impact) ... ok
+test_leg_silhouettes_remain_connected_at_trot_extremes (tests.test_btmg_spine.BtmgSpineTests.test_leg_silhouettes_remain_connected_at_trot_extremes) ... ok
+test_loops_match_and_move_root_has_no_displacement (tests.test_btmg_spine.BtmgSpineTests.test_loops_match_and_move_root_has_no_displacement) ... ok
+test_runtime_bones_and_sampled_mesh_match_preview_even_between_keys (tests.test_btmg_spine.BtmgSpineTests.test_runtime_bones_and_sampled_mesh_match_preview_even_between_keys) ... ok
+test_setup_render_keeps_original_assembly (tests.test_btmg_spine.BtmgSpineTests.test_setup_render_keeps_original_assembly) ... ok
+test_setup_vertices_preserve_ps_image_positions_and_weights_sum_one (tests.test_btmg_spine.BtmgSpineTests.test_setup_vertices_preserve_ps_image_positions_and_weights_sum_one) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 9.435s
+
+OK
+
+MODULE tests.test_grdgr_spine
+test_all_five_original_pngs_are_unchanged (tests.test_grdgr_spine.GrdgrSpineTests.test_all_five_original_pngs_are_unchanged) ... ok
+test_attack_and_hit_recover (tests.test_grdgr_spine.GrdgrSpineTests.test_attack_and_hit_recover) ... ok
+test_boots_follow_in_place_walk_paths (tests.test_grdgr_spine.GrdgrSpineTests.test_boots_follow_in_place_walk_paths) ... ok
+test_death_is_grounded_and_stable_at_end (tests.test_grdgr_spine.GrdgrSpineTests.test_death_is_grounded_and_stable_at_end) ... ok
+test_exact_names_version_and_source_layers (tests.test_grdgr_spine.GrdgrSpineTests.test_exact_names_version_and_source_layers) ... ok
+test_interpolated_rotations_cannot_make_full_turns_between_keys (tests.test_grdgr_spine.GrdgrSpineTests.test_interpolated_rotations_cannot_make_full_turns_between_keys) ... ok
+test_loops_match_and_move_root_has_no_displacement (tests.test_grdgr_spine.GrdgrSpineTests.test_loops_match_and_move_root_has_no_displacement) ... ok
+test_pants_mesh_keeps_both_legs_connected (tests.test_grdgr_spine.GrdgrSpineTests.test_pants_mesh_keeps_both_legs_connected) ... ok
+test_punch_anticipates_then_leads_with_foreground_glove (tests.test_grdgr_spine.GrdgrSpineTests.test_punch_anticipates_then_leads_with_foreground_glove) ... ok
+test_runtime_bones_and_sampled_mesh_match_preview_even_between_keys (tests.test_grdgr_spine.GrdgrSpineTests.test_runtime_bones_and_sampled_mesh_match_preview_even_between_keys) ... ok
+test_setup_render_keeps_original_assembly (tests.test_grdgr_spine.GrdgrSpineTests.test_setup_render_keeps_original_assembly) ... ok
+test_setup_vertices_preserve_ps_image_positions_and_weights_sum_one (tests.test_grdgr_spine.GrdgrSpineTests.test_setup_vertices_preserve_ps_image_positions_and_weights_sum_one) ... ok
+test_visible_parts_do_not_detach_at_reviewed_extreme_poses (tests.test_grdgr_spine.GrdgrSpineTests.test_visible_parts_do_not_detach_at_reviewed_extreme_poses) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 14.321s
+
+OK
+
+MODULE tests.test_gryhy_spine
+test_all_six_original_pngs_are_unchanged (tests.test_gryhy_spine.GryhySpineTests.test_all_six_original_pngs_are_unchanged) ... ok
+test_attack_and_hit_recover (tests.test_gryhy_spine.GryhySpineTests.test_attack_and_hit_recover) ... ok
+test_death_is_grounded_and_stable_at_end (tests.test_gryhy_spine.GryhySpineTests.test_death_is_grounded_and_stable_at_end) ... ok
+test_exact_names_version_and_source_layers (tests.test_gryhy_spine.GryhySpineTests.test_exact_names_version_and_source_layers) ... ok
+test_headbutt_anticipates_then_strikes_with_helmet (tests.test_gryhy_spine.GryhySpineTests.test_headbutt_anticipates_then_strikes_with_helmet) ... ok
+test_interpolated_rotations_cannot_make_full_turns_between_keys (tests.test_gryhy_spine.GryhySpineTests.test_interpolated_rotations_cannot_make_full_turns_between_keys) ... ok
+test_loops_match_and_move_root_has_no_displacement (tests.test_gryhy_spine.GryhySpineTests.test_loops_match_and_move_root_has_no_displacement) ... ok
+test_pants_mesh_keeps_both_legs_connected (tests.test_gryhy_spine.GryhySpineTests.test_pants_mesh_keeps_both_legs_connected) ... ok
+test_runtime_bones_and_sampled_mesh_match_preview_even_between_keys (tests.test_gryhy_spine.GryhySpineTests.test_runtime_bones_and_sampled_mesh_match_preview_even_between_keys) ... ok
+test_setup_render_keeps_original_assembly (tests.test_gryhy_spine.GryhySpineTests.test_setup_render_keeps_original_assembly) ... ok
+test_setup_vertices_preserve_ps_image_positions_and_weights_sum_one (tests.test_gryhy_spine.GryhySpineTests.test_setup_vertices_preserve_ps_image_positions_and_weights_sum_one) ... ok
+test_short_legs_follow_in_place_walk_paths (tests.test_gryhy_spine.GryhySpineTests.test_short_legs_follow_in_place_walk_paths) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 11.380s
+
+OK
+
+MODULE tests.test_image_pipeline
+test_transparent_png (tests.test_image_pipeline.ImagePipelineTest.test_transparent_png)
+Save and reopen a fully transparent 512x512 RGBA PNG. ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.035s
+
+OK
+Verified PNG: 512x512 RGBA; alpha range 0..0; 262144 transparent pixels
+
+MODULE tests.test_jbjs_spine
+test_all_eight_original_pngs_are_unchanged (tests.test_jbjs_spine.JbjsSpineTests.test_all_eight_original_pngs_are_unchanged) ... ok
+test_attack_and_hit_recover (tests.test_jbjs_spine.JbjsSpineTests.test_attack_and_hit_recover) ... ok
+test_boots_follow_in_place_walk_paths (tests.test_jbjs_spine.JbjsSpineTests.test_boots_follow_in_place_walk_paths) ... ok
+test_death_is_grounded_and_stable_at_end (tests.test_jbjs_spine.JbjsSpineTests.test_death_is_grounded_and_stable_at_end) ... ok
+test_exact_names_version_and_source_layers (tests.test_jbjs_spine.JbjsSpineTests.test_exact_names_version_and_source_layers) ... ok
+test_interpolated_rotations_cannot_make_full_turns_between_keys (tests.test_jbjs_spine.JbjsSpineTests.test_interpolated_rotations_cannot_make_full_turns_between_keys) ... ok
+test_leg_meshes_remain_connected_at_stride_extremes (tests.test_jbjs_spine.JbjsSpineTests.test_leg_meshes_remain_connected_at_stride_extremes) ... ok
+test_loops_match_and_move_root_has_no_displacement (tests.test_jbjs_spine.JbjsSpineTests.test_loops_match_and_move_root_has_no_displacement) ... ok
+test_runtime_bones_and_sampled_mesh_match_preview_even_between_keys (tests.test_jbjs_spine.JbjsSpineTests.test_runtime_bones_and_sampled_mesh_match_preview_even_between_keys) ... ok
+test_setup_render_keeps_original_assembly (tests.test_jbjs_spine.JbjsSpineTests.test_setup_render_keeps_original_assembly) ... ok
+test_setup_vertices_preserve_ps_image_positions_and_weights_sum_one (tests.test_jbjs_spine.JbjsSpineTests.test_setup_vertices_preserve_ps_image_positions_and_weights_sum_one) ... ok
+test_single_arm_claw_winds_back_then_reaches_forward_and_rakes (tests.test_jbjs_spine.JbjsSpineTests.test_single_arm_claw_winds_back_then_reaches_forward_and_rakes) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 6.489s
+
+OK
+
+MODULE tests.test_launcher
+test_default_does_not_launch_browser (tests.test_launcher.LauncherTests.test_default_does_not_launch_browser) ... LostFleet editor running on 127.0.0.1:<MagicMock name='EditorServer().__enter__().server_port' id='140567928842208'>
+ok
+test_occupied_port_does_not_open_an_unrelated_service (tests.test_launcher.LauncherTests.test_occupied_port_does_not_open_an_unrelated_service) ... ok
+test_open_browser_uses_bound_port_and_local_host (tests.test_launcher.LauncherTests.test_open_browser_uses_bound_port_and_local_host) ... LostFleet editor running on 0.0.0.0:8123
+ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.005s
+
+OK
+
+MODULE tests.test_sjt_airflow
+test_actual_render_has_clear_mobile_airflow_and_no_late_leak (tests.test_sjt_airflow.SjtAirflowTests.test_actual_render_has_clear_mobile_airflow_and_no_late_leak) ... ok
+test_added_meshes_agree_with_official_runtime (tests.test_sjt_airflow.SjtAirflowTests.test_added_meshes_agree_with_official_runtime) ... ok
+test_airflow_and_impact_windows (tests.test_sjt_airflow.SjtAirflowTests.test_airflow_and_impact_windows) ... ok
+test_all_original_action_curves_and_events_remain_exact (tests.test_sjt_airflow.SjtAirflowTests.test_all_original_action_curves_and_events_remain_exact) ... ok
+test_both_effect_textures_are_transparent_with_soft_alpha (tests.test_sjt_airflow.SjtAirflowTests.test_both_effect_textures_are_transparent_with_soft_alpha) ... ok
+test_fx_atlas_pixels_are_correctly_premultiplied (tests.test_sjt_airflow.SjtAirflowTests.test_fx_atlas_pixels_are_correctly_premultiplied) ... ok
+test_fx_hidden_outside_attack_2_and_when_it_finishes (tests.test_sjt_airflow.SjtAirflowTests.test_fx_hidden_outside_attack_2_and_when_it_finishes) ... ok
+test_original_pngs_and_project_backup_hashes (tests.test_sjt_airflow.SjtAirflowTests.test_original_pngs_and_project_backup_hashes) ... ok
+test_original_world_poses_are_unchanged_in_official_runtime (tests.test_sjt_airflow.SjtAirflowTests.test_original_world_poses_are_unchanged_in_official_runtime) ... ok
+test_pressure_wave_expands_and_fades (tests.test_sjt_airflow.SjtAirflowTests.test_pressure_wave_expands_and_fades) ... ok
+test_real_atlas_loads_both_pages_and_all_regions (tests.test_sjt_airflow.SjtAirflowTests.test_real_atlas_loads_both_pages_and_all_regions) ... ok
+test_reports_match_current_source_hashes (tests.test_sjt_airflow.SjtAirflowTests.test_reports_match_current_source_hashes) ... ok
+test_ribbon_heads_follow_actual_uploaded_tool_trajectory (tests.test_sjt_airflow.SjtAirflowTests.test_ribbon_heads_follow_actual_uploaded_tool_trajectory) ... ok
+test_trail_is_behind_character_and_pressure_wave_in_front (tests.test_sjt_airflow.SjtAirflowTests.test_trail_is_behind_character_and_pressure_wave_in_front) ... ok
+test_uploaded_bones_slots_and_meshes_are_preserved (tests.test_sjt_airflow.SjtAirflowTests.test_uploaded_bones_slots_and_meshes_are_preserved) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 3.565s
+
+OK
+
+MODULE tests.test_sjt_spine
+test_all_eight_original_pngs_are_unchanged (tests.test_sjt_spine.SjtSpineTests.test_all_eight_original_pngs_are_unchanged) ... ok
+test_attack_and_hit_recover (tests.test_sjt_spine.SjtSpineTests.test_attack_and_hit_recover) ... ok
+test_attack_sweeps_do_not_penetrate_floor_at_60hz (tests.test_sjt_spine.SjtSpineTests.test_attack_sweeps_do_not_penetrate_floor_at_60hz) ... ok
+test_boots_follow_in_place_walk_paths (tests.test_sjt_spine.SjtSpineTests.test_boots_follow_in_place_walk_paths) ... ok
+test_death_is_grounded_and_stable_at_end (tests.test_sjt_spine.SjtSpineTests.test_death_is_grounded_and_stable_at_end) ... ok
+test_exact_names_version_and_source_layers (tests.test_sjt_spine.SjtSpineTests.test_exact_names_version_and_source_layers) ... ok
+test_interpolated_rotations_cannot_make_full_turns_between_keys (tests.test_sjt_spine.SjtSpineTests.test_interpolated_rotations_cannot_make_full_turns_between_keys) ... ok
+test_leg_meshes_remain_connected_at_stride_extremes (tests.test_sjt_spine.SjtSpineTests.test_leg_meshes_remain_connected_at_stride_extremes) ... ok
+test_loops_match_and_move_root_has_no_displacement (tests.test_sjt_spine.SjtSpineTests.test_loops_match_and_move_root_has_no_displacement) ... ok
+test_mechanical_casings_stay_rigid_while_piston_slides (tests.test_sjt_spine.SjtSpineTests.test_mechanical_casings_stay_rigid_while_piston_slides) ... ok
+test_right_arm_poke_has_backwards_anticipation_and_forward_extension (tests.test_sjt_spine.SjtSpineTests.test_right_arm_poke_has_backwards_anticipation_and_forward_extension) ... ok
+test_right_arm_smash_raises_above_head_then_drops_near_ground (tests.test_sjt_spine.SjtSpineTests.test_right_arm_smash_raises_above_head_then_drops_near_ground) ... ok
+test_runtime_bones_and_sampled_mesh_match_preview_even_between_keys (tests.test_sjt_spine.SjtSpineTests.test_runtime_bones_and_sampled_mesh_match_preview_even_between_keys) ... ok
+test_setup_render_keeps_original_assembly (tests.test_sjt_spine.SjtSpineTests.test_setup_render_keeps_original_assembly) ... ok
+test_setup_vertices_preserve_ps_image_positions_and_weights_sum_one (tests.test_sjt_spine.SjtSpineTests.test_setup_vertices_preserve_ps_image_positions_and_weights_sum_one) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 55.527s
+
+OK
+
+MODULE tests.test_spine_editor_import
+test_airflow_setup_triangles_have_export_style_world_winding (tests.test_spine_editor_import.EditorTopologyTests.test_airflow_setup_triangles_have_export_style_world_winding) ... ok
+test_bird_full_motion_curves_and_bones_unchanged (tests.test_spine_editor_import.EditorTopologyTests.test_bird_full_motion_curves_and_bones_unchanged) ... ok
+test_bird_meshes_include_valid_editor_perimeters (tests.test_spine_editor_import.EditorTopologyTests.test_bird_meshes_include_valid_editor_perimeters) ... ok
+test_body_density_is_reduced_conservatively (tests.test_spine_editor_import.EditorTopologyTests.test_body_density_is_reduced_conservatively) ... ok
+test_degenerate_triangle_is_rejected (tests.test_spine_editor_import.EditorTopologyTests.test_degenerate_triangle_is_rejected) ... ok
+test_disconnected_ribbons_are_rejected (tests.test_spine_editor_import.EditorTopologyTests.test_disconnected_ribbons_are_rejected) ... ok
+test_duplicate_uv_is_rejected (tests.test_spine_editor_import.EditorTopologyTests.test_duplicate_uv_is_rejected) ... ok
+test_each_sjt_airflow_layer_has_unique_uvs_and_one_hull (tests.test_spine_editor_import.EditorTopologyTests.test_each_sjt_airflow_layer_has_unique_uvs_and_one_hull) ... ok
+test_edge_indices_are_coordinate_offsets_not_vertex_indices (tests.test_spine_editor_import.EditorTopologyTests.test_edge_indices_are_coordinate_offsets_not_vertex_indices) ... ok
+test_missing_nonessential_edges_is_flagged (tests.test_spine_editor_import.EditorTopologyTests.test_missing_nonessential_edges_is_flagged) ... ok
+test_out_of_range_index_is_rejected (tests.test_spine_editor_import.EditorTopologyTests.test_out_of_range_index_is_rejected) ... ok
+test_reversed_triangle_is_rejected (tests.test_spine_editor_import.EditorTopologyTests.test_reversed_triangle_is_rejected) ... ok
+test_sjt_all_meshes_pass_topology_checks (tests.test_spine_editor_import.EditorTopologyTests.test_sjt_all_meshes_pass_topology_checks) ... ok
+test_valid_single_uv_disk (tests.test_spine_editor_import.EditorTopologyTests.test_valid_single_uv_disk) ... ok
+test_wrong_hull_is_rejected (tests.test_spine_editor_import.EditorTopologyTests.test_wrong_hull_is_rejected) ... ok
+test_compatibility_loops_and_stationary_roots (tests.test_spine_editor_import.RegionCompatibilityTests.test_compatibility_loops_and_stationary_roots) ... ok
+test_compatibility_retains_five_actions_and_main_bones (tests.test_spine_editor_import.RegionCompatibilityTests.test_compatibility_retains_five_actions_and_main_bones) ... ok
+test_compatible_death_is_grounded (tests.test_spine_editor_import.RegionCompatibilityTests.test_compatible_death_is_grounded) ... ok
+test_no_mesh_fields_are_present (tests.test_spine_editor_import.RegionCompatibilityTests.test_no_mesh_fields_are_present) ... ok
+test_region_runtime_geometry_matches_independent_transforms (tests.test_spine_editor_import.RegionCompatibilityTests.test_region_runtime_geometry_matches_independent_transforms) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.871s
+
+OK
+
+MODULE tests.test_splitter
+test_cross_origin_post_blocked (tests.test_splitter.HTTPTests.test_cross_origin_post_blocked) ... 127.0.0.1 - - [28/Oct/2026 13:35:28] "POST /api/upload HTTP/1.1" 403 -
+ok
+test_editor_document_bundles_latest_assets (tests.test_splitter.HTTPTests.test_editor_document_bundles_latest_assets) ... 127.0.0.1 - - [28/Oct/2026 13:35:28] "GET / HTTP/1.1" 200 -
+ok
+test_errors_are_actionable (tests.test_splitter.HTTPTests.test_errors_are_actionable) ... 127.0.0.1 - - [28/Oct/2026 13:35:28] "POST /api/upload HTTP/1.1" 200 -
+127.0.0.1 - - [28/Oct/2026 13:35:28] "POST /api/upload HTTP/1.1" 400 -
+127.0.0.1 - - [28/Oct/2026 13:35:28] "POST /api/export HTTP/1.1" 404 -
+127.0.0.1 - - [28/Oct/2026 13:35:28] "POST /api/export HTTP/1.1" 400 -
+127.0.0.1 - - [28/Oct/2026 13:35:28] "POST /api/preview HTTP/1.1" 400 -
+127.0.0.1 - - [28/Oct/2026 13:35:28] "POST /api/export HTTP/1.1" 400 -
+ok
+test_pages_are_served (tests.test_splitter.HTTPTests.test_pages_are_served) ... 127.0.0.1 - - [28/Oct/2026 13:35:28] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [28/Oct/2026 13:35:28] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [28/Oct/2026 13:35:28] "GET /app.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Oct/2026 13:35:28] "GET /style.css?v=3 HTTP/1.1" 200 -
+ok
+test_unknown_route_does_not_expose_files (tests.test_splitter.HTTPTests.test_unknown_route_does_not_expose_files) ... 127.0.0.1 - - [28/Oct/2026 13:35:28] "GET /../requirements.txt HTTP/1.1" 404 -
+ok
+test_upload_preview_export_end_to_end (tests.test_splitter.HTTPTests.test_upload_preview_export_end_to_end) ... 127.0.0.1 - - [28/Oct/2026 13:35:28] "POST /api/upload HTTP/1.1" 200 -
+127.0.0.1 - - [28/Oct/2026 13:35:28] "GET /api/image/bQZWOT10HdejNiAo2jpGOgvT HTTP/1.1" 200 -
+127.0.0.1 - - [28/Oct/2026 13:35:28] "POST /api/preview HTTP/1.1" 200 -
+127.0.0.1 - - [28/Oct/2026 13:35:28] "POST /api/export HTTP/1.1" 200 -
+ok
+test_all_sixteen_supported_parts_export (tests.test_splitter.PipelineTests.test_all_sixteen_supported_parts_export) ... ok
+test_edge_expansion_erosion_and_feather (tests.test_splitter.PipelineTests.test_edge_expansion_erosion_and_feather) ... ok
+test_empty_visible_region_rejected (tests.test_splitter.PipelineTests.test_empty_visible_region_rejected) ... ok
+test_enclosed_white_is_preserved_unless_requested (tests.test_splitter.PipelineTests.test_enclosed_white_is_preserved_unless_requested) ... ok
+test_invalid_and_unsupported_images (tests.test_splitter.PipelineTests.test_invalid_and_unsupported_images) ... ok
+test_invalid_regions_and_parameters (tests.test_splitter.PipelineTests.test_invalid_regions_and_parameters) ... ok
+test_joint_overlap_adds_only_existing_pixels (tests.test_splitter.PipelineTests.test_joint_overlap_adds_only_existing_pixels) ... ok
+test_jpeg_background_removed_after_decode (tests.test_splitter.PipelineTests.test_jpeg_background_removed_after_decode) ... ok
+test_jpeg_exif_orientation (tests.test_splitter.PipelineTests.test_jpeg_exif_orientation) ... ok
+test_no_parts_or_duplicate_names_rejected (tests.test_splitter.PipelineTests.test_no_parts_or_duplicate_names_rejected) ... ok
+test_png_and_jpeg_uploads (tests.test_splitter.PipelineTests.test_png_and_jpeg_uploads) ... ok
+test_polygon_excludes_rectangle_corner (tests.test_splitter.PipelineTests.test_polygon_excludes_rectangle_corner) ... ok
+test_source_alpha_is_preserved_not_squared (tests.test_splitter.PipelineTests.test_source_alpha_is_preserved_not_squared) ... ok
+test_subtract_polygon_overrides_feather_and_overlap (tests.test_splitter.PipelineTests.test_subtract_polygon_overrides_feather_and_overlap) ... ok
+test_white_background_and_tight_crop (tests.test_splitter.PipelineTests.test_white_background_and_tight_crop) ... ok
+test_zip_contains_rgba_assets_and_reconstructable_coordinates (tests.test_splitter.PipelineTests.test_zip_contains_rgba_assets_and_reconstructable_coordinates) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 0.633s
+
+OK
+
+MODULE tests.test_ssjnl_spine
+test_all_eleven_original_pngs_are_unchanged (tests.test_ssjnl_spine.SsjnlSpineTests.test_all_eleven_original_pngs_are_unchanged) ... ok
+test_attack_and_hit_recover (tests.test_ssjnl_spine.SsjnlSpineTests.test_attack_and_hit_recover) ... ok
+test_attack_sweeps_do_not_penetrate_floor_at_60hz (tests.test_ssjnl_spine.SsjnlSpineTests.test_attack_sweeps_do_not_penetrate_floor_at_60hz) ... ok
+test_boots_follow_in_place_walk_paths (tests.test_ssjnl_spine.SsjnlSpineTests.test_boots_follow_in_place_walk_paths) ... ok
+test_claw_grab_winds_back_then_reaches_forward (tests.test_ssjnl_spine.SsjnlSpineTests.test_claw_grab_winds_back_then_reaches_forward) ... ok
+test_death_is_grounded_and_stable_at_end (tests.test_ssjnl_spine.SsjnlSpineTests.test_death_is_grounded_and_stable_at_end) ... ok
+test_death_rests_on_secondary_head_and_boot_instead_of_chain (tests.test_ssjnl_spine.SsjnlSpineTests.test_death_rests_on_secondary_head_and_boot_instead_of_chain) ... ok
+test_dual_heads_move_independently_and_eye_and_chain_stay_attached (tests.test_ssjnl_spine.SsjnlSpineTests.test_dual_heads_move_independently_and_eye_and_chain_stay_attached) ... ok
+test_exact_names_version_and_source_layers (tests.test_ssjnl_spine.SsjnlSpineTests.test_exact_names_version_and_source_layers) ... ok
+test_interpolated_rotations_cannot_make_full_turns_between_keys (tests.test_ssjnl_spine.SsjnlSpineTests.test_interpolated_rotations_cannot_make_full_turns_between_keys) ... ok
+test_leg_meshes_remain_connected_at_stride_extremes (tests.test_ssjnl_spine.SsjnlSpineTests.test_leg_meshes_remain_connected_at_stride_extremes) ... ok
+test_loops_match_and_move_root_has_no_displacement (tests.test_ssjnl_spine.SsjnlSpineTests.test_loops_match_and_move_root_has_no_displacement) ... ok
+test_mechanical_claw_fingers_keep_their_shape (tests.test_ssjnl_spine.SsjnlSpineTests.test_mechanical_claw_fingers_keep_their_shape) ... ok
+test_raised_claw_slash_has_distinct_high_to_low_arc (tests.test_ssjnl_spine.SsjnlSpineTests.test_raised_claw_slash_has_distinct_high_to_low_arc) ... ok
+test_runtime_bones_and_sampled_mesh_match_preview_even_between_keys (tests.test_ssjnl_spine.SsjnlSpineTests.test_runtime_bones_and_sampled_mesh_match_preview_even_between_keys) ... ok
+test_setup_render_keeps_original_assembly (tests.test_ssjnl_spine.SsjnlSpineTests.test_setup_render_keeps_original_assembly) ... ok
+test_setup_vertices_preserve_ps_image_positions_and_weights_sum_one (tests.test_ssjnl_spine.SsjnlSpineTests.test_setup_vertices_preserve_ps_image_positions_and_weights_sum_one) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 46.305s
+
+OK
+
+MODULE tests.test_sycs_spine
+test_actual_character_stays_connected_at_key_poses (tests.test_sycs_spine.SycsSpineTests.test_actual_character_stays_connected_at_key_poses) ... ok
+test_air_is_visible_only_during_whip_stroke (tests.test_sycs_spine.SycsSpineTests.test_air_is_visible_only_during_whip_stroke) ... ok
+test_air_triangles_have_consistent_setup_winding (tests.test_sycs_spine.SycsSpineTests.test_air_triangles_have_consistent_setup_winding) ... ok
+test_airflow_leading_edge_matches_actual_tip (tests.test_sycs_spine.SycsSpineTests.test_airflow_leading_edge_matches_actual_tip) ... ok
+test_all_meshes_have_editor_metadata_and_valid_topology (tests.test_sycs_spine.SycsSpineTests.test_all_meshes_have_editor_metadata_and_valid_topology) ... ok
+test_attack_hit_return_to_neutral_main_pose (tests.test_sycs_spine.SycsSpineTests.test_attack_hit_return_to_neutral_main_pose) ... ok
+test_bubble_circles_remain_inside_the_jar_glass (tests.test_sycs_spine.SycsSpineTests.test_bubble_circles_remain_inside_the_jar_glass) ... ok
+test_bubble_effect_changes_real_pixels_inside_jar (tests.test_sycs_spine.SycsSpineTests.test_bubble_effect_changes_real_pixels_inside_jar) ... ok
+test_bubbles_rise_and_reset_only_while_invisible (tests.test_sycs_spine.SycsSpineTests.test_bubbles_rise_and_reset_only_while_invisible) ... ok
+test_bubbles_stop_and_hide_during_death (tests.test_sycs_spine.SycsSpineTests.test_bubbles_stop_and_hide_during_death) ... ok
+test_dead_is_grounded_settled_and_feet_follow_collapse (tests.test_sycs_spine.SycsSpineTests.test_dead_is_grounded_settled_and_feet_follow_collapse) ... ok
+test_exact_five_actions_version_and_bone_counts (tests.test_sycs_spine.SycsSpineTests.test_exact_five_actions_version_and_bone_counts) ... ok
+test_jar_is_rigid_region_not_a_deforming_mesh (tests.test_sycs_spine.SycsSpineTests.test_jar_is_rigid_region_not_a_deforming_mesh) ... ok
+test_mouth_overlay_is_rigid_and_reuses_original_png (tests.test_sycs_spine.SycsSpineTests.test_mouth_overlay_is_rigid_and_reuses_original_png) ... ok
+test_move_has_broad_tentacle_wriggling (tests.test_sycs_spine.SycsSpineTests.test_move_has_broad_tentacle_wriggling) ... ok
+test_official_runtime_515_poses_match_independent_geometry (tests.test_sycs_spine.SycsSpineTests.test_official_runtime_515_poses_match_independent_geometry) ... ok
+test_original_layer_order_preserved_in_setup (tests.test_sycs_spine.SycsSpineTests.test_original_layer_order_preserved_in_setup) ... ok
+test_original_seventeen_pngs_remain_byte_identical (tests.test_sycs_spine.SycsSpineTests.test_original_seventeen_pngs_remain_byte_identical) ... ok
+test_preview_scale_is_uniform (tests.test_sycs_spine.SycsSpineTests.test_preview_scale_is_uniform) ... ok
+test_root_stays_fixed_in_idle_creep_and_attack (tests.test_sycs_spine.SycsSpineTests.test_root_stays_fixed_in_idle_creep_and_attack) ... ok
+test_setup_render_preserves_original_assembly (tests.test_sycs_spine.SycsSpineTests.test_setup_render_preserves_original_assembly) ... ok
+test_source_meshes_setup_positions_and_positive_weights (tests.test_sycs_spine.SycsSpineTests.test_source_meshes_setup_positions_and_positive_weights) ... ok
+test_stand_move_loops_include_bubble_transforms_and_alpha (tests.test_sycs_spine.SycsSpineTests.test_stand_move_loops_include_bubble_transforms_and_alpha) ... ok
+test_striking_mouth_aims_forward (tests.test_sycs_spine.SycsSpineTests.test_striking_mouth_aims_forward) ... ok
+test_tentacle_chain_lengths_are_preserved (tests.test_sycs_spine.SycsSpineTests.test_tentacle_chain_lengths_are_preserved) ... ok
+test_whip_has_visible_back_windup_and_large_forward_strike (tests.test_sycs_spine.SycsSpineTests.test_whip_has_visible_back_windup_and_large_forward_strike) ... ok
+test_world_rotation_tracks_have_no_single_frame_flip (tests.test_sycs_spine.SycsSpineTests.test_world_rotation_tracks_have_no_single_frame_flip) ... ok
+
+----------------------------------------------------------------------
+Ran 27 tests in 26.980s
+
+OK
+
+MODULE tests.test_szyx_spine
+test_actions_recover_to_setup_pose (tests.test_szyx_spine.SzyxSpineTests.test_actions_recover_to_setup_pose) ... ok
+test_bite_windup_lunge_jaw_snap_and_event (tests.test_szyx_spine.SzyxSpineTests.test_bite_windup_lunge_jaw_snap_and_event) ... ok
+test_claw_has_distinct_high_windup_and_forward_rake (tests.test_szyx_spine.SzyxSpineTests.test_claw_has_distinct_high_windup_and_forward_rake) ... ok
+test_dead_settles_grounded_and_body_drops (tests.test_szyx_spine.SzyxSpineTests.test_dead_settles_grounded_and_body_drops) ... ok
+test_death_does_not_penetrate_floor_at_key_poses (tests.test_szyx_spine.SzyxSpineTests.test_death_does_not_penetrate_floor_at_key_poses) ... ok
+test_diagonal_trot_phasing_and_lift (tests.test_szyx_spine.SzyxSpineTests.test_diagonal_trot_phasing_and_lift) ... ok
+test_editor_topology_valid_and_metadata_complete (tests.test_szyx_spine.SzyxSpineTests.test_editor_topology_valid_and_metadata_complete) ... ok
+test_exact_ankle_support_targets_no_unreachable_clamping (tests.test_szyx_spine.SzyxSpineTests.test_exact_ankle_support_targets_no_unreachable_clamping) ... ok
+test_exact_names_target_and_rig_counts (tests.test_szyx_spine.SzyxSpineTests.test_exact_names_target_and_rig_counts) ... ok
+test_head_teeth_and_jaw_are_rigid (tests.test_szyx_spine.SzyxSpineTests.test_head_teeth_and_jaw_are_rigid) ... ok
+test_idle_and_movement_loop_endpoints (tests.test_szyx_spine.SzyxSpineTests.test_idle_and_movement_loop_endpoints) ... ok
+test_inverse_bind_source_coordinates_and_positive_normalized_weights (tests.test_szyx_spine.SzyxSpineTests.test_inverse_bind_source_coordinates_and_positive_normalized_weights) ... ok
+test_no_world_bone_rotation_flip (tests.test_szyx_spine.SzyxSpineTests.test_no_world_bone_rotation_flip) ... ok
+test_official_runtime_498_poses_match_independent_geometry (tests.test_szyx_spine.SzyxSpineTests.test_official_runtime_498_poses_match_independent_geometry) ... ok
+test_original_layer_order_preserved (tests.test_szyx_spine.SzyxSpineTests.test_original_layer_order_preserved) ... ok
+test_root_stays_in_place_all_living_actions (tests.test_szyx_spine.SzyxSpineTests.test_root_stays_in_place_all_living_actions) ... ok
+test_setup_assembly_matches_photoshop (tests.test_szyx_spine.SzyxSpineTests.test_setup_assembly_matches_photoshop) ... ok
+test_source_meshes_do_not_disconnect_at_action_extremes (tests.test_szyx_spine.SzyxSpineTests.test_source_meshes_do_not_disconnect_at_action_extremes) ... ok
+test_source_sixteen_pngs_byte_identical_and_transparent (tests.test_szyx_spine.SzyxSpineTests.test_source_sixteen_pngs_byte_identical_and_transparent) ... ok
+test_stance_feet_push_back_monotonically_and_swing_forward (tests.test_szyx_spine.SzyxSpineTests.test_stance_feet_push_back_monotonically_and_swing_forward) ... ok
+test_tentacle_wriggling_has_delayed_nonidentical_tracks (tests.test_szyx_spine.SzyxSpineTests.test_tentacle_wriggling_has_delayed_nonidentical_tracks) ... ok
+test_uniform_preview_scaling_including_dead_root (tests.test_szyx_spine.SzyxSpineTests.test_uniform_preview_scaling_including_dead_root) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 24.342s
+
+OK
+
+MODULE tests.test_xd_spine
+test_all_nine_original_pngs_are_unchanged_and_transparent (tests.test_xd_spine.XdSpineTests.test_all_nine_original_pngs_are_unchanged_and_transparent) ... ok
+test_attack_hit_recover_and_death_lands_and_settles (tests.test_xd_spine.XdSpineTests.test_attack_hit_recover_and_death_lands_and_settles) ... ok
+test_breathing_changes_body_height_and_oscillates_hover (tests.test_xd_spine.XdSpineTests.test_breathing_changes_body_height_and_oscillates_hover) ... ok
+test_disc_spins_in_projected_plane_and_keeps_hub_fixed (tests.test_xd_spine.XdSpineTests.test_disc_spins_in_projected_plane_and_keeps_hub_fixed) ... ok
+test_entire_fork_detaches_once_and_rearms_after_flight (tests.test_xd_spine.XdSpineTests.test_entire_fork_detaches_once_and_rearms_after_flight) ... ok
+test_fork_handoff_has_no_position_scale_or_rotation_pop (tests.test_xd_spine.XdSpineTests.test_fork_handoff_has_no_position_scale_or_rotation_pop) ... ok
+test_group_draw_order_keeps_throwing_arm_in_front_of_head (tests.test_xd_spine.XdSpineTests.test_group_draw_order_keeps_throwing_arm_in_front_of_head) ... ok
+test_held_fork_does_not_sweep_through_saw_during_throw (tests.test_xd_spine.XdSpineTests.test_held_fork_does_not_sweep_through_saw_during_throw) ... ok
+test_hover_does_not_touch_ground_in_stand_or_move (tests.test_xd_spine.XdSpineTests.test_hover_does_not_touch_ground_in_stand_or_move) ... ok
+test_move_body_leans_forward_while_hovering_in_place (tests.test_xd_spine.XdSpineTests.test_move_body_leans_forward_while_hovering_in_place) ... ok
+test_names_version_and_source_layer_order (tests.test_xd_spine.XdSpineTests.test_names_version_and_source_layer_order) ... ok
+test_official_runtime_matches_bones_meshes_visibility_and_order_at_60hz (tests.test_xd_spine.XdSpineTests.test_official_runtime_matches_bones_meshes_visibility_and_order_at_60hz) ... ok
+test_rotations_do_not_spin_unintentionally_between_keyframes (tests.test_xd_spine.XdSpineTests.test_rotations_do_not_spin_unintentionally_between_keyframes) ... ok
+test_setup_render_matches_original_complete_assembly (tests.test_xd_spine.XdSpineTests.test_setup_render_matches_original_complete_assembly) ... ok
+test_setup_vertices_preserve_original_ps_positions (tests.test_xd_spine.XdSpineTests.test_setup_vertices_preserve_original_ps_positions) ... ok
+test_stand_and_move_loop_seamlessly_without_root_displacement (tests.test_xd_spine.XdSpineTests.test_stand_and_move_loop_seamlessly_without_root_displacement) ... ok
+test_throw_has_backwards_windup_and_large_forward_reach (tests.test_xd_spine.XdSpineTests.test_throw_has_backwards_windup_and_large_forward_reach) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 3.766s
+
+OK
+
+MODULE tests.test_xqdz_spine
+test_all_references_and_relative_paths_are_resolved (tests.test_xqdz_spine.XqdzSpineTests.test_all_references_and_relative_paths_are_resolved) ... ok
+test_death_does_not_sink_below_ground_during_the_fall (tests.test_xqdz_spine.XqdzSpineTests.test_death_does_not_sink_below_ground_during_the_fall) ... ok
+test_death_ends_at_ground_and_remains_still (tests.test_xqdz_spine.XqdzSpineTests.test_death_ends_at_ground_and_remains_still) ... ok
+test_death_preview_keeps_the_entire_fallen_character (tests.test_xqdz_spine.XqdzSpineTests.test_death_preview_keeps_the_entire_fallen_character) ... ok
+test_each_action_has_a_stronger_readable_accent_than_v1 (tests.test_xqdz_spine.XqdzSpineTests.test_each_action_has_a_stronger_readable_accent_than_v1) ... ok
+test_flash_and_shoot_event_are_synchronized (tests.test_xqdz_spine.XqdzSpineTests.test_flash_and_shoot_event_are_synchronized) ... ok
+test_flash_is_twice_v1_in_both_dimensions_and_starts_at_muzzle (tests.test_xqdz_spine.XqdzSpineTests.test_flash_is_twice_v1_in_both_dimensions_and_starts_at_muzzle) ... ok
+test_generated_setup_matches_configuration (tests.test_xqdz_spine.XqdzSpineTests.test_generated_setup_matches_configuration) ... ok
+test_light_masks_are_clipped_to_original_alpha (tests.test_xqdz_spine.XqdzSpineTests.test_light_masks_are_clipped_to_original_alpha) ... ok
+test_lights_are_attack_only_and_match_official_runtime_fade (tests.test_xqdz_spine.XqdzSpineTests.test_lights_are_attack_only_and_match_official_runtime_fade) ... ok
+test_loops_match_start_and_end_world_transforms (tests.test_xqdz_spine.XqdzSpineTests.test_loops_match_start_and_end_world_transforms) ... ok
+test_original_pngs_are_unchanged_and_keep_alpha (tests.test_xqdz_spine.XqdzSpineTests.test_original_pngs_are_unchanged_and_keep_alpha) ... ok
+test_recoil_moves_muzzle_backwards_for_left_facing_gun (tests.test_xqdz_spine.XqdzSpineTests.test_recoil_moves_muzzle_backwards_for_left_facing_gun) ... ok
+test_runtime_pose_report_is_current_and_matches_preview_math (tests.test_xqdz_spine.XqdzSpineTests.test_runtime_pose_report_is_current_and_matches_preview_math) ... ok
+test_setup_attachment_corners_preserve_original_assembly (tests.test_xqdz_spine.XqdzSpineTests.test_setup_attachment_corners_preserve_original_assembly) ... ok
+test_shot_light_actually_brightens_the_gun_and_turns_off (tests.test_xqdz_spine.XqdzSpineTests.test_shot_light_actually_brightens_the_gun_and_turns_off) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 1.574s
+
+OK
+
+MODULE tests.test_zhshz_spine
+test_claw_arm_reaches_without_ik_clamping_at_every_key (tests.test_zhshz_spine.ZhshzSpineTests.test_claw_arm_reaches_without_ik_clamping_at_every_key) ... ok
+test_death_grounded_with_head_contact_and_settled (tests.test_zhshz_spine.ZhshzSpineTests.test_death_grounded_with_head_contact_and_settled) ... ok
+test_fourteen_original_pngs_are_byte_identical_and_transparent (tests.test_zhshz_spine.ZhshzSpineTests.test_fourteen_original_pngs_are_byte_identical_and_transparent) ... ok
+test_fx_hidden_in_setup_and_other_actions (tests.test_zhshz_spine.ZhshzSpineTests.test_fx_hidden_in_setup_and_other_actions) ... ok
+test_head_crown_delays_and_body_breathes (tests.test_zhshz_spine.ZhshzSpineTests.test_head_crown_delays_and_body_breathes) ... ok
+test_melee_wind_reach_rake_and_event (tests.test_zhshz_spine.ZhshzSpineTests.test_melee_wind_reach_rake_and_event) ... ok
+test_names_version_bones_slots_and_original_layer_order (tests.test_zhshz_spine.ZhshzSpineTests.test_names_version_bones_slots_and_original_layer_order) ... ok
+test_no_full_turn_adjacent_rotation_jumps (tests.test_zhshz_spine.ZhshzSpineTests.test_no_full_turn_adjacent_rotation_jumps) ... ok
+test_official_runtime_bullet_37_poses (tests.test_zhshz_spine.ZhshzSpineTests.test_official_runtime_bullet_37_poses) ... ok
+test_official_runtime_character_492_poses (tests.test_zhshz_spine.ZhshzSpineTests.test_official_runtime_character_492_poses) ... ok
+test_projectile_changes_shape_and_is_one_main_glob (tests.test_zhshz_spine.ZhshzSpineTests.test_projectile_changes_shape_and_is_one_main_glob) ... ok
+test_projectile_source_hash_and_alpha (tests.test_zhshz_spine.ZhshzSpineTests.test_projectile_source_hash_and_alpha) ... ok
+test_projectile_stays_in_place_and_loops (tests.test_zhshz_spine.ZhshzSpineTests.test_projectile_stays_in_place_and_loops) ... ok
+test_red_slashes_have_true_alpha_and_visible_red_pixels (tests.test_zhshz_spine.ZhshzSpineTests.test_red_slashes_have_true_alpha_and_visible_red_pixels) ... ok
+test_rendered_setup_preserves_photoshop_assembly (tests.test_zhshz_spine.ZhshzSpineTests.test_rendered_setup_preserves_photoshop_assembly) ... ok
+test_scaled_preview_is_uniform_and_does_not_modify_source (tests.test_zhshz_spine.ZhshzSpineTests.test_scaled_preview_is_uniform_and_does_not_modify_source) ... ok
+test_setup_mesh_coordinates_preserve_every_source_layer (tests.test_zhshz_spine.ZhshzSpineTests.test_setup_mesh_coordinates_preserve_every_source_layer) ... ok
+test_spit_anticipation_head_forward_and_event (tests.test_zhshz_spine.ZhshzSpineTests.test_spit_anticipation_head_forward_and_event) ... ok
+test_spit_jet_edge_is_attached_to_mouth (tests.test_zhshz_spine.ZhshzSpineTests.test_spit_jet_edge_is_attached_to_mouth) ... ok
+test_stand_move_loops_and_action_recovery (tests.test_zhshz_spine.ZhshzSpineTests.test_stand_move_loops_and_action_recovery) ... ok
+test_walk_feet_hit_unclamped_paths (tests.test_zhshz_spine.ZhshzSpineTests.test_walk_feet_hit_unclamped_paths) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 4.055s
+
+OK
+
+MODULE tests.test_zlxy_spine
+test_death_is_grounded_and_settles (tests.test_zlxy_spine.ZlxySpineTests.test_death_is_grounded_and_settles) ... ok
+test_flash_attachment_and_alpha_window (tests.test_zlxy_spine.ZlxySpineTests.test_flash_attachment_and_alpha_window) ... ok
+test_grips_follow_weapon_and_offhand_releases_for_melee (tests.test_zlxy_spine.ZlxySpineTests.test_grips_follow_weapon_and_offhand_releases_for_melee) ... ok
+test_light_masks_have_same_mesh_and_occlude_with_surface (tests.test_zlxy_spine.ZlxySpineTests.test_light_masks_have_same_mesh_and_occlude_with_surface) ... ok
+test_loops_and_action_recovery (tests.test_zlxy_spine.ZlxySpineTests.test_loops_and_action_recovery) ... ok
+test_melee_large_raise_forward_smash_and_layering (tests.test_zlxy_spine.ZlxySpineTests.test_melee_large_raise_forward_smash_and_layering) ... ok
+test_names_bones_slots_and_version (tests.test_zlxy_spine.ZlxySpineTests.test_names_bones_slots_and_version) ... ok
+test_nine_original_png_hashes_and_transparency (tests.test_zlxy_spine.ZlxySpineTests.test_nine_original_png_hashes_and_transparency) ... ok
+test_no_adjacent_rotation_jumps (tests.test_zlxy_spine.ZlxySpineTests.test_no_adjacent_rotation_jumps) ... ok
+test_official_runtime_bullet_25_poses (tests.test_zlxy_spine.ZlxySpineTests.test_official_runtime_bullet_25_poses) ... ok
+test_official_runtime_character_480_poses (tests.test_zlxy_spine.ZlxySpineTests.test_official_runtime_character_480_poses) ... ok
+test_projectile_loop_root_stationary_metal_rigid_tail_animated (tests.test_zlxy_spine.ZlxySpineTests.test_projectile_loop_root_stationary_metal_rigid_tail_animated) ... ok
+test_projectile_provenance_transparency_and_independent_animation (tests.test_zlxy_spine.ZlxySpineTests.test_projectile_provenance_transparency_and_independent_animation) ... ok
+test_rigid_weapon_and_attached_muzzle (tests.test_zlxy_spine.ZlxySpineTests.test_rigid_weapon_and_attached_muzzle) ... ok
+test_setup_meshes_match_photoshop_positions (tests.test_zlxy_spine.ZlxySpineTests.test_setup_meshes_match_photoshop_positions) ... ok
+test_setup_render_matches_original_assembly (tests.test_zlxy_spine.ZlxySpineTests.test_setup_render_matches_original_assembly) ... ok
+test_shoot_kick_and_event (tests.test_zlxy_spine.ZlxySpineTests.test_shoot_kick_and_event) ... ok
+test_walk_foot_paths (tests.test_zlxy_spine.ZlxySpineTests.test_walk_foot_paths) ... ok
+test_warm_surface_lighting_actually_brightens_armor_pixels (tests.test_zlxy_spine.ZlxySpineTests.test_warm_surface_lighting_actually_brightens_armor_pixels) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 8.777s
+
+OK
+
+MODULE tests.test_zsx_spine
+test_attacks_hit_recover_and_no_adjacent_key_full_turn (tests.test_zsx_spine.ZsxSpineTests.test_attacks_hit_recover_and_no_adjacent_key_full_turn) ... ok
+test_body_and_head_silhouettes_remain_connected_at_key_poses (tests.test_zsx_spine.ZsxSpineTests.test_body_and_head_silhouettes_remain_connected_at_key_poses) ... ok
+test_bullet_changes_shape_while_staying_a_single_slime_glob (tests.test_zsx_spine.ZsxSpineTests.test_bullet_changes_shape_while_staying_a_single_slime_glob) ... ok
+test_bullet_root_never_moves_and_loop_seam_is_identical (tests.test_zsx_spine.ZsxSpineTests.test_bullet_root_never_moves_and_loop_seam_is_identical) ... ok
+test_death_is_grounded_without_relying_only_on_tongue (tests.test_zsx_spine.ZsxSpineTests.test_death_is_grounded_without_relying_only_on_tongue) ... ok
+test_exact_six_actor_names_and_editable_version (tests.test_zsx_spine.ZsxSpineTests.test_exact_six_actor_names_and_editable_version) ... ok
+test_feet_follow_the_original_scale_walk_paths (tests.test_zsx_spine.ZsxSpineTests.test_feet_follow_the_original_scale_walk_paths) ... ok
+test_four_original_pngs_remain_unchanged_and_keep_alpha (tests.test_zsx_spine.ZsxSpineTests.test_four_original_pngs_remain_unchanged_and_keep_alpha) ... ok
+test_melee_retracts_then_reaches_forward (tests.test_zsx_spine.ZsxSpineTests.test_melee_retracts_then_reaches_forward) ... ok
+test_new_projectile_png_is_transparent_and_identified_as_generated (tests.test_zsx_spine.ZsxSpineTests.test_new_projectile_png_is_transparent_and_identified_as_generated) ... ok
+test_official_runtime_matches_all_bullet_poses (tests.test_zsx_spine.ZsxSpineTests.test_official_runtime_matches_all_bullet_poses) ... ok
+test_official_runtime_matches_all_character_poses (tests.test_zsx_spine.ZsxSpineTests.test_official_runtime_matches_all_character_poses) ... ok
+test_original_ps_assembly_is_preserved (tests.test_zsx_spine.ZsxSpineTests.test_original_ps_assembly_is_preserved) ... ok
+test_preview_scale_is_uniform_and_does_not_change_animation (tests.test_zsx_spine.ZsxSpineTests.test_preview_scale_is_uniform_and_does_not_change_animation) ... ok
+test_projectile_is_independent_with_one_bullet_animation (tests.test_zsx_spine.ZsxSpineTests.test_projectile_is_independent_with_one_bullet_animation) ... ok
+test_setup_mesh_positions_and_normalized_weights (tests.test_zsx_spine.ZsxSpineTests.test_setup_mesh_positions_and_normalized_weights) ... ok
+test_spit_fx_is_visible_only_during_emission (tests.test_zsx_spine.ZsxSpineTests.test_spit_fx_is_visible_only_during_emission) ... ok
+test_spit_inflates_then_compresses_belly_and_pushes_mouth_forward (tests.test_zsx_spine.ZsxSpineTests.test_spit_inflates_then_compresses_belly_and_pushes_mouth_forward) ... ok
+test_spit_trailing_edge_stays_at_mouth_while_liquid_grows (tests.test_zsx_spine.ZsxSpineTests.test_spit_trailing_edge_stays_at_mouth_while_liquid_grows) ... ok
+test_stand_move_loops_and_move_root_stays_in_place (tests.test_zsx_spine.ZsxSpineTests.test_stand_move_loops_and_move_root_stays_in_place) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 11.039s
+
+OK
+
+TOTAL: 319 tests; 319 passed; 0 failed modules; 70.576 seconds.

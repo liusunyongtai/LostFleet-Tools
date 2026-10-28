@@ -1,0 +1,846 @@
+{
+  "target_version": "4.3.23",
+  "origin": [
+    650,
+    -990
+  ],
+  "bones": [
+    {
+      "name": "root",
+      "position": [
+        650,
+        -990
+      ],
+      "rotation": 0,
+      "length": 0
+    },
+    {
+      "name": "hips",
+      "position": [
+        850,
+        -550
+      ],
+      "rotation": 0,
+      "length": 0,
+      "parent": "root"
+    },
+    {
+      "name": "chest",
+      "position": [
+        530,
+        -460
+      ],
+      "rotation": 0,
+      "length": 0,
+      "parent": "hips"
+    },
+    {
+      "name": "head",
+      "position": [
+        480,
+        -425
+      ],
+      "rotation": 0,
+      "length": 0,
+      "parent": "chest"
+    },
+    {
+      "name": "jaw",
+      "position": [
+        330,
+        -590
+      ],
+      "rotation": 0,
+      "length": 0,
+      "parent": "head"
+    },
+    {
+      "name": "bite_point",
+      "position": [
+        100,
+        -715
+      ],
+      "rotation": 0,
+      "length": 0,
+      "parent": "jaw"
+    },
+    {
+      "name": "far_hind_upper",
+      "position": [
+        710,
+        -665
+      ],
+      "rotation": -55.175510843043206,
+      "length": 140.089257261219,
+      "parent": "hips"
+    },
+    {
+      "name": "far_hind_lower",
+      "position": [
+        790,
+        -780
+      ],
+      "rotation": -97.1250163489018,
+      "length": 120.93386622447825,
+      "parent": "far_hind_upper"
+    },
+    {
+      "name": "far_hind_paw",
+      "position": [
+        775,
+        -900
+      ],
+      "rotation": -118.52311860631204,
+      "length": 52.354560450833695,
+      "parent": "far_hind_lower"
+    },
+    {
+      "name": "far_hind_tip",
+      "position": [
+        750,
+        -946
+      ],
+      "rotation": 0,
+      "length": 0,
+      "parent": "far_hind_paw"
+    },
+    {
+      "name": "far_front_upper",
+      "position": [
+        435,
+        -640
+      ],
+      "rotation": -112.47943439710312,
+      "length": 156.92354826475216,
+      "parent": "chest"
+    },
+    {
+      "name": "far_front_lower",
+      "position": [
+        375,
+        -785
+      ],
+      "rotation": -130.2363583092738,
+      "length": 170.29386365926402,
+      "parent": "far_front_upper"
+    },
+    {
+      "name": "far_front_paw",
+      "position": [
+        265,
+        -915
+      ],
+      "rotation": -127.87498365109822,
+      "length": 57.0087712549569,
+      "parent": "far_front_lower"
+    },
+    {
+      "name": "far_front_tip",
+      "position": [
+        230,
+        -960
+      ],
+      "rotation": 0,
+      "length": 0,
+      "parent": "far_front_paw"
+    },
+    {
+      "name": "near_front_upper",
+      "position": [
+        585,
+        -645
+      ],
+      "rotation": -57.38075692880717,
+      "length": 148.4082207965583,
+      "parent": "chest"
+    },
+    {
+      "name": "near_front_lower",
+      "position": [
+        665,
+        -770
+      ],
+      "rotation": -136.78991060824606,
+      "length": 226.38462845343543,
+      "parent": "near_front_upper"
+    },
+    {
+      "name": "near_front_paw",
+      "position": [
+        500,
+        -925
+      ],
+      "rotation": -123.43986920578224,
+      "length": 63.51377803280167,
+      "parent": "near_front_lower"
+    },
+    {
+      "name": "near_front_tip",
+      "position": [
+        465,
+        -978
+      ],
+      "rotation": 0,
+      "length": 0,
+      "parent": "near_front_paw"
+    },
+    {
+      "name": "near_hind_upper",
+      "position": [
+        870,
+        -650
+      ],
+      "rotation": -50.826342029555775,
+      "length": 174.14074767268,
+      "parent": "hips"
+    },
+    {
+      "name": "near_hind_lower",
+      "position": [
+        980,
+        -785
+      ],
+      "rotation": -63.43494882292201,
+      "length": 156.52475842498527,
+      "parent": "near_hind_upper"
+    },
+    {
+      "name": "near_hind_paw",
+      "position": [
+        1050,
+        -925
+      ],
+      "rotation": -69.32557523912611,
+      "length": 56.64803615307419,
+      "parent": "near_hind_lower"
+    },
+    {
+      "name": "near_hind_tip",
+      "position": [
+        1070,
+        -978
+      ],
+      "rotation": 0,
+      "length": 0,
+      "parent": "near_hind_paw"
+    },
+    {
+      "name": "weiba_0",
+      "position": [
+        900,
+        -600
+      ],
+      "rotation": 12.994616791916505,
+      "length": 133.41664064126334,
+      "parent": "hips"
+    },
+    {
+      "name": "weiba_1",
+      "position": [
+        1030,
+        -570
+      ],
+      "rotation": 55.175510843043206,
+      "length": 140.089257261219,
+      "parent": "weiba_0"
+    },
+    {
+      "name": "weiba_2",
+      "position": [
+        1110,
+        -455
+      ],
+      "rotation": 94.76364169072617,
+      "length": 120.41594578792295,
+      "parent": "weiba_1"
+    },
+    {
+      "name": "weiba_3",
+      "position": [
+        1100,
+        -335
+      ],
+      "rotation": 129.47245984834385,
+      "length": 110.11357772772621,
+      "parent": "weiba_2"
+    },
+    {
+      "name": "weiba_4",
+      "position": [
+        1030,
+        -250
+      ],
+      "rotation": 168.6900675259798,
+      "length": 152.97058540778355,
+      "parent": "weiba_3"
+    },
+    {
+      "name": "shentichuxu_01_0",
+      "position": [
+        680,
+        -495
+      ],
+      "rotation": 32.7352262721076,
+      "length": 83.21658488546619,
+      "parent": "chest"
+    },
+    {
+      "name": "shentichuxu_01_1",
+      "position": [
+        750,
+        -450
+      ],
+      "rotation": 57.724355685422374,
+      "length": 112.36102527122117,
+      "parent": "shentichuxu_01_0"
+    },
+    {
+      "name": "shentichuxu_01_2",
+      "position": [
+        810,
+        -355
+      ],
+      "rotation": 6.34019174590991,
+      "length": 45.27692569068709,
+      "parent": "shentichuxu_01_1"
+    },
+    {
+      "name": "shentichuxu_01_3",
+      "position": [
+        855,
+        -350
+      ],
+      "rotation": -75.06858282186245,
+      "length": 77.62087348130012,
+      "parent": "shentichuxu_01_2"
+    },
+    {
+      "name": "shentichuxu_02_0",
+      "position": [
+        720,
+        -550
+      ],
+      "rotation": -16.69924423399362,
+      "length": 104.4030650891055,
+      "parent": "hips"
+    },
+    {
+      "name": "shentichuxu_02_1",
+      "position": [
+        820,
+        -580
+      ],
+      "rotation": 29.357753542791276,
+      "length": 91.7877987534291,
+      "parent": "shentichuxu_02_0"
+    },
+    {
+      "name": "shentichuxu_02_2",
+      "position": [
+        900,
+        -535
+      ],
+      "rotation": -29.357753542791276,
+      "length": 91.7877987534291,
+      "parent": "shentichuxu_02_1"
+    },
+    {
+      "name": "shentichuxu_02_3",
+      "position": [
+        980,
+        -580
+      ],
+      "rotation": -51.84277341263094,
+      "length": 89.02246907382428,
+      "parent": "shentichuxu_02_2"
+    },
+    {
+      "name": "toucx_04_0",
+      "position": [
+        520,
+        -265
+      ],
+      "rotation": 97.1250163489018,
+      "length": 80.62257748298549,
+      "parent": "head"
+    },
+    {
+      "name": "toucx_04_1",
+      "position": [
+        510,
+        -185
+      ],
+      "rotation": 126.86989764584402,
+      "length": 75.0,
+      "parent": "toucx_04_0"
+    },
+    {
+      "name": "toucx_04_2",
+      "position": [
+        465,
+        -125
+      ],
+      "rotation": 77.0053832080835,
+      "length": 66.70832032063167,
+      "parent": "toucx_04_1"
+    },
+    {
+      "name": "toucx_04_3",
+      "position": [
+        480,
+        -60
+      ],
+      "rotation": 8.74616226255521,
+      "length": 65.76473218982953,
+      "parent": "toucx_04_2"
+    },
+    {
+      "name": "toucx_04_4",
+      "position": [
+        545,
+        -50
+      ],
+      "rotation": -56.309932474020215,
+      "length": 54.08326913195984,
+      "parent": "toucx_04_3"
+    },
+    {
+      "name": "toucx_01_0",
+      "position": [
+        385,
+        -480
+      ],
+      "rotation": -23.962488974578186,
+      "length": 49.24428900898052,
+      "parent": "head"
+    },
+    {
+      "name": "toucx_01_1",
+      "position": [
+        430,
+        -500
+      ],
+      "rotation": -93.57633437499736,
+      "length": 80.15609770940699,
+      "parent": "toucx_01_0"
+    },
+    {
+      "name": "toucx_01_2",
+      "position": [
+        425,
+        -580
+      ],
+      "rotation": -49.76364169072618,
+      "length": 85.14693182963201,
+      "parent": "toucx_01_1"
+    },
+    {
+      "name": "toucx_01_3",
+      "position": [
+        480,
+        -645
+      ],
+      "rotation": -85.91438322002513,
+      "length": 70.178344238091,
+      "parent": "toucx_01_2"
+    },
+    {
+      "name": "toucx_01_4",
+      "position": [
+        485,
+        -715
+      ],
+      "rotation": -61.69924423399363,
+      "length": 73.824115301167,
+      "parent": "toucx_01_3"
+    },
+    {
+      "name": "toucx_02_0",
+      "position": [
+        510,
+        -410
+      ],
+      "rotation": -41.18592516570965,
+      "length": 53.150729063673246,
+      "parent": "head"
+    },
+    {
+      "name": "toucx_02_1",
+      "position": [
+        550,
+        -445
+      ],
+      "rotation": -70.01689347810003,
+      "length": 58.52349955359813,
+      "parent": "toucx_02_0"
+    },
+    {
+      "name": "toucx_02_2",
+      "position": [
+        570,
+        -500
+      ],
+      "rotation": -98.13010235415598,
+      "length": 70.71067811865476,
+      "parent": "toucx_02_1"
+    },
+    {
+      "name": "toucx_03_0",
+      "position": [
+        550,
+        -350
+      ],
+      "rotation": -18.43494882292201,
+      "length": 47.43416490252569,
+      "parent": "head"
+    },
+    {
+      "name": "toucx_03_1",
+      "position": [
+        595,
+        -365
+      ],
+      "rotation": -66.03751102542182,
+      "length": 49.24428900898052,
+      "parent": "toucx_03_0"
+    },
+    {
+      "name": "toucx_03_2",
+      "position": [
+        615,
+        -410
+      ],
+      "rotation": -109.98310652189998,
+      "length": 58.52349955359813,
+      "parent": "toucx_03_1"
+    }
+  ],
+  "bindings": {
+    "houyoutui": "far_hind_upper",
+    "qianyoutui": "far_front_upper",
+    "qianzuotui": "near_front_upper",
+    "houzuotui": "near_hind_upper",
+    "weiba": "weiba_0",
+    "shentichuxu_01": "shentichuxu_01_0",
+    "shentichuxu_02": "shentichuxu_02_0",
+    "toucx_04": "toucx_04_0",
+    "toucx_01": "toucx_01_0",
+    "toucx_02": "toucx_02_0",
+    "toucx_03": "toucx_03_0",
+    "shenti": "chest",
+    "tou": "head",
+    "xiaba": "jaw",
+    "xueye": "jaw",
+    "touci": "head"
+  },
+  "limbs": {
+    "far_hind": {
+      "image": "houyoutui",
+      "parent": "hips",
+      "hip": [
+        710,
+        -665
+      ],
+      "knee": [
+        790,
+        -780
+      ],
+      "ankle": [
+        775,
+        -900
+      ],
+      "toe": [
+        750,
+        -946
+      ],
+      "phase": 0
+    },
+    "far_front": {
+      "image": "qianyoutui",
+      "parent": "chest",
+      "hip": [
+        435,
+        -640
+      ],
+      "knee": [
+        375,
+        -785
+      ],
+      "ankle": [
+        265,
+        -915
+      ],
+      "toe": [
+        230,
+        -960
+      ],
+      "phase": 3.141592653589793
+    },
+    "near_front": {
+      "image": "qianzuotui",
+      "parent": "chest",
+      "hip": [
+        585,
+        -645
+      ],
+      "knee": [
+        665,
+        -770
+      ],
+      "ankle": [
+        500,
+        -925
+      ],
+      "toe": [
+        465,
+        -978
+      ],
+      "phase": 0
+    },
+    "near_hind": {
+      "image": "houzuotui",
+      "parent": "hips",
+      "hip": [
+        870,
+        -650
+      ],
+      "knee": [
+        980,
+        -785
+      ],
+      "ankle": [
+        1050,
+        -925
+      ],
+      "toe": [
+        1070,
+        -978
+      ],
+      "phase": 3.141592653589793
+    }
+  },
+  "chains": {
+    "weiba": {
+      "parent": "hips",
+      "points": [
+        [
+          900,
+          -600
+        ],
+        [
+          1030,
+          -570
+        ],
+        [
+          1110,
+          -455
+        ],
+        [
+          1100,
+          -335
+        ],
+        [
+          1030,
+          -250
+        ],
+        [
+          880,
+          -220
+        ]
+      ],
+      "bones": [
+        "weiba_0",
+        "weiba_1",
+        "weiba_2",
+        "weiba_3",
+        "weiba_4"
+      ]
+    },
+    "shentichuxu_01": {
+      "parent": "chest",
+      "points": [
+        [
+          680,
+          -495
+        ],
+        [
+          750,
+          -450
+        ],
+        [
+          810,
+          -355
+        ],
+        [
+          855,
+          -350
+        ],
+        [
+          875,
+          -425
+        ]
+      ],
+      "bones": [
+        "shentichuxu_01_0",
+        "shentichuxu_01_1",
+        "shentichuxu_01_2",
+        "shentichuxu_01_3"
+      ]
+    },
+    "shentichuxu_02": {
+      "parent": "hips",
+      "points": [
+        [
+          720,
+          -550
+        ],
+        [
+          820,
+          -580
+        ],
+        [
+          900,
+          -535
+        ],
+        [
+          980,
+          -580
+        ],
+        [
+          1035,
+          -650
+        ]
+      ],
+      "bones": [
+        "shentichuxu_02_0",
+        "shentichuxu_02_1",
+        "shentichuxu_02_2",
+        "shentichuxu_02_3"
+      ]
+    },
+    "toucx_04": {
+      "parent": "head",
+      "points": [
+        [
+          520,
+          -265
+        ],
+        [
+          510,
+          -185
+        ],
+        [
+          465,
+          -125
+        ],
+        [
+          480,
+          -60
+        ],
+        [
+          545,
+          -50
+        ],
+        [
+          575,
+          -95
+        ]
+      ],
+      "bones": [
+        "toucx_04_0",
+        "toucx_04_1",
+        "toucx_04_2",
+        "toucx_04_3",
+        "toucx_04_4"
+      ]
+    },
+    "toucx_01": {
+      "parent": "head",
+      "points": [
+        [
+          385,
+          -480
+        ],
+        [
+          430,
+          -500
+        ],
+        [
+          425,
+          -580
+        ],
+        [
+          480,
+          -645
+        ],
+        [
+          485,
+          -715
+        ],
+        [
+          520,
+          -780
+        ]
+      ],
+      "bones": [
+        "toucx_01_0",
+        "toucx_01_1",
+        "toucx_01_2",
+        "toucx_01_3",
+        "toucx_01_4"
+      ]
+    },
+    "toucx_02": {
+      "parent": "head",
+      "points": [
+        [
+          510,
+          -410
+        ],
+        [
+          550,
+          -445
+        ],
+        [
+          570,
+          -500
+        ],
+        [
+          560,
+          -570
+        ]
+      ],
+      "bones": [
+        "toucx_02_0",
+        "toucx_02_1",
+        "toucx_02_2"
+      ]
+    },
+    "toucx_03": {
+      "parent": "head",
+      "points": [
+        [
+          550,
+          -350
+        ],
+        [
+          595,
+          -365
+        ],
+        [
+          615,
+          -410
+        ],
+        [
+          595,
+          -465
+        ]
+      ],
+      "bones": [
+        "toucx_03_0",
+        "toucx_03_1",
+        "toucx_03_2"
+      ]
+    }
+  }
+}

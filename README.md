@@ -227,3 +227,7 @@ LOSTFLEET_URL=http://127.0.0.1:8000/ PYTHON=/workspace/.venvs/lostfleet-tools/bi
 ### SYCS 深渊触手 · 蠕动、罐内气泡与前抽
 
 新增 [Spine PRO 4.3.23 导入说明](examples/sycs-spine/README.md) 与 [五动作及气泡预览](examples/sycs-spine/preview.html)：`stand`、`dead`、`hit`、`move`、`attack`。42 根骨骼，保留原始 17 张 PNG；多段触手蠕动、身体呼吸、罐内 8 个气泡循环上浮；前景长触手蓄力后前抽，附气流拖尾与回弹。移动原地循环。下载 [完整 ZIP](downloads/sycs-spine-4.3.23.zip)。包含网格拓扑检查，桌面编辑器导入仍需本机确认，详见包内 README。
+
+### SZYX 四足异形 · 撕咬与单爪抓击
+
+新增 [Spine PRO 4.3.23 导入说明](examples/szyx-spine/README.md) 和 [六动作及手机尺寸预览](examples/szyx-spine/preview.html)：`stand`、`dead`、`hit`、`move`、`attack`、`attack_2`。51 根骨骼，原始 16 张透明 PNG 保持不变；四足对角原地步态、触手错相蠕动、呼吸、前扑撕咬及单前爪抓击，包含蓄力与回弹。下载 [完整 ZIP](downloads/szyx-spine-4.3.23.zip)。包内记录实际运行库与拓扑验证；专有桌面编辑器导入尚未实测。
