@@ -1,0 +1,56 @@
+{ "skeleton": { "images": "E:/太空/人物/第一章怪物/新112/images/" },
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "youchibang", "bone": "root", "attachment": "youchibang" },
+	{ "name": "beiqi03", "bone": "root", "attachment": "beiqi03" },
+	{ "name": "beiqi02", "bone": "root", "attachment": "beiqi02" },
+	{ "name": "bqiqi01", "bone": "root", "attachment": "bqiqi01" },
+	{ "name": "shenti", "bone": "root", "attachment": "shenti" },
+	{ "name": "toubu", "bone": "root", "attachment": "toubu" },
+	{ "name": "zuoxiae", "bone": "root", "attachment": "zuoxiae" },
+	{ "name": "youxiae", "bone": "root", "attachment": "youxiae" },
+	{ "name": "zuoya", "bone": "root", "attachment": "zuoya" },
+	{ "name": "youya", "bone": "root", "attachment": "youya" },
+	{ "name": "zuochibang", "bone": "root", "attachment": "zuochibang" }
+],
+"skins": {
+	"default": {
+		"youchibang": {
+			"youchibang": { "x": 262, "y": -296, "width": 402, "height": 270 }
+		},
+		"beiqi03": {
+			"beiqi03": { "x": 698, "y": -235.5, "width": 82, "height": 65 }
+		},
+		"beiqi02": {
+			"beiqi02": { "x": 679, "y": -195.5, "width": 120, "height": 117 }
+		},
+		"bqiqi01": {
+			"bqiqi01": { "x": 628.5, "y": -142.5, "width": 127, "height": 127 }
+		},
+		"shenti": {
+			"shenti": { "x": 748, "y": -236, "width": 726, "height": 294 }
+		},
+		"toubu": {
+			"toubu": { "x": 420.5, "y": -296, "width": 261, "height": 180 }
+		},
+		"zuoxiae": {
+			"zuoxiae": { "x": 446, "y": -517, "width": 210, "height": 334 }
+		},
+		"youxiae": {
+			"youxiae": { "x": 262, "y": -497, "width": 128, "height": 336 }
+		},
+		"zuoya": {
+			"zuoya": { "x": 411, "y": -458, "width": 102, "height": 238 }
+		},
+		"youya": {
+			"youya": { "x": 323.5, "y": -455, "width": 53, "height": 212 }
+		},
+		"zuochibang": {
+			"zuochibang": { "x": 762.5, "y": -362.5, "width": 497, "height": 239 }
+		}
+	}
+},
+"animations": { "animation": {} }
+}

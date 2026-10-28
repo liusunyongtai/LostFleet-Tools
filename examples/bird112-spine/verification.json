@@ -1,0 +1,43 @@
+{
+  "targetEditor": "Spine PRO 4.3.23",
+  "desktopEditorTested": false,
+  "officialRuntime": "@esotericsoftware/spine-core 4.3.13",
+  "sampleHz": 60,
+  "runtimePoses": 371,
+  "automatedTests": {
+    "passed": 250,
+    "failed": 0
+  },
+  "gallery": {
+    "decodedImages": 12,
+    "allHttp200": true,
+    "pageErrors": 0
+  },
+  "rootStationaryAnimations": [
+    "stand",
+    "move",
+    "attack"
+  ],
+  "attackLoop": {
+    "duration": 0.8,
+    "bodyDownwardPitchDegrees": [
+      32,
+      40
+    ],
+    "reducedWingSpan": true,
+    "headDownTailUp": true,
+    "startAndEndBothDiving": true
+  },
+  "sourcePNGCount": 11,
+  "originalUploadJSONSHA256": "4417e14dcf61b417f3b387db0f8c1a702cbd5ce8a786190524c49b0636ab93dc",
+  "death": {
+    "settledFromSeconds": 1.4,
+    "headFloorClearancePixels": 3
+  },
+  "limitations": [
+    "Desktop Spine PRO 4.3.23 import not executed in this environment.",
+    "Previews use independent software rendering, not desktop screenshots.",
+    "World flight/dive paths and collisions are controlled by the game.",
+    "Import data and original images supplied; export a game atlas in the local editor."
+  ]
+}

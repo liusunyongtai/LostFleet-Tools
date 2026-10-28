@@ -1,0 +1,308 @@
+{
+  "target_version": "4.3.23",
+  "origin": [
+    600,
+    -900
+  ],
+  "fps": 30,
+  "bones": [
+    {
+      "name": "root",
+      "position": [
+        600,
+        -900
+      ],
+      "rotation": 0,
+      "length": 0
+    },
+    {
+      "name": "hover",
+      "position": [
+        600,
+        -245
+      ],
+      "rotation": 0,
+      "length": 0,
+      "parent": "root"
+    },
+    {
+      "name": "body",
+      "position": [
+        600,
+        -245
+      ],
+      "rotation": 0,
+      "length": 180,
+      "parent": "hover"
+    },
+    {
+      "name": "neck",
+      "position": [
+        505,
+        -245
+      ],
+      "rotation": 0,
+      "length": 50,
+      "parent": "body"
+    },
+    {
+      "name": "head",
+      "position": [
+        490,
+        -281
+      ],
+      "rotation": 0,
+      "length": 160,
+      "parent": "neck"
+    },
+    {
+      "name": "tail_base",
+      "position": [
+        780,
+        -350
+      ],
+      "rotation": 0,
+      "length": 160,
+      "parent": "body"
+    },
+    {
+      "name": "tail_mid",
+      "position": [
+        940,
+        -365
+      ],
+      "rotation": 0,
+      "length": 160,
+      "parent": "tail_base"
+    },
+    {
+      "name": "tail_tip",
+      "position": [
+        1060,
+        -255
+      ],
+      "rotation": 0,
+      "length": 140,
+      "parent": "tail_mid"
+    },
+    {
+      "name": "tail_curl",
+      "position": [
+        990,
+        -145
+      ],
+      "rotation": 0,
+      "length": 65,
+      "parent": "tail_tip"
+    },
+    {
+      "name": "front_wing",
+      "position": [
+        580,
+        -265
+      ],
+      "rotation": 0,
+      "length": 190,
+      "parent": "body"
+    },
+    {
+      "name": "front_wing_elbow",
+      "position": [
+        760,
+        -342
+      ],
+      "rotation": 0,
+      "length": 175,
+      "parent": "front_wing"
+    },
+    {
+      "name": "front_wing_tip",
+      "position": [
+        940,
+        -365
+      ],
+      "rotation": 0,
+      "length": 70,
+      "parent": "front_wing_elbow"
+    },
+    {
+      "name": "back_wing",
+      "position": [
+        425,
+        -215
+      ],
+      "rotation": 0,
+      "length": 165,
+      "parent": "body"
+    },
+    {
+      "name": "back_wing_elbow",
+      "position": [
+        270,
+        -252
+      ],
+      "rotation": 0,
+      "length": 165,
+      "parent": "back_wing"
+    },
+    {
+      "name": "back_wing_tip",
+      "position": [
+        100,
+        -300
+      ],
+      "rotation": 0,
+      "length": 60,
+      "parent": "back_wing_elbow"
+    },
+    {
+      "name": "spine_01",
+      "position": [
+        603,
+        -199
+      ],
+      "rotation": 0,
+      "length": 100,
+      "parent": "body"
+    },
+    {
+      "name": "spine_02",
+      "position": [
+        648,
+        -248
+      ],
+      "rotation": 0,
+      "length": 90,
+      "parent": "body"
+    },
+    {
+      "name": "spine_03",
+      "position": [
+        678,
+        -266
+      ],
+      "rotation": 0,
+      "length": 70,
+      "parent": "body"
+    },
+    {
+      "name": "front_jaw",
+      "position": [
+        475,
+        -365
+      ],
+      "rotation": 0,
+      "length": 170,
+      "parent": "head"
+    },
+    {
+      "name": "front_jaw_tip",
+      "position": [
+        493,
+        -523
+      ],
+      "rotation": 0,
+      "length": 150,
+      "parent": "front_jaw"
+    },
+    {
+      "name": "back_jaw",
+      "position": [
+        307,
+        -347
+      ],
+      "rotation": 0,
+      "length": 170,
+      "parent": "head"
+    },
+    {
+      "name": "back_jaw_tip",
+      "position": [
+        233,
+        -505
+      ],
+      "rotation": 0,
+      "length": 145,
+      "parent": "back_jaw"
+    },
+    {
+      "name": "front_fang",
+      "position": [
+        418,
+        -351
+      ],
+      "rotation": 0,
+      "length": 220,
+      "parent": "head"
+    },
+    {
+      "name": "back_fang",
+      "position": [
+        326,
+        -361
+      ],
+      "rotation": 0,
+      "length": 200,
+      "parent": "head"
+    },
+    {
+      "name": "dive_contact",
+      "position": [
+        370,
+        -465
+      ],
+      "rotation": 0,
+      "length": 55,
+      "parent": "head"
+    }
+  ],
+  "bindings": {
+    "youchibang": "back_wing",
+    "beiqi03": "spine_03",
+    "beiqi02": "spine_02",
+    "bqiqi01": "spine_01",
+    "shenti": "body",
+    "toubu": "head",
+    "zuoxiae": "front_jaw",
+    "youxiae": "back_jaw",
+    "zuoya": "front_fang",
+    "youya": "back_fang",
+    "zuochibang": "front_wing"
+  },
+  "facing": "left",
+  "attack": "Stationary persistent head-down dive loop, 32–40 degrees, folded wings. Use engine crossfade to enter/exit; root never advances.",
+  "tail_chain": [
+    [
+      680,
+      -300
+    ],
+    [
+      780,
+      -350
+    ],
+    [
+      940,
+      -365
+    ],
+    [
+      1060,
+      -255
+    ],
+    [
+      990,
+      -145
+    ],
+    [
+      940,
+      -95
+    ]
+  ],
+  "tail_bones": [
+    "body",
+    "tail_base",
+    "tail_mid",
+    "tail_tip",
+    "tail_curl",
+    "tail_curl"
+  ]
+}
