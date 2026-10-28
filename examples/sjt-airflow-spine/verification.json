@@ -1,0 +1,32 @@
+{
+  "targetEditor": "Spine PRO 4.3.23",
+  "desktopEditorTested": false,
+  "officialRuntime": "@esotericsoftware/spine-core 4.3.13",
+  "realAtlasPages": [
+    "sjt-4.3.png",
+    "sjt-airflow-fx.png"
+  ],
+  "runtimePoses60Hz": 448,
+  "originalPoseComparisons": 448,
+  "toolTrajectoryHz": 240,
+  "automatedTests": {
+    "passed": 230,
+    "failed": 0
+  },
+  "gallery": {
+    "decodedImages": 16,
+    "allHttp200": true,
+    "pageErrors": 0
+  },
+  "changes": [
+    "attack_2: translucent airflow ribbon meshes following the uploaded edited tool trajectory",
+    "attack_2: expanding pressure wave near the tool low point",
+    "Two auxiliary bones, two VFX slots, PMA effects atlas page",
+    "Original eight image bytes, 17 bone definitions, original meshes, events and action curves preserved"
+  ],
+  "limitations": [
+    "Desktop editor not accessible; import updated JSON and save a new .spine on your machine.",
+    "Uploaded .spine is retained only as an unchanged backup under source/original-project.",
+    "Previews use official-runtime matrices and independent software rendering, not desktop screenshots."
+  ]
+}

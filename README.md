@@ -209,3 +209,8 @@ LOSTFLEET_URL=http://127.0.0.1:8000/ PYTHON=/workspace/.venvs/lostfleet-tools/bi
 ### ZHSHZ 菌冠感染者 · 红色抓痕、喷吐和独立毒液
 
 新增 [Spine PRO 4.3.23 动画包说明](examples/zhshz-spine/README.md) 与 [角色及毒液预览](examples/zhshz-spine/preview.html)：`stand`、`dead`、`hit`、`move`、`attack_1`（前抓与红色抓痕）、`attack_2`（喷吐）。21 根角色骨骼，保留原始十四张 PNG；另附 `poison-bullet-4.3.json` 的 `bullet` 原地循环。下载 [完整 ZIP](downloads/zhshz-spine-4.3.23.zip)。两份 JSON 均以缩放 1 导入；毒液实际飞行由游戏控制。事件、特效来源、验证范围及桌面 Spine 未实测说明见包内 README。
+
+
+### SJT · attack_2 气流增强版
+
+基于用户重新上传的 Spine 4.3.23 导出数据，保留原曲线、事件、角色 PNG 和原始图集页，为 `attack_2` 增加沿拳端轨迹的半透明气流及扩散气浪。新增双页图集、对比 GIF 与手机尺寸预览。见 [导入说明](examples/sjt-airflow-spine/README.md)、[效果对比](examples/sjt-airflow-spine/preview.html)、[完整 ZIP](downloads/sjt-spine-airflow-4.3.23.zip)。导入根目录新版 JSON；上传的旧 `.spine` 仅保存在备份目录。官方运行库验证范围及桌面编辑器未实测说明见包内 README。

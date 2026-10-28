@@ -1,0 +1,193 @@
+{
+  "browser": "Chromium headless",
+  "transport": "Temporary local HTTP server",
+  "desktopSpineTested": false,
+  "embeddedCodexPreviewTested": false,
+  "images": [
+    {
+      "src": "previews/attack_2-comparison.gif",
+      "width": 1200,
+      "height": 530,
+      "complete": true
+    },
+    {
+      "src": "previews/attack_2.gif",
+      "width": 840,
+      "height": 706,
+      "complete": true
+    },
+    {
+      "src": "previews/mobile-attack_2.gif",
+      "width": 420,
+      "height": 300,
+      "complete": true
+    },
+    {
+      "src": "previews/stand.gif",
+      "width": 840,
+      "height": 706,
+      "complete": true
+    },
+    {
+      "src": "previews/mobile-stand.gif",
+      "width": 420,
+      "height": 300,
+      "complete": true
+    },
+    {
+      "src": "previews/move.gif",
+      "width": 840,
+      "height": 706,
+      "complete": true
+    },
+    {
+      "src": "previews/mobile-move.gif",
+      "width": 420,
+      "height": 300,
+      "complete": true
+    },
+    {
+      "src": "previews/attack_1.gif",
+      "width": 840,
+      "height": 706,
+      "complete": true
+    },
+    {
+      "src": "previews/mobile-attack_1.gif",
+      "width": 420,
+      "height": 300,
+      "complete": true
+    },
+    {
+      "src": "previews/hit.gif",
+      "width": 840,
+      "height": 706,
+      "complete": true
+    },
+    {
+      "src": "previews/mobile-hit.gif",
+      "width": 420,
+      "height": 300,
+      "complete": true
+    },
+    {
+      "src": "previews/dead.gif",
+      "width": 840,
+      "height": 706,
+      "complete": true
+    },
+    {
+      "src": "previews/mobile-dead.gif",
+      "width": 420,
+      "height": 300,
+      "complete": true
+    },
+    {
+      "src": "previews/airflow-contact.png",
+      "width": 1440,
+      "height": 630,
+      "complete": true
+    },
+    {
+      "src": "images/fx/air_streak.png",
+      "width": 512,
+      "height": 128,
+      "complete": true
+    },
+    {
+      "src": "images/fx/impact_air.png",
+      "width": 512,
+      "height": 256,
+      "complete": true
+    }
+  ],
+  "errors": [],
+  "failed": [],
+  "requests": [
+    {
+      "url": "/preview.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "/previews/attack_2-comparison.gif",
+      "status": 200,
+      "contentType": "image/gif"
+    },
+    {
+      "url": "/previews/attack_2.gif",
+      "status": 200,
+      "contentType": "image/gif"
+    },
+    {
+      "url": "/previews/mobile-attack_2.gif",
+      "status": 200,
+      "contentType": "image/gif"
+    },
+    {
+      "url": "/previews/mobile-stand.gif",
+      "status": 200,
+      "contentType": "image/gif"
+    },
+    {
+      "url": "/previews/move.gif",
+      "status": 200,
+      "contentType": "image/gif"
+    },
+    {
+      "url": "/previews/stand.gif",
+      "status": 200,
+      "contentType": "image/gif"
+    },
+    {
+      "url": "/previews/mobile-move.gif",
+      "status": 200,
+      "contentType": "image/gif"
+    },
+    {
+      "url": "/previews/mobile-attack_1.gif",
+      "status": 200,
+      "contentType": "image/gif"
+    },
+    {
+      "url": "/previews/attack_1.gif",
+      "status": 200,
+      "contentType": "image/gif"
+    },
+    {
+      "url": "/previews/hit.gif",
+      "status": 200,
+      "contentType": "image/gif"
+    },
+    {
+      "url": "/previews/mobile-hit.gif",
+      "status": 200,
+      "contentType": "image/gif"
+    },
+    {
+      "url": "/previews/mobile-dead.gif",
+      "status": 200,
+      "contentType": "image/gif"
+    },
+    {
+      "url": "/previews/dead.gif",
+      "status": 200,
+      "contentType": "image/gif"
+    },
+    {
+      "url": "/previews/airflow-contact.png",
+      "status": 200,
+      "contentType": "image/png"
+    },
+    {
+      "url": "/images/fx/air_streak.png",
+      "status": 200,
+      "contentType": "image/png"
+    },
+    {
+      "url": "/images/fx/impact_air.png",
+      "status": 200,
+      "contentType": "image/png"
+    }
+  ]
+}
